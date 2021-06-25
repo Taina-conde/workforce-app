@@ -1,4 +1,4 @@
-import { useFormik } from "formik";
+import { useFormik, Field, FormikProvider } from "formik";
 import { setLocale } from "yup";
 import * as yup from "yup";
 import Button from "@material-ui/core/Button";
@@ -9,13 +9,13 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { ufs, cargos } from "../../helpers/index";
-import "date-fns";
+import { DatePicker } from "formik-material-ui-pickers";
 import DateFnsUtils from "@date-io/date-fns";
 import {
   MuiPickersUtilsProvider,
+  KeyboardTimePicker,
   KeyboardDatePicker,
 } from "@material-ui/pickers";
-import { date } from "yup/lib/locale";
 
 setLocale({
   mixed: {
@@ -28,7 +28,6 @@ setLocale({
 const validationSchema = yup.object({
   nome: yup.string(),
   cpf: yup.number().positive().integer().min(),
- 
 });
 
 const useStyles = makeStyles((theme) => ({
@@ -59,7 +58,7 @@ const EmployeeForm = () => {
   const dateNow = Date.now();
   console.log("date: ", dateNow);
   return (
-    <div>
+    <FormikProvider value={formik}>
       <form
         className={classes.root}
         onSubmit={formik.handleSubmit}
@@ -101,19 +100,14 @@ const EmployeeForm = () => {
           </Select>
         </FormControl>
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
-          <KeyboardDatePicker
-            margin="normal"
-            id="date-picker-dialog"
-            name = "cadastro"
-            label="Data de Cadastro"
-            format="MM/dd/yyyy"
-            value={formik.values.cadastro}
-            onChange={formik.handleChange}
-            KeyboardButtonProps={{
-              "aria-label": "change date",
-            }}
+          <Field
+            component={DatePicker}
+            label="Data de cadastro"
+            name="cadastro"
           />
+          ;
         </MuiPickersUtilsProvider>
+
         <FormControl className={classes.formControl}>
           <InputLabel id="uf">UF</InputLabel>
           <Select
@@ -134,7 +128,7 @@ const EmployeeForm = () => {
           Pesquisar
         </Button>
       </form>
-    </div>
+    </FormikProvider>
   );
 };
 export default EmployeeForm;
