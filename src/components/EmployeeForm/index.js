@@ -4,6 +4,10 @@ import * as yup from "yup";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
 
 setLocale({
   mixed: {
@@ -25,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
       width: "25ch",
     },
   },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
 }));
 const EmployeeForm = () => {
   const classes = useStyles();
@@ -32,6 +40,7 @@ const EmployeeForm = () => {
     initialValues: {
       nome: "",
       cpf: "",
+      cargo: "",
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {},
@@ -39,7 +48,11 @@ const EmployeeForm = () => {
 
   return (
     <div>
-      <form className = {classes.root} onSubmit={formik.handleSubmit} autoComplete = "off">
+      <form
+        className={classes.root}
+        onSubmit={formik.handleSubmit}
+        autoComplete="off"
+      >
         <TextField
           id="nome"
           name="nome"
@@ -59,6 +72,30 @@ const EmployeeForm = () => {
           error={formik.touched.cpf && Boolean(formik.errors.cpf)}
           helperText={formik.touched.cpf && formik.errors.cpf}
         />
+        <FormControl className={classes.formControl}>
+          <InputLabel id="cargo">Cargo</InputLabel>
+          <Select
+            labelId="cargo"
+            id = "cargo"
+            name = "cargo"
+            value={formik.values.cargo}
+            onChange={formik.handleChange}
+          >
+            <MenuItem  value={"devJr"}>Dev Jr</MenuItem>
+            <MenuItem  value={"devPl"}>Dev Pl</MenuItem>
+            <MenuItem value={"devSr"}>Dev Sr</MenuItem>
+            <MenuItem  value={"POJr"}>PO Jr</MenuItem>
+            <MenuItem  value={"POPl"}>PO Pl</MenuItem>
+            <MenuItem  value={"POSr"}>PO Sr</MenuItem>
+            <MenuItem  value={"ACJr"}>AC Jr</MenuItem>
+            <MenuItem  value={"ACPl"}>AC Pl</MenuItem>
+            <MenuItem  value={"ACSr"}>AC Sr</MenuItem>
+            <MenuItem   value={"analistaJr"}>Analista Jr</MenuItem>
+            <MenuItem   value={"analistaPl"}>Analista Pl</MenuItem>
+            <MenuItem  value={"analistaSr"}>Analista Sr</MenuItem>
+                
+          </Select>
+        </FormControl>
         <Button color="primary" variant="contained" type="submit">
           Pesquisar
         </Button>
