@@ -8,7 +8,14 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
-import { ufs } from "../../helpers/index";
+import { ufs, cargos } from "../../helpers/index";
+import "date-fns";
+import DateFnsUtils from "@date-io/date-fns";
+import {
+  MuiPickersUtilsProvider,
+  KeyboardDatePicker,
+} from "@material-ui/pickers";
+import { date } from "yup/lib/locale";
 
 setLocale({
   mixed: {
@@ -21,6 +28,9 @@ setLocale({
 const validationSchema = yup.object({
   nome: yup.string(),
   cpf: yup.number().positive().integer().min(),
+  cadastradoEm: yup.date().default(function () {
+    return new Date();
+  }),
 });
 
 const useStyles = makeStyles((theme) => ({
@@ -42,12 +52,14 @@ const EmployeeForm = () => {
       nome: "",
       cpf: "",
       cargo: "",
-      uf : "",
+      date: new Date('2017-08-18T21:11:54'),
+      uf: "",
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {},
   });
-
+const dateNow = Date.now()
+console.log("date: ", dateNow)
   return (
     <div>
       <form
@@ -83,20 +95,26 @@ const EmployeeForm = () => {
             value={formik.values.cargo}
             onChange={formik.handleChange}
           >
-            <MenuItem value={"devJr"}>Dev Jr</MenuItem>
-            <MenuItem value={"devPl"}>Dev Pl</MenuItem>
-            <MenuItem value={"devSr"}>Dev Sr</MenuItem>
-            <MenuItem value={"POJr"}>PO Jr</MenuItem>
-            <MenuItem value={"POPl"}>PO Pl</MenuItem>
-            <MenuItem value={"POSr"}>PO Sr</MenuItem>
-            <MenuItem value={"ACJr"}>AC Jr</MenuItem>
-            <MenuItem value={"ACPl"}>AC Pl</MenuItem>
-            <MenuItem value={"ACSr"}>AC Sr</MenuItem>
-            <MenuItem value={"analistaJr"}>Analista Jr</MenuItem>
-            <MenuItem value={"analistaPl"}>Analista Pl</MenuItem>
-            <MenuItem value={"analistaSr"}>Analista Sr</MenuItem>
+            {cargos.map((cargo, index) => (
+              <MenuItem key={index} value={cargo}>
+                {cargo}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
+        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+          <KeyboardDatePicker
+            margin="normal"
+            id="date-picker-dialog"
+            label="Date picker dialog"
+            format="MM/dd/yyyy"
+            value={selectedDate}
+            onChange={handleDateChange}
+            KeyboardButtonProps={{
+              "aria-label": "change date",
+            }}
+          />
+        </MuiPickersUtilsProvider>
         <FormControl className={classes.formControl}>
           <InputLabel id="uf">UF</InputLabel>
           <Select
@@ -106,8 +124,10 @@ const EmployeeForm = () => {
             value={formik.values.uf}
             onChange={formik.handleChange}
           >
-            {ufs.map( (uf, index) => (
-                <MenuItem key = {index} value = {uf}>{uf}</MenuItem>
+            {ufs.map((uf, index) => (
+              <MenuItem key={index} value={uf}>
+                {uf}
+              </MenuItem>
             ))}
           </Select>
         </FormControl>
