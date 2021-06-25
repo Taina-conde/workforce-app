@@ -1,5 +1,5 @@
 
-const ufs = [
+export const ufs = [
     "AC",
     "AL",
     "AP",

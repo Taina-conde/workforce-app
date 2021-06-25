@@ -8,6 +8,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import { ufs } from "../../helpers/index";
 
 setLocale({
   mixed: {
@@ -97,7 +98,7 @@ const EmployeeForm = () => {
           </Select>
         </FormControl>
         <FormControl className={classes.formControl}>
-          <InputLabel id="uf">Unidade Federativa</InputLabel>
+          <InputLabel id="uf">UF</InputLabel>
           <Select
             labelId="uf"
             id="uf"
@@ -105,33 +106,9 @@ const EmployeeForm = () => {
             value={formik.values.uf}
             onChange={formik.handleChange}
           >
-            <MenuItem value={"AC"}>AC</MenuItem>
-            <MenuItem value={"AL"}>AL</MenuItem>
-            <MenuItem value={"AP"}>AP</MenuItem>
-            <MenuItem value={"AM"}>AM</MenuItem>
-            <MenuItem value={"BA"}>BA</MenuItem>
-            <MenuItem value={"CE"}>CE</MenuItem>
-            <MenuItem value={"DF"}>DF</MenuItem>
-            <MenuItem value={"ES"}>ES</MenuItem>
-            <MenuItem value={"GO"}>GO</MenuItem>
-            <MenuItem value={"MA"}>MA</MenuItem>
-            <MenuItem value={"MT"}>MT</MenuItem>
-            <MenuItem value={"MS"}>MS</MenuItem>
-            <MenuItem value={"MG"}>MG</MenuItem>
-            <MenuItem value={"PA"}>PA</MenuItem>
-            <MenuItem value={"PB"}>PB</MenuItem>
-            <MenuItem value={"PR"}>PR</MenuItem>
-            <MenuItem value={"PE"}>PE</MenuItem>
-            <MenuItem value={"PI"}>PI</MenuItem>
-            <MenuItem value={"RJ"}>RJ</MenuItem>
-            <MenuItem value={"RJ"}>RN</MenuItem>
-            <MenuItem value={"RJ"}>RS</MenuItem>
-            <MenuItem value={"RJ"}>RO</MenuItem>
-            <MenuItem value={"RJ"}>RR</MenuItem>
-            <MenuItem value={"RJ"}>SC</MenuItem>
-            <MenuItem value={"RJ"}>SP</MenuItem>
-            <MenuItem value={"RJ"}>SE</MenuItem>
-            <MenuItem value={"RJ"}>TO</MenuItem>
+            {ufs.map( (uf, index) => (
+                <MenuItem key = {index} value = {uf}>{uf}</MenuItem>
+            ))}
           </Select>
         </FormControl>
         <Button color="primary" variant="contained" type="submit">
