@@ -28,9 +28,7 @@ setLocale({
 const validationSchema = yup.object({
   nome: yup.string(),
   cpf: yup.number().positive().integer().min(),
-  cadastradoEm: yup.date().default(function () {
-    return new Date();
-  }),
+ 
 });
 
 const useStyles = makeStyles((theme) => ({
@@ -52,14 +50,14 @@ const EmployeeForm = () => {
       nome: "",
       cpf: "",
       cargo: "",
-      date: new Date('2017-08-18T21:11:54'),
+      cadastro: Date.now(),
       uf: "",
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {},
   });
-const dateNow = Date.now()
-console.log("date: ", dateNow)
+  const dateNow = Date.now();
+  console.log("date: ", dateNow);
   return (
     <div>
       <form
@@ -106,10 +104,11 @@ console.log("date: ", dateNow)
           <KeyboardDatePicker
             margin="normal"
             id="date-picker-dialog"
-            label="Date picker dialog"
+            name = "cadastro"
+            label="Data de Cadastro"
             format="MM/dd/yyyy"
-            value={selectedDate}
-            onChange={handleDateChange}
+            value={formik.values.cadastro}
+            onChange={formik.handleChange}
             KeyboardButtonProps={{
               "aria-label": "change date",
             }}
