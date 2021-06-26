@@ -1,15 +1,16 @@
-import Navbar from './components/Navbar';
-import EmployeeForm from './components/EmployeeForm';
-import ResultsTable from './components/ResultsTable';
+import Navbar from "./components/Navbar";
+import EmployeeForm from "./components/EmployeeForm";
+import ResultsTable from "./components/ResultsTable";
+import Container from "@material-ui/core/Container";
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <EmployeeForm/>
-      <ResultsTable/>
-
-     
+      <Navbar />
+      <Container>
+        <EmployeeForm />
+        <ResultsTable />
+      </Container>
     </div>
   );
 }
