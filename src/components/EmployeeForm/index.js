@@ -11,11 +11,9 @@ import Select from "@material-ui/core/Select";
 import { ufs, cargos } from "../../helpers/index";
 import { DatePicker } from "formik-material-ui-pickers";
 import DateFnsUtils from "@date-io/date-fns";
-import {
-  MuiPickersUtilsProvider,
-  KeyboardTimePicker,
-  KeyboardDatePicker,
-} from "@material-ui/pickers";
+import { MuiPickersUtilsProvider } from "@material-ui/pickers";
+import Slider from "@material-ui/core/Slider";
+import Typography from "@material-ui/core/Typography";
 
 setLocale({
   mixed: {
@@ -51,6 +49,7 @@ const EmployeeForm = () => {
       cargo: "",
       cadastro: Date.now(),
       uf: "",
+      salario: [0, 10000],
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {},
@@ -124,6 +123,37 @@ const EmployeeForm = () => {
             ))}
           </Select>
         </FormControl>
+        <FormControl className={classes.formControl}>
+          <Typography id="range-slider" gutterBottom>
+            Faixa salarial
+          </Typography>
+          <Field name="salario">
+            {({
+              field, // { name, value, onChange, onBlur }
+              form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
+              meta,
+            }) => (
+              <Slider
+                value={formik.values.salario}
+                onChange={(e, value) =>
+                  field.onChange({
+                    ...e,
+                    target: {
+                      ...e.target,
+                      name: field.name,
+                      value,
+                    },
+                  })
+                }
+                valueLabelDisplay="auto"
+                aria-labelledby="range-slider"
+                getAriaValueText={() => `R$${formik.values.salario}`}
+              />
+            )}
+          </Field>
+          
+        </FormControl>
+
         <Button color="primary" variant="contained" type="submit">
           Pesquisar
         </Button>
