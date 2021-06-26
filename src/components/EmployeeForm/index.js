@@ -104,7 +104,6 @@ const EmployeeForm = () => {
             label="Data de cadastro"
             name="cadastro"
           />
-          ;
         </MuiPickersUtilsProvider>
 
         <FormControl className={classes.formControl}>
@@ -127,14 +126,16 @@ const EmployeeForm = () => {
           <Typography id="range-slider" gutterBottom>
             Faixa salarial
           </Typography>
-          <Field name="salario">
+          <Field name="salario" value = {formik.values.salario}>
             {({
               field, // { name, value, onChange, onBlur }
               form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
               meta,
-            }) => (
+            }) => {
+                console.log("field", field)
+                return(
               <Slider
-                value={formik.values.salario}
+                value = {field.value}
                 onChange={(e, value) =>
                   field.onChange({
                     ...e,
@@ -147,9 +148,9 @@ const EmployeeForm = () => {
                 }
                 valueLabelDisplay="auto"
                 aria-labelledby="range-slider"
-                getAriaValueText={() => `R$${formik.values.salario}`}
+                getAriaValueText={(value) => `R$${value}`}
               />
-            )}
+            )}}
           </Field>
           
         </FormControl>
