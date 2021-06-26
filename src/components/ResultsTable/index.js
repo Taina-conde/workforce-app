@@ -37,5 +37,3 @@ export default function ResultsTable() {
     </TableContainer>
   );
 }
-
-export default ResultsTable;
