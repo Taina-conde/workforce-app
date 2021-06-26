@@ -8,7 +8,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
-import { ufs, cargos } from "../../helpers/index";
+import { ufs, cargos, statusArr } from "../../helpers/index";
 import { DatePicker } from "formik-material-ui-pickers";
 import DateFnsUtils from "@date-io/date-fns";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
@@ -50,6 +50,7 @@ const EmployeeForm = () => {
       cadastro: Date.now(),
       uf: "",
       salario: [0, 10000],
+      status: "",
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {},
@@ -153,6 +154,22 @@ const EmployeeForm = () => {
             )}}
           </Field>
           
+        </FormControl>
+        <FormControl className={classes.formControl}>
+          <InputLabel id="status">Status</InputLabel>
+          <Select
+            labelId="status"
+            id="status"
+            name="status"
+            value={formik.values.status}
+            onChange={formik.handleChange}
+          >
+            {statusArr.map((item, index) => (
+              <MenuItem key={index} value={item}>
+                {item}
+              </MenuItem>
+            ))}
+          </Select>
         </FormControl>
 
         <Button color="primary" variant="contained" type="submit">
