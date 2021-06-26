@@ -55,8 +55,8 @@ const EmployeeForm = () => {
     validationSchema: validationSchema,
     onSubmit: (values) => {},
   });
-  const dateNow = Date.now();
-  console.log("date: ", dateNow);
+
+
   return (
     <FormikProvider value={formik}>
       <form
