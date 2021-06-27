@@ -10,6 +10,7 @@ import StatusInput from "../shared/StatusInput";
 import UfInput from "../shared/UfInput";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import SalarioInput from "./SalarioInput";
 
 setLocale({
   number: {
@@ -33,15 +34,15 @@ const useStyles = makeStyles((theme) => ({
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
       width: "50ch",
-    }
+    },
   },
   inputItem: {
     margin: theme.spacing(1),
     minWidth: 40,
-    textAlign: "center"
+    textAlign: "center",
   },
   btn: {
-    marginTop: theme.spacing(2)
+    marginTop: theme.spacing(2),
   },
   salario: {
     width: "100%",
@@ -61,14 +62,14 @@ const NewEmployeeForm = () => {
         status: "",
       }}
       validationSchema={validationSchema}
-      onSubmit= {(values) => {
+      onSubmit={(values) => {
         console.log(" values em submit", values);
       }}
     >
       {(props) => (
         <form onSubmit={props.handleSubmit} className={classes.root}>
-          <Grid container spacing={2} justify = "center" alignItems="center">
-            <Grid item xs={12} >
+          <Grid container spacing={2} justify="center" alignItems="center">
+            <Grid item xs={12}>
               <Typography variant="h5" gutterBottom>
                 Novo funcionário
               </Typography>
@@ -79,25 +80,24 @@ const NewEmployeeForm = () => {
             <Grid item xs={12}>
               <CpfInput />
             </Grid>
-            <Grid item xs className= {classes.inputItem}>
+            <Grid item xs= {12}>
+              <SalarioInput />
+            </Grid>
+            <Grid item xs className={classes.inputItem}>
               <CargoInput />
             </Grid>
-            <Grid item xs className= {classes.inputItem}>
+            <Grid item xs className={classes.inputItem}>
               <UfInput />
             </Grid>
-            <Grid item xs className= {classes.inputItem}>
+            <Grid item xs className={classes.inputItem}>
               <StatusInput />
             </Grid>
-          </Grid>
-          <Grid item xs = {12} className={classes.btn}>
-            <Button
-              
-              color="primary"
-              variant="contained"
-              type="submit"
-            >
-              Salvar
-            </Button>
+            
+            <Grid item xs={12} className={classes.btn}>
+              <Button color="primary" variant="contained" type="submit">
+                Salvar
+              </Button>
+            </Grid>
           </Grid>
         </form>
       )}
