@@ -4,6 +4,7 @@ import * as yup from "yup";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { makeStyles } from "@material-ui/core/styles";
+import { criteriosArr } from "../../helpers";
 
 setLocale({
   number: {
@@ -47,7 +48,7 @@ const SearchForm = () => {
       {(props) => (
         <form onSubmit={props.handleSubmit}>
           <FormControl className={classes.formControl}>
-            <InputLabel id="criterioBusca">criterioBusca</InputLabel>
+            <InputLabel id="criterioBusca">Buscar por :</InputLabel>
             <Select
               labelId="criterioBusca"
               id="criterioBusca"
@@ -55,9 +56,9 @@ const SearchForm = () => {
               value={formik.values.criterioBusca}
               onChange={formik.handleChange}
             >
-              {criterioBuscas.map((criterioBusca, index) => (
-                <MenuItem key={index} value={criterioBusca}>
-                  {cargo}
+              {criteriosArr.map((criterio, index) => (
+                <MenuItem key={index} value={criterio}>
+                  {criterio}
                 </MenuItem>
               ))}
             </Select>
