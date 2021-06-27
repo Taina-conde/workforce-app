@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.primary.light,
     },
   },
+  modal: { display: "flex", alignItems: "center", justifyContent: "center" },
   paper: {
     position: "absolute",
     width: 400,
@@ -51,6 +52,7 @@ export default function AddEmployeeBtn(props) {
       </Box>
       <Modal
         open={open}
+        className = {classes.modal}
         onClose={handleClose}
         aria-labelledby="new-employee-modal"
         aria-describedby="new-employee-form"
@@ -60,10 +62,10 @@ export default function AddEmployeeBtn(props) {
           timeout: 500,
         }}
       >
-        <Fade in = {open}>
+        <Fade in={open}>
           <div className={classes.paper}>
             <NewEmployeeForm />
-          </div> 
+          </div>
         </Fade>
       </Modal>
     </div>
