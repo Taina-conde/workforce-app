@@ -31,9 +31,9 @@ const SalarioFaixaInput = () => {
                   },
                 })
               }
-              valueLabelDisplay="on"
+              valueLabelDisplay="auto"
               aria-labelledby="range-slider"
-              getAriaValueText={() => (`R$${field.value}`)}
+              getAriaValueText={(value) => (`R$${value}`)}
             />
           );
         }}
