@@ -1,5 +1,6 @@
 import { Field} from "formik";
 import TextField from "@material-ui/core/TextField";
+import InputAdornment from '@material-ui/core/InputAdornment';
 const SalarioInput = () => {
   
   return (
@@ -12,6 +13,9 @@ const SalarioInput = () => {
           error={touched.salario && Boolean(errors.salario)}
           helperText={touched.salario && errors.salario}
           {...field}
+          InputProps={{
+            startAdornment: <InputAdornment position="start">R$</InputAdornment>,
+          }}
         /> 
       )}
     </Field>
