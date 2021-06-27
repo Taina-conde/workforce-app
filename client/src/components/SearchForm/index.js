@@ -8,6 +8,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from "@material-ui/core/styles";
 import { criteriosArr } from "../../helpers";
 import NomeInput from "../shared/NomeInput";
+import CpfInput from "../shared/CpfInput";
 
 setLocale({
   number: {
@@ -69,6 +70,7 @@ const SearchForm = () => {
             </Select>
           </FormControl>
           {props.values.criterioBusca === "nome" && <NomeInput/>}
+          {props.values.criterioBusca === "cpf" && <CpfInput/>}
 
         </form>
       )}}
