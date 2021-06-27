@@ -14,6 +14,7 @@ import TextField from "@material-ui/core/TextField";
 import CargoInput from "../shared/CargoInput";
 import DateInput from "./DateInput";
 import UfInput from "../shared/UfInput";
+import SalarioFaixaInput from "./SalarioFaixaInput";
 
 setLocale({
   number: {
@@ -35,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     minWidth: 200,
   },
+  btn: {
+      margin: theme.spacing(2),
+  }
 }));
 
 const SearchForm = () => {
@@ -103,8 +107,14 @@ const SearchForm = () => {
                 <UfInput />
               </FormControl>
             )}
+              {props.values.criterioBusca === "salario" && (
+              <FormControl className={classes.formControl}>
+                <SalarioFaixaInput/>
+              </FormControl>
+            )}
 
-            <Button color="primary" variant="contained" type="submit">
+
+            <Button className = {classes.btn} color="primary" variant="contained" type="submit">
               Pesquisar
             </Button>
           </form>

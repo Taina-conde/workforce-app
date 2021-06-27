@@ -7,7 +7,7 @@ const SalarioFaixaInput = () => {
       <Typography id="range-slider" gutterBottom>
         Faixa salarial
       </Typography>
-      <Field name="salario" value={formik.values.salario}>
+      <Field name="salario">
         {({
           field, // { name, value, onChange, onBlur }
           form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
@@ -17,6 +17,8 @@ const SalarioFaixaInput = () => {
           return (
             <Slider
               value={field.value}
+              step = {1000}
+              max = {10000}
               onChange={(e, value) =>
                 field.onChange({
                   ...e,
@@ -27,9 +29,9 @@ const SalarioFaixaInput = () => {
                   },
                 })
               }
-              valueLabelDisplay="auto"
+              valueLabelDisplay="on"
               aria-labelledby="range-slider"
-              getAriaValueText={(value) => `R$${value}`}
+              getAriaValueText={() => (`R$${field.value}`)}
             />
           );
         }}
