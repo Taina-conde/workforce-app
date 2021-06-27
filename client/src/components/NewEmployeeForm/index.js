@@ -33,14 +33,15 @@ const useStyles = makeStyles((theme) => ({
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
       width: "50ch",
-    },
+    }
   },
-  formControl: {
+  inputItem: {
     margin: theme.spacing(1),
-    minWidth: 200,
+    minWidth: 40,
+    textAlign: "center"
   },
   btn: {
-    margin: theme.spacing(2),
+    marginTop: theme.spacing(2)
   },
   salario: {
     width: "100%",
@@ -60,14 +61,14 @@ const NewEmployeeForm = () => {
         status: "",
       }}
       validationSchema={validationSchema}
-      onSubmit={(values) => {
+      onSubmit= {(values) => {
         console.log(" values em submit", values);
       }}
     >
       {(props) => (
         <form onSubmit={props.handleSubmit} className={classes.root}>
-          <Grid container spacing={2}>
-            <Grid item xs={12}>
+          <Grid container spacing={2} justify = "center" alignItems="center">
+            <Grid item xs={12} >
               <Typography variant="h5" gutterBottom>
                 Novo funcionário
               </Typography>
@@ -78,19 +79,19 @@ const NewEmployeeForm = () => {
             <Grid item xs={12}>
               <CpfInput />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs className= {classes.inputItem}>
               <CargoInput />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs className= {classes.inputItem}>
               <UfInput />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs className= {classes.inputItem}>
               <StatusInput />
             </Grid>
           </Grid>
-          <Grid item xs = {12}>
+          <Grid item xs = {12} className={classes.btn}>
             <Button
-              className={classes.btn}
+              
               color="primary"
               variant="contained"
               type="submit"
