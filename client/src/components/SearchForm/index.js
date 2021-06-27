@@ -38,6 +38,9 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
       margin: theme.spacing(2),
+  },
+  salario : {
+      width: "100%",
   }
 }));
 
@@ -108,7 +111,7 @@ const SearchForm = () => {
               </FormControl>
             )}
               {props.values.criterioBusca === "salario" && (
-              <FormControl className={classes.formControl}>
+              <FormControl className={[classes.formControl, classes.salario]}>
                 <SalarioFaixaInput/>
               </FormControl>
             )}

@@ -1,6 +1,7 @@
 import { Field } from 'formik';
 import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
+import { sliderMarks } from "../../helpers/index";
 const SalarioFaixaInput = () => {
   return (
     <>
@@ -17,8 +18,9 @@ const SalarioFaixaInput = () => {
           return (
             <Slider
               value={field.value}
-              step = {1000}
+              step = {500}
               max = {10000}
+              marks = {sliderMarks}
               onChange={(e, value) =>
                 field.onChange({
                   ...e,
