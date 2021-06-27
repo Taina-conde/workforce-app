@@ -9,7 +9,8 @@ const NomeInput = () => {
           id="nome"
           label="Nome"
           value={field.value.nome}
-          
+          error={touched.nome && Boolean(errors.nome)}
+          helperText={touched.nome && errors.nome}
           {...field}
         />
       )}
