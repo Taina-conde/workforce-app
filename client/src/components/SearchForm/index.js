@@ -11,6 +11,7 @@ import { criteriosArr } from "../../helpers";
 import NomeInput from "../shared/NomeInput";
 import CpfInput from "../shared/CpfInput";
 import TextField from "@material-ui/core/TextField";
+import CargoInput from "../shared/CargoInput";
 
 setLocale({
   number: {
@@ -83,6 +84,11 @@ const SearchForm = () => {
             {props.values.criterioBusca === "cpf" && (
               <FormControl>
                 <CpfInput/>
+              </FormControl>
+            )}
+            {props.values.criterioBusca === "cargo" && (
+              <FormControl>
+                <CargoInput/>
               </FormControl>
             )}
 
