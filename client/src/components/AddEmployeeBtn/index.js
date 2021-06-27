@@ -17,10 +17,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function AddEmployeeBtn() {
+export default function AddEmployeeBtn(props) {
   const classes = useStyles();
   return (
-    <Box component = {IconButton} className={classes.box} boxShadow = {3}>
+    <Box component = {IconButton} className={classes.box} boxShadow = {3} onClick = {() => props.onHandleOpen()}>
         <AddIcon color = "inherit"/>
     </Box>
     
