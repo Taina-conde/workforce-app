@@ -13,6 +13,7 @@ import CpfInput from "../shared/CpfInput";
 import TextField from "@material-ui/core/TextField";
 import CargoInput from "../shared/CargoInput";
 import DateInput from "./DateInput";
+import UfInput from "../shared/UfInput";
 
 setLocale({
   number: {
@@ -78,23 +79,28 @@ const SearchForm = () => {
               </Select>
             </FormControl>
             {props.values.criterioBusca === "nome" && (
-              <FormControl>
+              <FormControl className={classes.formControl}>
                 <NomeInput />
               </FormControl>
             )}
             {props.values.criterioBusca === "cpf" && (
-              <FormControl>
+              <FormControl className={classes.formControl}>
                 <CpfInput />
               </FormControl>
             )}
             {props.values.criterioBusca === "cargo" && (
-              <FormControl>
+              <FormControl className={classes.formControl}>
                 <CargoInput />
               </FormControl>
             )}
             {props.values.criterioBusca === "cadastro" && (
-              <FormControl>
+              <FormControl className={classes.formControl}>
                 <DateInput />
+              </FormControl>
+            )}
+            {props.values.criterioBusca === "uf" && (
+              <FormControl className={classes.formControl}>
+                <UfInput />
               </FormControl>
             )}
 
