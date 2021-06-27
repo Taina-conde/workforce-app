@@ -43,3 +43,5 @@ export const cargos = [
   "Analista Sr",
 ];
 export const statusArr = ["ativo", "inativo", "bloqueado"];
+
+export const criteriosArr = ["nome", "cpf", "cargo", "cadastro", "uf", "salario", "status"]
