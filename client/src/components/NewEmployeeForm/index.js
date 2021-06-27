@@ -2,6 +2,7 @@ import { Formik } from "formik";
 import { setLocale } from "yup";
 import * as yup from "yup";
 import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 setLocale({
     number: {
       min: "Deve conter 11 números",
@@ -56,7 +57,7 @@ const NewEmployeeForm = () => {
         {(props) => (
             <form onSubmit={props.handleSubmit} className={classes.root}>
               
-                
+
   
               <Button className = {classes.btn} color="primary" variant="contained" type="submit">
                 Salvar
