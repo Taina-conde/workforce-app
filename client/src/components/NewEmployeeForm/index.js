@@ -53,19 +53,18 @@ const NewEmployeeForm = () => {
           console.log(" values em submit", values);
         }}
       >
-        {(props) => {
-          console.log("cpf", props.values.cpf);
-          return (
+        {(props) => (
             <form onSubmit={props.handleSubmit} className={classes.root}>
               
-  
+                
   
               <Button className = {classes.btn} color="primary" variant="contained" type="submit">
                 Salvar
               </Button>
             </form>
-          );
-        }}
+          )
+        }
       </Formik>
+    )
 }
 export default NewEmployeeForm;
