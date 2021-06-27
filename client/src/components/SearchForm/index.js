@@ -10,11 +10,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import { criteriosArr } from "../../helpers";
 import NomeInput from "../shared/NomeInput";
 import CpfInput from "../shared/CpfInput";
-import TextField from "@material-ui/core/TextField";
 import CargoInput from "../shared/CargoInput";
 import DateInput from "./DateInput";
 import UfInput from "../shared/UfInput";
 import SalarioFaixaInput from "./SalarioFaixaInput";
+import StatusInput from "../shared/StatusInput";
 
 setLocale({
   number: {
@@ -113,6 +113,11 @@ const SearchForm = () => {
               {props.values.criterioBusca === "salario" && (
               <FormControl className={[classes.formControl, classes.salario]}>
                 <SalarioFaixaInput/>
+              </FormControl>
+            )}
+            {props.values.criterioBusca === "status" && (
+              <FormControl className={classes.formControl}>
+                <StatusInput />
               </FormControl>
             )}
 
