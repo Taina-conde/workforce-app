@@ -7,6 +7,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from "@material-ui/core/styles";
 import { criteriosArr } from "../../helpers";
+import NomeInput from "../shared/NomeInput";
 
 setLocale({
   number: {
@@ -47,7 +48,9 @@ const SearchForm = () => {
       validationSchema={validationSchema}
       onSubmit={(values) => {}}
     >
-      {(props) => (
+      {(props) => {
+          
+          return (
         <form onSubmit={props.handleSubmit} className = {classes.root}>
           <FormControl className={classes.formControl}>
             <InputLabel id="criterioBusca">Buscar funcionários por </InputLabel>
@@ -65,10 +68,10 @@ const SearchForm = () => {
               ))}
             </Select>
           </FormControl>
-          
+          {props.values.criterioBusca === "nome" && <NomeInput/>}
 
         </form>
-      )}
+      )}}
     </Formik>
   );
 };
