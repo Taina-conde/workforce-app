@@ -1,15 +1,10 @@
-import { Field, useFormikContext } from "formik";
+import { Field} from "formik";
 import TextField from "@material-ui/core/TextField";
 const CpfInput = () => {
   
   return (
     <Field name="cpf">
-      {({ field, form: { touched, errors }, meta }) => { 
-          console.log ("field", field)
-          console.log("touched", touched)
-          console.log("errors", errors)
-          console.log("meta", meta)
-          return (
+      {({ field, form: { touched, errors }, meta }) => (
         <TextField
           id="cpf"
           label="CPF"
@@ -18,7 +13,7 @@ const CpfInput = () => {
           helperText={touched.cpf && errors.cpf}
           {...field}
         /> 
-      )}}
+      )}
     </Field>
   );
 };
