@@ -5,6 +5,8 @@ import AddIcon from "@material-ui/icons/Add";
 import Box from "@material-ui/core/Box";
 import Modal from "@material-ui/core/Modal";
 import NewEmployeeForm from "../NewEmployeeForm";
+import Backdrop from "@material-ui/core/Backdrop";
+import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
   box: {
@@ -19,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   paper: {
-    position: 'absolute',
+    position: "absolute",
     width: 400,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
@@ -52,10 +54,17 @@ export default function AddEmployeeBtn(props) {
         onClose={handleClose}
         aria-labelledby="new-employee-modal"
         aria-describedby="new-employee-form"
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
       >
-        <div className = {classes.paper}>
-          <NewEmployeeForm />
-        </div>
+        <Fade in = {open}>
+          <div className={classes.paper}>
+            <NewEmployeeForm />
+          </div> 
+        </Fade>
       </Modal>
     </div>
   );
