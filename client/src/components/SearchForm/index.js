@@ -3,6 +3,8 @@ import { setLocale } from "yup";
 import * as yup from "yup";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from "@material-ui/core/styles";
 import { criteriosArr } from "../../helpers";
 
@@ -19,12 +21,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: "25ch",
+      width: "50ch",
     },
   },
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120,
+    minWidth: 200,
   },
 }));
 
@@ -46,15 +48,15 @@ const SearchForm = () => {
       onSubmit={(values) => {}}
     >
       {(props) => (
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={props.handleSubmit} className = {classes.root}>
           <FormControl className={classes.formControl}>
-            <InputLabel id="criterioBusca">Buscar por :</InputLabel>
+            <InputLabel id="criterioBusca">Buscar funcionários por </InputLabel>
             <Select
               labelId="criterioBusca"
               id="criterioBusca"
               name="criterioBusca"
-              value={formik.values.criterioBusca}
-              onChange={formik.handleChange}
+              value={props.values.criterioBusca}
+              onChange={props.handleChange}
             >
               {criteriosArr.map((criterio, index) => (
                 <MenuItem key={index} value={criterio}>
@@ -63,6 +65,8 @@ const SearchForm = () => {
               ))}
             </Select>
           </FormControl>
+          
+
         </form>
       )}
     </Formik>
