@@ -1,5 +1,9 @@
 const express = require('express');
+const employees = require('./employees');
+
 const app = express();
+
+app.use(express.static('public'));
 
 app.get('/',(req, res) => {
     res.send("Hello World")
