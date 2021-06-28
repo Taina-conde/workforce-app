@@ -17,6 +17,17 @@ function getBy(key, criterioBusca, query) {
     let filteredEmployees = employees.filter(
       (employee) => employee[criterioBusca] === query
     );
-    res(filteredEmployees)
+    res(filteredEmployees);
+  });
+}
+function saveEmployee(key, newEmployee) {
+  return new Promise((res) => {
+    let employees = getAll(key);
+    const employeeInDataBase = employees.filter(
+      (employee) => employee.cpf === newEmployee.cpf
+    );
+    const employeeExists = employeeInDataBase.length !== 0;
+    
+
   });
 }
