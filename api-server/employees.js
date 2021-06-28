@@ -21,16 +21,16 @@ function getBy(key, criterioBusca, query) {
   });
 }
 function formatEmployee(employee) {
-    return {
-        DataCad: Date.now().toString("MM/dd/yy"),
-        Cargo: employee.cargo,
-        Cpf: employee.cpf,
-        Nome: employee.nome,
-        UfNasc: employee.uf.toUpperCase(),
-        Salario: Number(employee.salario),
-        Status: employee.status.toUpperCase(),
-        deleted: false,
-    }
+  return {
+    DataCad: Date.now().toString("MM/dd/yy"),
+    Cargo: employee.cargo,
+    Cpf: employee.cpf,
+    Nome: employee.nome,
+    UfNasc: employee.uf.toUpperCase(),
+    Salario: Number(employee.salario),
+    Status: employee.status.toUpperCase(),
+    deleted: false,
+  };
 }
 
 function saveEmployee(key, newEmployee) {
@@ -41,15 +41,24 @@ function saveEmployee(key, newEmployee) {
     );
     const employeeExists = employeeInDataBaseArr.length !== 0;
     const employeeInDataBase = employeeInDataBaseArr[0];
-    
-    if (employeeExists) {
-        for (prop in newEmployee) {
-            employeeInDataBase[prop] = newEmployee[prop];
 
-        }
-        return res(employeeInDataBase);
+    if (employeeExists) {
+      for (prop in newEmployee) {
+        employeeInDataBase[prop] = newEmployee[prop];
+      }
+      return res(employeeInDataBase);
     }
     employees.concat(formatEmployee(newEmployee));
-
+  });
+}
+function disableEmployee(key, cpf) {
+  return new Promise((res) => {
+    let employees = getAll(key);
+    const employeeInDataBaseArr = employees.filter(
+      (employee) => employee.cpf === cpf
+    );
+    const employeeInDataBase = employeeInDataBaseArr[0];
+    employeeInDataBase.deleted = true;
+    res(employeeInDataBase);
   });
 }
