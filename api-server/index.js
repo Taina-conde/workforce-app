@@ -53,5 +53,6 @@ app.get('/employees/:criterioBusca/:query', (req, res) => {
         }
     )
 })
+app.post('/employees', )
 
 app.listen(config.port, () => console.log(`Listening on port ${config.port}, Ctrl + C to stop`));
