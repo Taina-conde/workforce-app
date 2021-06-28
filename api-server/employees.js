@@ -1,4 +1,4 @@
-import { dataDefault } from "./data";
+const dataDefault = require('./data');
 const clone = require("clone");
 
 let dataBase = {};

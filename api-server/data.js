@@ -1,4 +1,4 @@
-export const dataDefault = [
+dataDefault = [
    {
         DataCad: "15/04/2017",
         Cargo: "Dev Jr",
@@ -5000,3 +5000,6 @@ export const dataDefault = [
         deleted: false,
     },
 ]
+module.exports =  {
+    dataDefault
+}
