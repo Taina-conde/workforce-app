@@ -11,11 +11,11 @@ function getAll(key) {
   return data;
 }
 
-function getByCpf(key, cpf) {
+function getBy(key, criterioBusca, query) {
   return new Promise((res) => {
     let employees = getAll(key);
     let filteredEmployees = employees.filter(
-      (employee) => employee.cpf === cpf
+      (employee) => employee[criterioBusca] === query
     );
     res(filteredEmployees)
   });
