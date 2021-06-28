@@ -20,14 +20,36 @@ function getBy(key, criterioBusca, query) {
     res(filteredEmployees);
   });
 }
+function formatEmployee(employee) {
+    return {
+        DataCad: Date.now().toString("MM/dd/yy"),
+        Cargo: employee.cargo,
+        Cpf: employee.cpf,
+        Nome: employee.nome,
+        UfNasc: employee.uf.toUpperCase(),
+        Salario: Number(employee.salario),
+        Status: employee.status.toUpperCase(),
+        deleted: false,
+    }
+}
+
 function saveEmployee(key, newEmployee) {
   return new Promise((res) => {
     let employees = getAll(key);
-    const employeeInDataBase = employees.filter(
+    const employeeInDataBaseArr = employees.filter(
       (employee) => employee.cpf === newEmployee.cpf
     );
-    const employeeExists = employeeInDataBase.length !== 0;
+    const employeeExists = employeeInDataBaseArr.length !== 0;
+    const employeeInDataBase = employeeInDataBaseArr[0];
     
+    if (employeeExists) {
+        for (prop in newEmployee) {
+            employeeInDataBase[prop] = newEmployee[prop];
+
+        }
+        return res(employeeInDataBase);
+    }
+    employees.concat(formatEmployee(newEmployee));
 
   });
 }
