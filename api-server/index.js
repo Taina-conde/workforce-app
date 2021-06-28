@@ -51,4 +51,4 @@ app.get('/employees/:cpf', (req, res) => {
     )
 })
 
-app.listen(config.port, () => console.log(`Listening on port ${confi.port}, Ctrl + C to stop`));
+app.listen(config.port, () => console.log(`Listening on port ${config.port}, Ctrl + C to stop`));
