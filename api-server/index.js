@@ -37,6 +37,18 @@ app.get('/employees', (req, res) => {
         }
     )
 })
+app.get('/employees/:cpf', (req, res) => {
+    employees.getBy(req.key, req.params.cpf)
+    .then(
+        (data) => res.send(data),
+        (error) => {
+            console.log(error);
+            res.status(500).send({
+                error: 'There was an error.'
+            })
+        }
+    )
+})
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
