@@ -25,6 +25,18 @@ app.use((req, res, next) => {
   }
 });
 
+app.get('/employees', (req, res) => {
+    employees.getAll(req.key)
+    .then(
+        (data) => res.send(data),
+        (error) => {
+            console.log(error);
+            res.status(500).send({
+                error: "There was an error."
+            })
+        }
+    )
+})
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
