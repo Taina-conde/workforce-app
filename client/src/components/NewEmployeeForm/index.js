@@ -11,6 +11,7 @@ import UfInput from "../shared/UfInput";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import SalarioInput from "./SalarioInput";
+import { saveNewEmployee } from "../../api";
 
 
 setLocale({
@@ -24,10 +25,7 @@ const validationSchema = yup.object({
   cpf: yup.number().positive().integer().required(),
   salario: yup.number().positive().required().max(100000),
   cargo: yup.string().required(),
-  cadastro: yup.date().default(function () {
-    return new Date();
-  }),
-  uf: yup.string().required(),
+  ufNasc: yup.string().required(),
   status: yup.string().required(),
 });
 const useStyles = makeStyles((theme) => ({
@@ -64,6 +62,8 @@ const NewEmployeeForm = () => {
       validationSchema={validationSchema}
       onSubmit={(values) => {
         console.log(" values em submit", values);
+        //CALL API
+        saveNewEmployee(values)
         
       }}
     >

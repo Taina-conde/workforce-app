@@ -27,9 +27,13 @@ function getBy(token, criterioBusca, query) {
     res(filteredEmployees);
   });
 }
+function formatDate() {
+    const today = new Date().toLocaleDateString('en-GR');
+    return today
+}
 function formatEmployee(employee) {
   return {
-    DataCad: Date.now().toString("MM/dd/yy"),
+    DataCad: formatDate(),
     Cargo: employee.cargo,
     Cpf: employee.cpf,
     Nome: employee.nome,

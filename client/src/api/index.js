@@ -11,11 +11,8 @@ export async function getEmployees() {
   return employees;
 }
 export async function getBy(criterioBusca, query) {
-    console.log("query", query)
     const response = await window.fetch(`${api}/employees/${criterioBusca}/${query}`, header);
-    console.log("response" , response)
     const employee = await response.json();
-    console.log('employee', employee)
     return employee
 }
 export async function saveNewEmployee(employee) {
@@ -28,5 +25,6 @@ export async function saveNewEmployee(employee) {
         body: JSON.stringify(employee)
     })
     const employeeResponse = await response.json();
+    console.log("employee save", employeeResponse)
     return employeeResponse
 }
