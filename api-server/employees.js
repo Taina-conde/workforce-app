@@ -10,6 +10,13 @@ function getData(token) {
   }
   return data;
 }
+function getAll(token) {
+    return new Promise((res) => {
+        const employees = getData(token);
+        let filteredEmployees = employees.filter( employee => !employee.deleted);
+        res(filteredEmployees)
+    })
+}
 
 function getBy(token, criterioBusca, query) {
   return new Promise((res) => {
