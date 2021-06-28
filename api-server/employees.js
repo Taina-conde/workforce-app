@@ -21,8 +21,13 @@ function getAll(token) {
 function getBy(token, criterioBusca, query) {
   return new Promise((res) => {
     let employees = getData(token);
+    console.log("criterio de busca", criterioBusca)
+    console.log('query', query)
     let filteredEmployees = employees.filter(
-      (employee) => employee[criterioBusca] === query
+      (employee) => {
+          
+        console.log("employee", employee)
+        return employee[criterioBusca] === query}
     );
     res(filteredEmployees);
   });
