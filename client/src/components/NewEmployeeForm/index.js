@@ -21,7 +21,7 @@ setLocale({
 const validationSchema = yup.object({
   nome: yup.string().required(),
   cpf: yup.number().positive().integer().min(11).required(),
-  salario: yup.number().positive().max(4).required(),
+  salario: yup.number().positive().required().max(100000),
   cargo: yup.string().required(),
   cadastro: yup.date().default(function () {
     return new Date();
