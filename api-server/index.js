@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require("express");
 const cors = require("cors");
+const bodyParser = require('body-parser');
 const employees = require("./employees");
 const config = require('./config')
 
@@ -53,6 +54,18 @@ app.get('/employees/:criterioBusca/:query', (req, res) => {
         }
     )
 })
-app.post('/employees', )
+app.post('/employees', bodyParser.json(), (req, res) => {
+    employees.save(req.token, req.body)
+    .then(
+        (data) => res.send(data),
+        (error) => {
+            console.error(error)
+            res.status(500).send({
+               error: 'There was an error.'
+        })
+      }
+    )
+} )
+
 
 app.listen(config.port, () => console.log(`Listening on port ${config.port}, Ctrl + C to stop`));
