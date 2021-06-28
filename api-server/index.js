@@ -67,5 +67,17 @@ app.post('/employees', bodyParser.json(), (req, res) => {
     )
 } )
 
+app.put('/employees/:cpf', bodyParser.json(), (req, res) => {
+    employees.save(req.token, req.params.cpf, req.body)
+    .then(
+        (data) => res.send(data),
+        (error) => {
+            console.error(error)
+            res.status(500).send({
+               error: 'There was an error.'
+        })
+      }
+    )
+})
 
 app.listen(config.port, () => console.log(`Listening on port ${config.port}, Ctrl + C to stop`));
