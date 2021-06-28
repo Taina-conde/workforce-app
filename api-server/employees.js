@@ -62,4 +62,9 @@ function disable(key, cpf) {
     res(employeeInDataBase);
   });
 }
-
+module.exports = {
+    getAll,
+    getBy,
+    save,
+    disable,
+  };
