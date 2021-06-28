@@ -37,7 +37,7 @@ function formatEmployee(employee) {
     Cargo: employee.cargo,
     Cpf: employee.cpf,
     Nome: employee.nome,
-    UfNasc: employee.uf.toUpperCase(),
+    UfNasc: employee.ufNasc.toUpperCase(),
     Salario: Number(employee.salario),
     Status: employee.status.toUpperCase(),
     deleted: false,
