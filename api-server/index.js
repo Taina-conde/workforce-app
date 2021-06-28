@@ -13,18 +13,18 @@ app.get("/", (req, res) => {
 });
 
 app.use((req, res, next) => {
-  const key = req.get("Authorization");
-
-  if (key) {
-    req.key = key;
-    next();
-  } else {
-    res.status(403).send({
-      error:
-        "Please, provide an Authorization header to identify yourself (can be whatever you want)",
-    });
-  }
-});
+    const key = req.get("Authorization");
+  
+    if (key) {
+      req.key = key;
+      next();
+    } else {
+      res.status(403).send({
+        error:
+          "Please, provide an Authorization header to identify yourself (can be whatever you want)",
+      });
+    }
+  });
 
 app.get('/employees', (req, res) => {
     employees.getAll(req.key)
