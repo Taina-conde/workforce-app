@@ -6,7 +6,8 @@ export const dataDefault = [
         Nome: "Aaron Aaberg",
         UfNasc: "AP",
         Salario: 8965.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -15,7 +16,8 @@ export const dataDefault = [
         Nome: "Aaron Aaby",
         UfNasc: "RO",
         Salario: 5312.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -24,7 +26,8 @@ export const dataDefault = [
         Nome: "Abbey Aadland",
         UfNasc: "RJ",
         Salario: 5448.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -33,7 +36,8 @@ export const dataDefault = [
         Nome: "Abbie Aagaard",
         UfNasc: "PR",
         Salario: 3655.10,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -42,7 +46,8 @@ export const dataDefault = [
         Nome: "Abby Aakre",
         UfNasc: "MA",
         Salario: 7027.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -51,7 +56,8 @@ export const dataDefault = [
         Nome: "Abdul Aaland",
         UfNasc: "PE",
         Salario: 2058.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -60,7 +66,8 @@ export const dataDefault = [
         Nome: "Abe Aalbers",
         UfNasc: "PA",
         Salario: 2282.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -69,7 +76,8 @@ export const dataDefault = [
         Nome: "Abel Aalderink",
         UfNasc: "MG",
         Salario: 5522.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -78,7 +86,8 @@ export const dataDefault = [
         Nome: "Abigail Aalund",
         UfNasc: "ES",
         Salario: 7880.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -87,7 +96,8 @@ export const dataDefault = [
         Nome: "Abraham Aamodt",
         UfNasc: "TO",
         Salario: 3833.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -96,7 +106,8 @@ export const dataDefault = [
         Nome: "Abram Aamot",
         UfNasc: "AP",
         Salario: 6336.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -105,7 +116,8 @@ export const dataDefault = [
         Nome: "Ada Aanderud",
         UfNasc: "ES",
         Salario: 1355.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -114,7 +126,8 @@ export const dataDefault = [
         Nome: "Adah Aanenson",
         UfNasc: "PE",
         Salario: 5340.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -123,7 +136,8 @@ export const dataDefault = [
         Nome: "Adalberto Aanerud",
         UfNasc: "RJ",
         Salario: 6892.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -132,7 +146,8 @@ export const dataDefault = [
         Nome: "Adaline Aarant",
         UfNasc: "RS",
         Salario: 3086.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -141,7 +156,8 @@ export const dataDefault = [
         Nome: "Adam Aardema",
         UfNasc: "AP",
         Salario: 4793.60,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -150,7 +166,8 @@ export const dataDefault = [
         Nome: "Adam Aarestad",
         UfNasc: "RJ",
         Salario: 9346.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -159,7 +176,8 @@ export const dataDefault = [
         Nome: "Adan Aarhus",
         UfNasc: "RS",
         Salario: 789.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -168,7 +186,8 @@ export const dataDefault = [
         Nome: "Addie Aaron",
         UfNasc: "SP",
         Salario: 2670.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -177,7 +196,8 @@ export const dataDefault = [
         Nome: "Adela Aarons",
         UfNasc: "MA",
         Salario: 882.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -186,7 +206,8 @@ export const dataDefault = [
         Nome: "Adelaida Aaronson",
         UfNasc: "AC",
         Salario: 5240.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -195,7 +216,8 @@ export const dataDefault = [
         Nome: "Adelaide Aarsvold",
         UfNasc: "AM",
         Salario: 133.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -204,7 +226,8 @@ export const dataDefault = [
         Nome: "Adele Aas",
         UfNasc: "AL",
         Salario: 6007.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -213,7 +236,8 @@ export const dataDefault = [
         Nome: "Adelia Aasby",
         UfNasc: "AM",
         Salario: 5342.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -222,7 +246,8 @@ export const dataDefault = [
         Nome: "Adelina Aase",
         UfNasc: "AP",
         Salario: 7048.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -231,7 +256,8 @@ export const dataDefault = [
         Nome: "Adeline Aasen",
         UfNasc: "SC",
         Salario: 7009.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -240,7 +266,8 @@ export const dataDefault = [
         Nome: "Adell Aavang",
         UfNasc: "AC",
         Salario: 4309.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -249,7 +276,8 @@ export const dataDefault = [
         Nome: "Adella Abad",
         UfNasc: "TO",
         Salario: 3281.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -258,7 +286,8 @@ export const dataDefault = [
         Nome: "Adelle Abadi",
         UfNasc: "DF",
         Salario: 3978.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -267,7 +296,8 @@ export const dataDefault = [
         Nome: "Adena Abadie",
         UfNasc: "BA",
         Salario: 8839.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -276,7 +306,8 @@ export const dataDefault = [
         Nome: "Adina Abair",
         UfNasc: "RR",
         Salario: 6720.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -285,7 +316,8 @@ export const dataDefault = [
         Nome: "Adolfo Abaja",
         UfNasc: "SP",
         Salario: 8031.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -294,7 +326,8 @@ export const dataDefault = [
         Nome: "Adolph Abajian",
         UfNasc: "MS",
         Salario: 3429.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -303,7 +336,8 @@ export const dataDefault = [
         Nome: "Adria Abalos",
         UfNasc: "MA",
         Salario: 9382.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -312,7 +346,8 @@ export const dataDefault = [
         Nome: "Adrian Abaloz",
         UfNasc: "GO",
         Salario: 2428.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -321,7 +356,8 @@ export const dataDefault = [
         Nome: "Adrian Abar",
         UfNasc: "BA",
         Salario: 1635.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -330,7 +366,8 @@ export const dataDefault = [
         Nome: "Adriana Abarca",
         UfNasc: "RR",
         Salario: 8073.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -339,7 +376,8 @@ export const dataDefault = [
         Nome: "Adriane Abare",
         UfNasc: "AM",
         Salario: 7371.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -348,7 +386,8 @@ export const dataDefault = [
         Nome: "Adrianna Abascal",
         UfNasc: "MA",
         Salario: 9709.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -357,7 +396,8 @@ export const dataDefault = [
         Nome: "Adrianne Abasta",
         UfNasc: "GO",
         Salario: 8968.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -366,7 +406,8 @@ export const dataDefault = [
         Nome: "Adrien Abate",
         UfNasc: "MT",
         Salario: 4673.20,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -375,7 +416,8 @@ export const dataDefault = [
         Nome: "Adriene Abati",
         UfNasc: "PI",
         Salario: 5439.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -384,7 +426,8 @@ export const dataDefault = [
         Nome: "Adrienne Abatiell",
         UfNasc: "MT",
         Salario: 8593.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -393,7 +436,8 @@ export const dataDefault = [
         Nome: "Afton Abato",
         UfNasc: "PB",
         Salario: 6889.70,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -402,7 +446,8 @@ export const dataDefault = [
         Nome: "Agatha Abatti",
         UfNasc: "MS",
         Salario: 6839.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -411,7 +456,8 @@ export const dataDefault = [
         Nome: "Agnes Abaunza",
         UfNasc: "TO",
         Salario: 649.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -420,7 +466,8 @@ export const dataDefault = [
         Nome: "Agnus Abaya",
         UfNasc: "DF",
         Salario: 8827.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -429,7 +476,8 @@ export const dataDefault = [
         Nome: "Agripina Abbadessa",
         UfNasc: "TO",
         Salario: 7561.20,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -438,7 +486,8 @@ export const dataDefault = [
         Nome: "Agueda Abbamonte",
         UfNasc: "PE",
         Salario: 629.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -447,7 +496,8 @@ export const dataDefault = [
         Nome: "Agustin Abbas",
         UfNasc: "MG",
         Salario: 7088.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -456,7 +506,8 @@ export const dataDefault = [
         Nome: "Agustina Abbasi",
         UfNasc: "AM",
         Salario: 4847.90,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -465,7 +516,8 @@ export const dataDefault = [
         Nome: "Ahmad Abbassi",
         UfNasc: "RS",
         Salario: 2997.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -474,7 +526,8 @@ export const dataDefault = [
         Nome: "Ahmed Abbate",
         UfNasc: "AC",
         Salario: 9056.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -483,7 +536,8 @@ export const dataDefault = [
         Nome: "Ai Abbatiello",
         UfNasc: "MG",
         Salario: 7857.40,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -492,7 +546,8 @@ export const dataDefault = [
         Nome: "Aida Abbay",
         UfNasc: "PB",
         Salario: 4460.30,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -501,7 +556,8 @@ export const dataDefault = [
         Nome: "Aide Abbe",
         UfNasc: "PI",
         Salario: 2188.20,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -510,7 +566,8 @@ export const dataDefault = [
         Nome: "Aiko Abbed",
         UfNasc: "RN",
         Salario: 2431.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -519,7 +576,8 @@ export const dataDefault = [
         Nome: "Aileen Abbenante",
         UfNasc: "DF",
         Salario: 1241.60,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -528,7 +586,8 @@ export const dataDefault = [
         Nome: "Ailene Abbey",
         UfNasc: "AM",
         Salario: 8751.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -537,7 +596,8 @@ export const dataDefault = [
         Nome: "Aimee Abbinanti",
         UfNasc: "SE",
         Salario: 6554.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -546,7 +606,8 @@ export const dataDefault = [
         Nome: "Aisha Abbington",
         UfNasc: "BA",
         Salario: 658.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -555,7 +616,8 @@ export const dataDefault = [
         Nome: "Aja Abbitt",
         UfNasc: "PI",
         Salario: 8051.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -564,7 +626,8 @@ export const dataDefault = [
         Nome: "Akiko Abbot",
         UfNasc: "AP",
         Salario: 5712.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -573,7 +636,8 @@ export const dataDefault = [
         Nome: "Akilah Abbott",
         UfNasc: "MS",
         Salario: 5154.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -582,7 +646,8 @@ export const dataDefault = [
         Nome: "Al Abboud",
         UfNasc: "SE",
         Salario: 2269.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -591,7 +656,8 @@ export const dataDefault = [
         Nome: "Alaina Abbruzzese",
         UfNasc: "AL",
         Salario: 8107.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -600,7 +666,8 @@ export const dataDefault = [
         Nome: "Alaine Abbs",
         UfNasc: "PE",
         Salario: 1951.90,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -609,7 +676,8 @@ export const dataDefault = [
         Nome: "Alan Abby",
         UfNasc: "RS",
         Salario: 1650.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -618,7 +686,8 @@ export const dataDefault = [
         Nome: "Alana Abdalla",
         UfNasc: "RJ",
         Salario: 8383.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -627,7 +696,8 @@ export const dataDefault = [
         Nome: "Alane Abdallah",
         UfNasc: "RS",
         Salario: 2190.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -636,7 +706,8 @@ export const dataDefault = [
         Nome: "Alanna Abdel",
         UfNasc: "PB",
         Salario: 2636.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -645,7 +716,8 @@ export const dataDefault = [
         Nome: "Alayna Abdelal",
         UfNasc: "SP",
         Salario: 9523.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -654,7 +726,8 @@ export const dataDefault = [
         Nome: "Alba Abdelaziz",
         UfNasc: "AP",
         Salario: 1266.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -663,7 +736,8 @@ export const dataDefault = [
         Nome: "Albert Abdeldayen",
         UfNasc: "PB",
         Salario: 4137.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -672,7 +746,8 @@ export const dataDefault = [
         Nome: "Albert Abdelhamid",
         UfNasc: "MT",
         Salario: 3019.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -681,7 +756,8 @@ export const dataDefault = [
         Nome: "Alberta Abdella",
         UfNasc: "AC",
         Salario: 8535.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -690,7 +766,8 @@ export const dataDefault = [
         Nome: "Albertha Abdelmuti",
         UfNasc: "GO",
         Salario: 1231.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -699,7 +776,8 @@ export const dataDefault = [
         Nome: "Albertina Abdelrahman",
         UfNasc: "SE",
         Salario: 4972.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -708,7 +786,8 @@ export const dataDefault = [
         Nome: "Albertine Abdelwahed",
         UfNasc: "PA",
         Salario: 6391.70,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -717,7 +796,8 @@ export const dataDefault = [
         Nome: "Alberto Abdi",
         UfNasc: "PR",
         Salario: 2002.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -726,7 +806,8 @@ export const dataDefault = [
         Nome: "Albina Abdin",
         UfNasc: "PR",
         Salario: 4259.50,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -735,7 +816,8 @@ export const dataDefault = [
         Nome: "Alda Abdo",
         UfNasc: "MT",
         Salario: 3786.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -744,7 +826,8 @@ export const dataDefault = [
         Nome: "Alden Abdon",
         UfNasc: "GO",
         Salario: 8385.60,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -753,7 +836,8 @@ export const dataDefault = [
         Nome: "Aldo Abdool",
         UfNasc: "PB",
         Salario: 3819.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -762,7 +846,8 @@ export const dataDefault = [
         Nome: "Alease Abdou",
         UfNasc: "MG",
         Salario: 9137.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -771,7 +856,8 @@ export const dataDefault = [
         Nome: "Alec Abdul",
         UfNasc: "RJ",
         Salario: 953.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -780,7 +866,8 @@ export const dataDefault = [
         Nome: "Alecia Abdula",
         UfNasc: "MG",
         Salario: 5236.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -789,7 +876,8 @@ export const dataDefault = [
         Nome: "Aleen Abdulaziz",
         UfNasc: "SP",
         Salario: 8491.60,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -798,7 +886,8 @@ export const dataDefault = [
         Nome: "Aleida Abdulkarim",
         UfNasc: "PE",
         Salario: 9897.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -807,7 +896,8 @@ export const dataDefault = [
         Nome: "Aleisha Abdulla",
         UfNasc: "GO",
         Salario: 4820.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -816,7 +906,8 @@ export const dataDefault = [
         Nome: "Alejandra Abdullah",
         UfNasc: "MT",
         Salario: 9621.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -825,7 +916,8 @@ export const dataDefault = [
         Nome: "Alejandrina Abdullai",
         UfNasc: "RN",
         Salario: 5989.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -834,7 +926,8 @@ export const dataDefault = [
         Nome: "Alejandro Abdulmateen",
         UfNasc: "BA",
         Salario: 2250.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -843,7 +936,8 @@ export const dataDefault = [
         Nome: "Alena Abdulmuniem",
         UfNasc: "PI",
         Salario: 2838.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -852,7 +946,8 @@ export const dataDefault = [
         Nome: "Alene Abdur",
         UfNasc: "MT",
         Salario: 5903.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -861,7 +956,8 @@ export const dataDefault = [
         Nome: "Alesha Abe",
         UfNasc: "AL",
         Salario: 3511.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -870,7 +966,8 @@ export const dataDefault = [
         Nome: "Aleshia Abeb",
         UfNasc: "GO",
         Salario: 6302.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -879,7 +976,8 @@ export const dataDefault = [
         Nome: "Alesia Abed",
         UfNasc: "BA",
         Salario: 159.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -888,7 +986,8 @@ export const dataDefault = [
         Nome: "Alessandra Abedelah",
         UfNasc: "MT",
         Salario: 648.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -897,7 +996,8 @@ export const dataDefault = [
         Nome: "Aleta Abedi",
         UfNasc: "RS",
         Salario: 7498.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -906,7 +1006,8 @@ export const dataDefault = [
         Nome: "Aletha Abee",
         UfNasc: "PR",
         Salario: 6791.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -915,7 +1016,8 @@ export const dataDefault = [
         Nome: "Alethea Abegg",
         UfNasc: "PB",
         Salario: 3790.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -924,7 +1026,8 @@ export const dataDefault = [
         Nome: "Alethia Abeita",
         UfNasc: "PI",
         Salario: 4185.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -933,7 +1036,8 @@ export const dataDefault = [
         Nome: "Alex Abel",
         UfNasc: "MA",
         Salario: 2770.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -942,7 +1046,8 @@ export const dataDefault = [
         Nome: "Alex Abela",
         UfNasc: "MG",
         Salario: 3318.80,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -951,7 +1056,8 @@ export const dataDefault = [
         Nome: "Alexa Abelar",
         UfNasc: "RJ",
         Salario: 8522.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -960,7 +1066,8 @@ export const dataDefault = [
         Nome: "Alexander Abelardo",
         UfNasc: "PA",
         Salario: 9559.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -969,7 +1076,8 @@ export const dataDefault = [
         Nome: "Alexander Abele",
         UfNasc: "RN",
         Salario: 8045.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -978,7 +1086,8 @@ export const dataDefault = [
         Nome: "Alexandra Abeles",
         UfNasc: "RR",
         Salario: 9570.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -987,7 +1096,8 @@ export const dataDefault = [
         Nome: "Alexandria Abell",
         UfNasc: "TO",
         Salario: 294.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -996,7 +1106,8 @@ export const dataDefault = [
         Nome: "Alexia Abella",
         UfNasc: "GO",
         Salario: 8267.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1005,7 +1116,8 @@ export const dataDefault = [
         Nome: "Alexis Abellera",
         UfNasc: "ES",
         Salario: 9685.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -1014,7 +1126,8 @@ export const dataDefault = [
         Nome: "Alexis Abelman",
         UfNasc: "AC",
         Salario: 7418.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -1023,7 +1136,8 @@ export const dataDefault = [
         Nome: "Alfonso Abeln",
         UfNasc: "AC",
         Salario: 3177.40,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -1032,7 +1146,8 @@ export const dataDefault = [
         Nome: "Alfonzo Abels",
         UfNasc: "PB",
         Salario: 9283.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -1041,7 +1156,8 @@ export const dataDefault = [
         Nome: "Alfred Abelson",
         UfNasc: "PA",
         Salario: 4300.00,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -1050,7 +1166,8 @@ export const dataDefault = [
         Nome: "Alfreda Aben",
         UfNasc: "CE",
         Salario: 435.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -1059,7 +1176,8 @@ export const dataDefault = [
         Nome: "Alfredia Abend",
         UfNasc: "CE",
         Salario: 8660.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -1068,7 +1186,8 @@ export const dataDefault = [
         Nome: "Alfredo Abendroth",
         UfNasc: "PA",
         Salario: 3898.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -1077,7 +1196,8 @@ export const dataDefault = [
         Nome: "Ali Aber",
         UfNasc: "RO",
         Salario: 2765.60,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -1086,7 +1206,8 @@ export const dataDefault = [
         Nome: "Ali Abercombie",
         UfNasc: "RJ",
         Salario: 3978.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -1095,7 +1216,8 @@ export const dataDefault = [
         Nome: "Alia Abercrombie",
         UfNasc: "PA",
         Salario: 8791.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -1104,7 +1226,8 @@ export const dataDefault = [
         Nome: "Alica Aberle",
         UfNasc: "AC",
         Salario: 8606.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -1113,7 +1236,8 @@ export const dataDefault = [
         Nome: "Alice Abernatha",
         UfNasc: "TO",
         Salario: 8927.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -1122,7 +1246,8 @@ export const dataDefault = [
         Nome: "Alicia Abernathy",
         UfNasc: "PA",
         Salario: 6123.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -1131,7 +1256,8 @@ export const dataDefault = [
         Nome: "Alida Abernethy",
         UfNasc: "PB",
         Salario: 3816.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -1140,7 +1266,8 @@ export const dataDefault = [
         Nome: "Alina Aberson",
         UfNasc: "RN",
         Salario: 3943.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -1149,7 +1276,8 @@ export const dataDefault = [
         Nome: "Aline Abes",
         UfNasc: "TO",
         Salario: 9932.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -1158,7 +1286,8 @@ export const dataDefault = [
         Nome: "Alisa Abeta",
         UfNasc: "ES",
         Salario: 1160.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -1167,7 +1296,8 @@ export const dataDefault = [
         Nome: "Alise Abete",
         UfNasc: "PI",
         Salario: 4831.60,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -1176,7 +1306,8 @@ export const dataDefault = [
         Nome: "Alisha Abetrani",
         UfNasc: "MA",
         Salario: 4953.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -1185,7 +1316,8 @@ export const dataDefault = [
         Nome: "Alishia Abeyta",
         UfNasc: "PB",
         Salario: 143.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -1194,7 +1326,8 @@ export const dataDefault = [
         Nome: "Alisia Abide",
         UfNasc: "CE",
         Salario: 3534.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1203,7 +1336,8 @@ export const dataDefault = [
         Nome: "Alison Abigantus",
         UfNasc: "ES",
         Salario: 4190.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -1212,7 +1346,8 @@ export const dataDefault = [
         Nome: "Alissa Abila",
         UfNasc: "SC",
         Salario: 8644.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -1221,7 +1356,8 @@ export const dataDefault = [
         Nome: "Alita Abilay",
         UfNasc: "RS",
         Salario: 7029.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -1230,7 +1366,8 @@ export const dataDefault = [
         Nome: "Alix Abild",
         UfNasc: "RO",
         Salario: 1800.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1239,7 +1376,8 @@ export const dataDefault = [
         Nome: "Aliza Abilez",
         UfNasc: "TO",
         Salario: 688.10,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -1248,7 +1386,8 @@ export const dataDefault = [
         Nome: "Alla Abina",
         UfNasc: "ES",
         Salario: 2032.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -1257,7 +1396,8 @@ export const dataDefault = [
         Nome: "Allan Abington",
         UfNasc: "GO",
         Salario: 7746.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -1266,7 +1406,8 @@ export const dataDefault = [
         Nome: "Alleen Abitong",
         UfNasc: "DF",
         Salario: 4205.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -1275,7 +1416,8 @@ export const dataDefault = [
         Nome: "Allegra Abke",
         UfNasc: "MS",
         Salario: 5951.90,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -1284,7 +1426,8 @@ export const dataDefault = [
         Nome: "Allen Abkemeier",
         UfNasc: "RN",
         Salario: 2462.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -1293,7 +1436,8 @@ export const dataDefault = [
         Nome: "Allen Ablang",
         UfNasc: "RN",
         Salario: 7616.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -1302,7 +1446,8 @@ export const dataDefault = [
         Nome: "Allena Ablao",
         UfNasc: "AM",
         Salario: 4602.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -1311,7 +1456,8 @@ export const dataDefault = [
         Nome: "Allene Able",
         UfNasc: "RR",
         Salario: 593.00,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -1320,7 +1466,8 @@ export const dataDefault = [
         Nome: "Allie Ableman",
         UfNasc: "RR",
         Salario: 8623.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -1329,7 +1476,8 @@ export const dataDefault = [
         Nome: "Alline Abler",
         UfNasc: "BA",
         Salario: 7583.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -1338,7 +1486,8 @@ export const dataDefault = [
         Nome: "Allison Ables",
         UfNasc: "AC",
         Salario: 2438.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -1347,7 +1496,8 @@ export const dataDefault = [
         Nome: "Allyn Ablin",
         UfNasc: "SE",
         Salario: 6700.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -1356,7 +1506,8 @@ export const dataDefault = [
         Nome: "Allyson Abling",
         UfNasc: "BA",
         Salario: 7024.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -1365,7 +1516,8 @@ export const dataDefault = [
         Nome: "Alma Abner",
         UfNasc: "SE",
         Salario: 6644.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -1374,7 +1526,8 @@ export const dataDefault = [
         Nome: "Almeda Abnet",
         UfNasc: "MG",
         Salario: 9495.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -1383,7 +1536,8 @@ export const dataDefault = [
         Nome: "Almeta Abney",
         UfNasc: "AL",
         Salario: 1697.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -1392,7 +1546,8 @@ export const dataDefault = [
         Nome: "Alona Abo",
         UfNasc: "PB",
         Salario: 9515.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -1401,7 +1556,8 @@ export const dataDefault = [
         Nome: "Alonso Abolafia",
         UfNasc: "DF",
         Salario: 2447.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -1410,7 +1566,8 @@ export const dataDefault = [
         Nome: "Alonzo Abolt",
         UfNasc: "CE",
         Salario: 8830.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -1419,7 +1576,8 @@ export const dataDefault = [
         Nome: "Alpha Abood",
         UfNasc: "SE",
         Salario: 5482.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -1428,7 +1586,8 @@ export const dataDefault = [
         Nome: "Alphonse Aboshihata",
         UfNasc: "PE",
         Salario: 5685.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -1437,7 +1596,8 @@ export const dataDefault = [
         Nome: "Alphonso Aboud",
         UfNasc: "RS",
         Salario: 2760.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -1446,7 +1606,8 @@ export const dataDefault = [
         Nome: "Alta Aboudi",
         UfNasc: "PR",
         Salario: 7524.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -1455,7 +1616,8 @@ export const dataDefault = [
         Nome: "Altagracia Aboulahoud",
         UfNasc: "RS",
         Salario: 8868.70,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -1464,7 +1626,8 @@ export const dataDefault = [
         Nome: "Altha Aboulissan",
         UfNasc: "PR",
         Salario: 2203.60,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -1473,7 +1636,8 @@ export const dataDefault = [
         Nome: "Althea Abousaleh",
         UfNasc: "SC",
         Salario: 5985.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -1482,7 +1646,8 @@ export const dataDefault = [
         Nome: "Alton Aboytes",
         UfNasc: "AL",
         Salario: 1821.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -1491,7 +1656,8 @@ export const dataDefault = [
         Nome: "Alva Abplanalp",
         UfNasc: "PE",
         Salario: 337.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -1500,7 +1666,8 @@ export const dataDefault = [
         Nome: "Alva Abrachinsky",
         UfNasc: "BA",
         Salario: 5445.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -1509,7 +1676,8 @@ export const dataDefault = [
         Nome: "Alvaro Abraham",
         UfNasc: "AC",
         Salario: 1797.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -1518,7 +1686,8 @@ export const dataDefault = [
         Nome: "Alvera Abrahamian",
         UfNasc: "RN",
         Salario: 2859.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -1527,7 +1696,8 @@ export const dataDefault = [
         Nome: "Alverta Abrahams",
         UfNasc: "DF",
         Salario: 8283.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -1536,7 +1706,8 @@ export const dataDefault = [
         Nome: "Alvin Abrahamsen",
         UfNasc: "BA",
         Salario: 6829.10,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -1545,7 +1716,8 @@ export const dataDefault = [
         Nome: "Alvina Abrahamson",
         UfNasc: "TO",
         Salario: 7239.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -1554,7 +1726,8 @@ export const dataDefault = [
         Nome: "Alyce Abram",
         UfNasc: "AC",
         Salario: 7892.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -1563,7 +1736,8 @@ export const dataDefault = [
         Nome: "Alycia Abramek",
         UfNasc: "AM",
         Salario: 3786.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -1572,7 +1746,8 @@ export const dataDefault = [
         Nome: "Alysa Abramian",
         UfNasc: "AC",
         Salario: 5494.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -1581,7 +1756,8 @@ export const dataDefault = [
         Nome: "Alyse Abramoff",
         UfNasc: "MG",
         Salario: 8274.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -1590,7 +1766,8 @@ export const dataDefault = [
         Nome: "Alysha Abramov",
         UfNasc: "RJ",
         Salario: 951.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -1599,7 +1776,8 @@ export const dataDefault = [
         Nome: "Alysia Abramovich",
         UfNasc: "TO",
         Salario: 108.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -1608,7 +1786,8 @@ export const dataDefault = [
         Nome: "Alyson Abramovitz",
         UfNasc: "SE",
         Salario: 7720.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -1617,7 +1796,8 @@ export const dataDefault = [
         Nome: "Alyssa Abramowitz",
         UfNasc: "ES",
         Salario: 6465.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -1626,7 +1806,8 @@ export const dataDefault = [
         Nome: "Amada Abramowski",
         UfNasc: "PB",
         Salario: 332.80,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1635,7 +1816,8 @@ export const dataDefault = [
         Nome: "Amado Abrams",
         UfNasc: "ES",
         Salario: 5424.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -1644,7 +1826,8 @@ export const dataDefault = [
         Nome: "Amal Abramson",
         UfNasc: "PR",
         Salario: 5960.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1653,7 +1836,8 @@ export const dataDefault = [
         Nome: "Amalia Abrantes",
         UfNasc: "PA",
         Salario: 9226.50,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1662,7 +1846,8 @@ export const dataDefault = [
         Nome: "Amanda Abreau",
         UfNasc: "AC",
         Salario: 7958.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -1671,7 +1856,8 @@ export const dataDefault = [
         Nome: "Amber Abrecht",
         UfNasc: "RJ",
         Salario: 612.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -1680,7 +1866,8 @@ export const dataDefault = [
         Nome: "Amberly Abrego",
         UfNasc: "PA",
         Salario: 8459.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1689,7 +1876,8 @@ export const dataDefault = [
         Nome: "Ambrose Abrell",
         UfNasc: "SC",
         Salario: 9009.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -1698,7 +1886,8 @@ export const dataDefault = [
         Nome: "Amee Abreo",
         UfNasc: "MG",
         Salario: 3954.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -1707,7 +1896,8 @@ export const dataDefault = [
         Nome: "Amelia Abreu",
         UfNasc: "AL",
         Salario: 770.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -1716,7 +1906,8 @@ export const dataDefault = [
         Nome: "America Abrev",
         UfNasc: "MS",
         Salario: 3912.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -1725,7 +1916,8 @@ export const dataDefault = [
         Nome: "Ami Abrew",
         UfNasc: "AL",
         Salario: 6302.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -1734,7 +1926,8 @@ export const dataDefault = [
         Nome: "Amie Abrey",
         UfNasc: "DF",
         Salario: 9068.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -1743,7 +1936,8 @@ export const dataDefault = [
         Nome: "Amiee Abrial",
         UfNasc: "BA",
         Salario: 9195.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -1752,7 +1946,8 @@ export const dataDefault = [
         Nome: "Amina Abril",
         UfNasc: "PI",
         Salario: 285.60,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -1761,7 +1956,8 @@ export const dataDefault = [
         Nome: "Amira Abriola",
         UfNasc: "SE",
         Salario: 6066.70,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -1770,7 +1966,8 @@ export const dataDefault = [
         Nome: "Ammie Abrom",
         UfNasc: "PR",
         Salario: 1004.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -1779,7 +1976,8 @@ export const dataDefault = [
         Nome: "Amos Abron",
         UfNasc: "SE",
         Salario: 3277.40,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -1788,7 +1986,8 @@ export const dataDefault = [
         Nome: "Amparo Abruzzese",
         UfNasc: "PA",
         Salario: 6977.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -1797,7 +1996,8 @@ export const dataDefault = [
         Nome: "Amy Abruzzino",
         UfNasc: "AC",
         Salario: 575.10,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -1806,7 +2006,8 @@ export const dataDefault = [
         Nome: "An Abruzzo",
         UfNasc: "PA",
         Salario: 9630.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -1815,7 +2016,8 @@ export const dataDefault = [
         Nome: "Ana Absalon",
         UfNasc: "MT",
         Salario: 7000.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -1824,7 +2026,8 @@ export const dataDefault = [
         Nome: "Anabel Abshear",
         UfNasc: "CE",
         Salario: 7693.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -1833,7 +2036,8 @@ export const dataDefault = [
         Nome: "Analisa Absher",
         UfNasc: "AP",
         Salario: 4625.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -1842,7 +2046,8 @@ export const dataDefault = [
         Nome: "Anamaria Abshier",
         UfNasc: "RR",
         Salario: 3901.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -1851,7 +2056,8 @@ export const dataDefault = [
         Nome: "Anastacia Abshire",
         UfNasc: "RR",
         Salario: 356.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -1860,7 +2066,8 @@ export const dataDefault = [
         Nome: "Anastasia Abson",
         UfNasc: "PA",
         Salario: 5523.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -1869,7 +2076,8 @@ export const dataDefault = [
         Nome: "Andera Abston",
         UfNasc: "RJ",
         Salario: 4467.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -1878,7 +2086,8 @@ export const dataDefault = [
         Nome: "Anderson Abt",
         UfNasc: "SE",
         Salario: 242.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -1887,7 +2096,8 @@ export const dataDefault = [
         Nome: "Andra Abts",
         UfNasc: "PE",
         Salario: 7637.20,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -1896,7 +2106,8 @@ export const dataDefault = [
         Nome: "Andre Abu",
         UfNasc: "RO",
         Salario: 2229.60,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -1905,7 +2116,8 @@ export const dataDefault = [
         Nome: "Andre Abuaita",
         UfNasc: "AP",
         Salario: 7239.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -1914,7 +2126,8 @@ export const dataDefault = [
         Nome: "Andrea Abubakr",
         UfNasc: "BA",
         Salario: 2114.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -1923,7 +2136,8 @@ export const dataDefault = [
         Nome: "Andrea Abud",
         UfNasc: "MG",
         Salario: 9067.20,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -1932,7 +2146,8 @@ export const dataDefault = [
         Nome: "Andreas Abuel",
         UfNasc: "SE",
         Salario: 7307.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -1941,7 +2156,8 @@ export const dataDefault = [
         Nome: "Andree Abugn",
         UfNasc: "SP",
         Salario: 1216.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -1950,7 +2166,8 @@ export const dataDefault = [
         Nome: "Andres Abuhl",
         UfNasc: "PB",
         Salario: 5910.00,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1959,7 +2176,8 @@ export const dataDefault = [
         Nome: "Andrew Abundis",
         UfNasc: "RR",
         Salario: 3549.80,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -1968,7 +2186,8 @@ export const dataDefault = [
         Nome: "Andrew Abundiz",
         UfNasc: "MG",
         Salario: 4437.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -1977,7 +2196,8 @@ export const dataDefault = [
         Nome: "Andria Aburto",
         UfNasc: "RS",
         Salario: 7778.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -1986,7 +2206,8 @@ export const dataDefault = [
         Nome: "Andy Abusufait",
         UfNasc: "GO",
         Salario: 9491.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -1995,7 +2216,8 @@ export const dataDefault = [
         Nome: "Anette Acal",
         UfNasc: "CE",
         Salario: 5733.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -2004,7 +2226,8 @@ export const dataDefault = [
         Nome: "Angel Acampora",
         UfNasc: "RR",
         Salario: 9940.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -2013,7 +2236,8 @@ export const dataDefault = [
         Nome: "Angel Accala",
         UfNasc: "RS",
         Salario: 2709.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2022,7 +2246,8 @@ export const dataDefault = [
         Nome: "Angela Accardi",
         UfNasc: "AP",
         Salario: 1442.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -2031,7 +2256,8 @@ export const dataDefault = [
         Nome: "Angele Accardo",
         UfNasc: "MG",
         Salario: 8931.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -2040,7 +2266,8 @@ export const dataDefault = [
         Nome: "Angelena Accetta",
         UfNasc: "SE",
         Salario: 4593.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -2049,7 +2276,8 @@ export const dataDefault = [
         Nome: "Angeles Accetturo",
         UfNasc: "RS",
         Salario: 6043.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -2058,7 +2286,8 @@ export const dataDefault = [
         Nome: "Angelia Accola",
         UfNasc: "SP",
         Salario: 8872.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -2067,7 +2296,8 @@ export const dataDefault = [
         Nome: "Angelic Accomando",
         UfNasc: "PE",
         Salario: 2995.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2076,7 +2306,8 @@ export const dataDefault = [
         Nome: "Angelica Accornero",
         UfNasc: "PI",
         Salario: 4602.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -2085,7 +2316,8 @@ export const dataDefault = [
         Nome: "Angelika Accosta",
         UfNasc: "PA",
         Salario: 8154.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2094,7 +2326,8 @@ export const dataDefault = [
         Nome: "Angelina Accurso",
         UfNasc: "PB",
         Salario: 1207.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -2103,7 +2336,8 @@ export const dataDefault = [
         Nome: "Angeline Ace",
         UfNasc: "AM",
         Salario: 7209.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -2112,7 +2346,8 @@ export const dataDefault = [
         Nome: "Angelique Acebedo",
         UfNasc: "AP",
         Salario: 5837.40,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -2121,7 +2356,8 @@ export const dataDefault = [
         Nome: "Angelita Acebo",
         UfNasc: "PA",
         Salario: 3218.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -2130,7 +2366,8 @@ export const dataDefault = [
         Nome: "Angella Acedo",
         UfNasc: "BA",
         Salario: 6675.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -2139,7 +2376,8 @@ export const dataDefault = [
         Nome: "Angelo Acee",
         UfNasc: "PI",
         Salario: 1236.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -2148,7 +2386,8 @@ export const dataDefault = [
         Nome: "Angelo Aceituno",
         UfNasc: "MG",
         Salario: 9778.70,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -2157,7 +2396,8 @@ export const dataDefault = [
         Nome: "Angelyn Acencio",
         UfNasc: "PB",
         Salario: 5702.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -2166,7 +2406,8 @@ export const dataDefault = [
         Nome: "Angie Aceret",
         UfNasc: "PA",
         Salario: 4920.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2175,7 +2416,8 @@ export const dataDefault = [
         Nome: "Angila Acerno",
         UfNasc: "PI",
         Salario: 7292.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -2184,7 +2426,8 @@ export const dataDefault = [
         Nome: "Angla Acero",
         UfNasc: "RO",
         Salario: 4231.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -2193,7 +2436,8 @@ export const dataDefault = [
         Nome: "Angle Acerra",
         UfNasc: "PE",
         Salario: 6053.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -2202,7 +2446,8 @@ export const dataDefault = [
         Nome: "Anglea Aceto",
         UfNasc: "AM",
         Salario: 8939.20,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -2211,7 +2456,8 @@ export const dataDefault = [
         Nome: "Anh Aceuedo",
         UfNasc: "SC",
         Salario: 83.40,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -2220,7 +2466,8 @@ export const dataDefault = [
         Nome: "Anibal Acevado",
         UfNasc: "AP",
         Salario: 5823.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -2229,7 +2476,8 @@ export const dataDefault = [
         Nome: "Anika Aceveda",
         UfNasc: "PA",
         Salario: 346.30,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -2238,7 +2486,8 @@ export const dataDefault = [
         Nome: "Anisa Acevedo",
         UfNasc: "SE",
         Salario: 237.00,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -2247,7 +2496,8 @@ export const dataDefault = [
         Nome: "Anisha Aceves",
         UfNasc: "PB",
         Salario: 6136.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -2256,7 +2506,8 @@ export const dataDefault = [
         Nome: "Anissa Acey",
         UfNasc: "DF",
         Salario: 3048.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -2265,7 +2516,8 @@ export const dataDefault = [
         Nome: "Anita Acfalle",
         UfNasc: "SE",
         Salario: 9222.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -2274,7 +2526,8 @@ export const dataDefault = [
         Nome: "Anitra Achane",
         UfNasc: "PE",
         Salario: 6591.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -2283,7 +2536,8 @@ export const dataDefault = [
         Nome: "Anja Ache",
         UfNasc: "BA",
         Salario: 8297.70,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -2292,7 +2546,8 @@ export const dataDefault = [
         Nome: "Anjanette Acheampong",
         UfNasc: "RO",
         Salario: 3464.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -2301,7 +2556,8 @@ export const dataDefault = [
         Nome: "Anjelica Achee",
         UfNasc: "RJ",
         Salario: 5121.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -2310,7 +2566,8 @@ export const dataDefault = [
         Nome: "Ann Achekian",
         UfNasc: "MA",
         Salario: 6159.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -2319,7 +2576,8 @@ export const dataDefault = [
         Nome: "Anna Achenbach",
         UfNasc: "DF",
         Salario: 3140.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -2328,7 +2586,8 @@ export const dataDefault = [
         Nome: "Annabel Acheson",
         UfNasc: "ES",
         Salario: 7688.00,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -2337,7 +2596,8 @@ export const dataDefault = [
         Nome: "Annabell Achille",
         UfNasc: "MS",
         Salario: 821.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -2346,7 +2606,8 @@ export const dataDefault = [
         Nome: "Annabelle Achilles",
         UfNasc: "TO",
         Salario: 9105.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -2355,7 +2616,8 @@ export const dataDefault = [
         Nome: "Annalee Achin",
         UfNasc: "SC",
         Salario: 7425.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -2364,7 +2626,8 @@ export const dataDefault = [
         Nome: "Annalisa Achor",
         UfNasc: "GO",
         Salario: 715.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -2373,7 +2636,8 @@ export const dataDefault = [
         Nome: "Annamae Achord",
         UfNasc: "MA",
         Salario: 9368.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -2382,7 +2646,8 @@ export const dataDefault = [
         Nome: "Annamaria Achorn",
         UfNasc: "PE",
         Salario: 8723.30,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -2391,7 +2656,8 @@ export const dataDefault = [
         Nome: "Annamarie Achter",
         UfNasc: "PR",
         Salario: 8330.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -2400,7 +2666,8 @@ export const dataDefault = [
         Nome: "Anne Achterhof",
         UfNasc: "RJ",
         Salario: 653.40,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -2409,7 +2676,8 @@ export const dataDefault = [
         Nome: "Anneliese Achzet",
         UfNasc: "RJ",
         Salario: 9849.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -2418,7 +2686,8 @@ export const dataDefault = [
         Nome: "Annelle Achziger",
         UfNasc: "BA",
         Salario: 3332.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -2427,7 +2696,8 @@ export const dataDefault = [
         Nome: "Annemarie Acierno",
         UfNasc: "BA",
         Salario: 9151.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -2436,7 +2706,8 @@ export const dataDefault = [
         Nome: "Annett Acimovic",
         UfNasc: "PA",
         Salario: 6713.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -2445,7 +2716,8 @@ export const dataDefault = [
         Nome: "Annetta Ack",
         UfNasc: "RJ",
         Salario: 3329.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -2454,7 +2726,8 @@ export const dataDefault = [
         Nome: "Annette Ackah",
         UfNasc: "MG",
         Salario: 4643.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -2463,7 +2736,8 @@ export const dataDefault = [
         Nome: "Annice Acken",
         UfNasc: "PR",
         Salario: 670.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -2472,7 +2746,8 @@ export const dataDefault = [
         Nome: "Annie Acker",
         UfNasc: "PR",
         Salario: 6144.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -2481,7 +2756,8 @@ export const dataDefault = [
         Nome: "Annika Ackerley",
         UfNasc: "PA",
         Salario: 2230.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -2490,7 +2766,8 @@ export const dataDefault = [
         Nome: "Annis Ackerly",
         UfNasc: "RO",
         Salario: 5628.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -2499,7 +2776,8 @@ export const dataDefault = [
         Nome: "Annita Ackerman",
         UfNasc: "PI",
         Salario: 9380.00,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -2508,7 +2786,8 @@ export const dataDefault = [
         Nome: "Annmarie Ackermann",
         UfNasc: "AC",
         Salario: 8372.80,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -2517,7 +2796,8 @@ export const dataDefault = [
         Nome: "Anthony Ackers",
         UfNasc: "RS",
         Salario: 1666.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -2526,7 +2806,8 @@ export const dataDefault = [
         Nome: "Anthony Ackerson",
         UfNasc: "AC",
         Salario: 4218.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2535,7 +2816,8 @@ export const dataDefault = [
         Nome: "Antione Ackert",
         UfNasc: "AP",
         Salario: 6270.40,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -2544,7 +2826,8 @@ export const dataDefault = [
         Nome: "Antionette Ackies",
         UfNasc: "AM",
         Salario: 2049.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -2553,7 +2836,8 @@ export const dataDefault = [
         Nome: "Antoine Ackins",
         UfNasc: "AM",
         Salario: 6577.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -2562,7 +2846,8 @@ export const dataDefault = [
         Nome: "Antoinette Ackison",
         UfNasc: "CE",
         Salario: 8246.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -2571,7 +2856,8 @@ export const dataDefault = [
         Nome: "Anton Ackiss",
         UfNasc: "PI",
         Salario: 5944.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -2580,7 +2866,8 @@ export const dataDefault = [
         Nome: "Antone Ackland",
         UfNasc: "RJ",
         Salario: 7644.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -2589,7 +2876,8 @@ export const dataDefault = [
         Nome: "Antonetta Acklen",
         UfNasc: "BA",
         Salario: 2563.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -2598,7 +2886,8 @@ export const dataDefault = [
         Nome: "Antonette Ackles",
         UfNasc: "MG",
         Salario: 4685.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -2607,7 +2896,8 @@ export const dataDefault = [
         Nome: "Antonia Ackley",
         UfNasc: "MA",
         Salario: 175.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -2616,7 +2906,8 @@ export const dataDefault = [
         Nome: "Antonia Acklin",
         UfNasc: "AC",
         Salario: 4341.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -2625,7 +2916,8 @@ export const dataDefault = [
         Nome: "Antonietta Ackman",
         UfNasc: "SC",
         Salario: 9959.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2634,7 +2926,8 @@ export const dataDefault = [
         Nome: "Antonina Ackmann",
         UfNasc: "RO",
         Salario: 1909.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -2643,7 +2936,8 @@ export const dataDefault = [
         Nome: "Antonio Ackroyd",
         UfNasc: "RR",
         Salario: 6555.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -2652,7 +2946,8 @@ export const dataDefault = [
         Nome: "Antonio Acly",
         UfNasc: "SP",
         Salario: 524.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -2661,7 +2956,8 @@ export const dataDefault = [
         Nome: "Antony Acoba",
         UfNasc: "AC",
         Salario: 4061.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -2670,7 +2966,8 @@ export const dataDefault = [
         Nome: "Antwan Acocella",
         UfNasc: "SC",
         Salario: 3533.00,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -2679,7 +2976,8 @@ export const dataDefault = [
         Nome: "Anya Acock",
         UfNasc: "PI",
         Salario: 3858.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -2688,7 +2986,8 @@ export const dataDefault = [
         Nome: "Apolonia Acoff",
         UfNasc: "PE",
         Salario: 6329.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -2697,7 +2996,8 @@ export const dataDefault = [
         Nome: "April Acor",
         UfNasc: "PE",
         Salario: 2909.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -2706,7 +3006,8 @@ export const dataDefault = [
         Nome: "Apryl Acord",
         UfNasc: "SE",
         Salario: 5569.00,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -2715,7 +3016,8 @@ export const dataDefault = [
         Nome: "Ara Acorda",
         UfNasc: "BA",
         Salario: 5001.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -2724,7 +3026,8 @@ export const dataDefault = [
         Nome: "Araceli Acors",
         UfNasc: "PA",
         Salario: 8854.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -2733,7 +3036,8 @@ export const dataDefault = [
         Nome: "Aracelis Acosta",
         UfNasc: "CE",
         Salario: 4893.50,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -2742,7 +3046,8 @@ export const dataDefault = [
         Nome: "Aracely Acosto",
         UfNasc: "MG",
         Salario: 2293.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -2751,7 +3056,8 @@ export const dataDefault = [
         Nome: "Arcelia Acothley",
         UfNasc: "AM",
         Salario: 4699.10,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -2760,7 +3066,8 @@ export const dataDefault = [
         Nome: "Archie Acquaviva",
         UfNasc: "RJ",
         Salario: 862.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -2769,7 +3076,8 @@ export const dataDefault = [
         Nome: "Ardath Acquilla",
         UfNasc: "RR",
         Salario: 1886.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -2778,7 +3086,8 @@ export const dataDefault = [
         Nome: "Ardelia Acre",
         UfNasc: "RJ",
         Salario: 5888.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -2787,7 +3096,8 @@ export const dataDefault = [
         Nome: "Ardell Acree",
         UfNasc: "CE",
         Salario: 4443.00,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -2796,7 +3106,8 @@ export const dataDefault = [
         Nome: "Ardella Acres",
         UfNasc: "CE",
         Salario: 1986.10,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -2805,7 +3116,8 @@ export const dataDefault = [
         Nome: "Ardelle Acrey",
         UfNasc: "RJ",
         Salario: 6130.40,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -2814,7 +3126,8 @@ export const dataDefault = [
         Nome: "Arden Acri",
         UfNasc: "PA",
         Salario: 5619.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -2823,7 +3136,8 @@ export const dataDefault = [
         Nome: "Ardis Acron",
         UfNasc: "AM",
         Salario: 618.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -2832,7 +3146,8 @@ export const dataDefault = [
         Nome: "Ardith Actis",
         UfNasc: "ES",
         Salario: 4500.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -2841,7 +3156,8 @@ export const dataDefault = [
         Nome: "Aretha Acton",
         UfNasc: "AC",
         Salario: 1531.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -2850,7 +3166,8 @@ export const dataDefault = [
         Nome: "Argelia Acuff",
         UfNasc: "RO",
         Salario: 8237.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -2859,7 +3176,8 @@ export const dataDefault = [
         Nome: "Danilo Deus Dará",
         UfNasc: "AL",
         Salario: 9004.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -2868,7 +3186,8 @@ export const dataDefault = [
         Nome: "Argentina Acuna",
         UfNasc: "RJ",
         Salario: 7491.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -2877,7 +3196,8 @@ export const dataDefault = [
         Nome: "Ariana Acy",
         UfNasc: "DF",
         Salario: 6181.60,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -2886,7 +3206,8 @@ export const dataDefault = [
         Nome: "Ariane Ada",
         UfNasc: "ES",
         Salario: 815.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -2895,7 +3216,8 @@ export const dataDefault = [
         Nome: "Arianna Adachi",
         UfNasc: "PB",
         Salario: 361.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -2904,7 +3226,8 @@ export const dataDefault = [
         Nome: "Arianne Adair",
         UfNasc: "MS",
         Salario: 254.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2913,7 +3236,8 @@ export const dataDefault = [
         Nome: "Arica Adalja",
         UfNasc: "MS",
         Salario: 1008.70,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -2922,7 +3246,8 @@ export const dataDefault = [
         Nome: "Arie Adam",
         UfNasc: "PB",
         Salario: 2700.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -2931,7 +3256,8 @@ export const dataDefault = [
         Nome: "Ariel Adamaitis",
         UfNasc: "AP",
         Salario: 3690.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -2940,7 +3266,8 @@ export const dataDefault = [
         Nome: "Ariel Adamcik",
         UfNasc: "AM",
         Salario: 9463.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -2949,7 +3276,8 @@ export const dataDefault = [
         Nome: "Arielle Adamczak",
         UfNasc: "SC",
         Salario: 7736.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -2958,7 +3286,8 @@ export const dataDefault = [
         Nome: "Arla Adamczyk",
         UfNasc: "RJ",
         Salario: 3509.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -2967,7 +3296,8 @@ export const dataDefault = [
         Nome: "Arlean Adame",
         UfNasc: "TO",
         Salario: 9147.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2976,7 +3306,8 @@ export const dataDefault = [
         Nome: "Arleen Adamec",
         UfNasc: "PA",
         Salario: 5293.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -2985,7 +3316,8 @@ export const dataDefault = [
         Nome: "Arlen Adamek",
         UfNasc: "SC",
         Salario: 374.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -2994,7 +3326,8 @@ export const dataDefault = [
         Nome: "Arlena Adames",
         UfNasc: "AP",
         Salario: 7673.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -3003,7 +3336,8 @@ export const dataDefault = [
         Nome: "Arlene Adami",
         UfNasc: "RN",
         Salario: 3691.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3012,7 +3346,8 @@ export const dataDefault = [
         Nome: "Arletha Adamiak",
         UfNasc: "AC",
         Salario: 8333.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -3021,7 +3356,8 @@ export const dataDefault = [
         Nome: "Arletta Adamik",
         UfNasc: "RO",
         Salario: 2217.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -3030,7 +3366,8 @@ export const dataDefault = [
         Nome: "Arlette Adamis",
         UfNasc: "SC",
         Salario: 2078.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -3039,7 +3376,8 @@ export const dataDefault = [
         Nome: "Arlie Adamitis",
         UfNasc: "RO",
         Salario: 7952.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -3048,7 +3386,8 @@ export const dataDefault = [
         Nome: "Arlinda Adamo",
         UfNasc: "ES",
         Salario: 8984.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -3057,7 +3396,8 @@ export const dataDefault = [
         Nome: "Arline Adamos",
         UfNasc: "RS",
         Salario: 1034.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -3066,7 +3406,8 @@ export const dataDefault = [
         Nome: "Arlyne Adamowski",
         UfNasc: "TO",
         Salario: 484.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -3075,7 +3416,8 @@ export const dataDefault = [
         Nome: "Armand Adams",
         UfNasc: "PE",
         Salario: 1872.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -3084,7 +3426,8 @@ export const dataDefault = [
         Nome: "Armanda Adamsen",
         UfNasc: "RO",
         Salario: 2736.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -3093,7 +3436,8 @@ export const dataDefault = [
         Nome: "Armandina Adamski",
         UfNasc: "AL",
         Salario: 4361.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -3102,7 +3446,8 @@ export const dataDefault = [
         Nome: "Armando Adamsky",
         UfNasc: "MA",
         Salario: 9975.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -3111,7 +3456,8 @@ export const dataDefault = [
         Nome: "Armida Adamson",
         UfNasc: "MS",
         Salario: 2752.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -3120,7 +3466,8 @@ export const dataDefault = [
         Nome: "Arminda Adamsonis",
         UfNasc: "DF",
         Salario: 2871.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -3129,7 +3476,8 @@ export const dataDefault = [
         Nome: "Arnetta Adamyan",
         UfNasc: "PI",
         Salario: 8787.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -3138,7 +3486,8 @@ export const dataDefault = [
         Nome: "Arnette Adan",
         UfNasc: "PA",
         Salario: 2799.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -3147,7 +3496,8 @@ export const dataDefault = [
         Nome: "Arnita Adank",
         UfNasc: "TO",
         Salario: 3232.90,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -3156,7 +3506,8 @@ export const dataDefault = [
         Nome: "Arnold Adas",
         UfNasc: "PE",
         Salario: 6795.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -3165,7 +3516,8 @@ export const dataDefault = [
         Nome: "Arnoldo Adauto",
         UfNasc: "RJ",
         Salario: 9329.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -3174,7 +3526,8 @@ export const dataDefault = [
         Nome: "Arnulfo Adaway",
         UfNasc: "PA",
         Salario: 9360.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -3183,7 +3536,8 @@ export const dataDefault = [
         Nome: "Aron Aday",
         UfNasc: "AP",
         Salario: 7666.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3192,7 +3546,8 @@ export const dataDefault = [
         Nome: "Arron Adcock",
         UfNasc: "AC",
         Salario: 2239.30,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -3201,7 +3556,8 @@ export const dataDefault = [
         Nome: "Art Adcox",
         UfNasc: "PE",
         Salario: 8629.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3210,7 +3566,8 @@ export const dataDefault = [
         Nome: "Arthur Addair",
         UfNasc: "PA",
         Salario: 815.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -3219,7 +3576,8 @@ export const dataDefault = [
         Nome: "Arthur Addams",
         UfNasc: "RN",
         Salario: 1148.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -3228,7 +3586,8 @@ export const dataDefault = [
         Nome: "Artie Addario",
         UfNasc: "PE",
         Salario: 5379.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -3237,7 +3596,8 @@ export const dataDefault = [
         Nome: "Arturo Addeo",
         UfNasc: "RO",
         Salario: 8598.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -3246,7 +3606,8 @@ export const dataDefault = [
         Nome: "Arvilla Adderley",
         UfNasc: "AL",
         Salario: 4395.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -3255,7 +3616,8 @@ export const dataDefault = [
         Nome: "Asa Adderly",
         UfNasc: "BA",
         Salario: 3908.30,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -3264,7 +3626,8 @@ export const dataDefault = [
         Nome: "Asha Addesso",
         UfNasc: "PB",
         Salario: 1781.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -3273,7 +3636,8 @@ export const dataDefault = [
         Nome: "Ashanti Addicks",
         UfNasc: "MG",
         Salario: 946.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -3282,7 +3646,8 @@ export const dataDefault = [
         Nome: "Ashely Addie",
         UfNasc: "RS",
         Salario: 3177.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -3291,7 +3656,8 @@ export const dataDefault = [
         Nome: "Ashlea Addiego",
         UfNasc: "SC",
         Salario: 608.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -3300,7 +3666,8 @@ export const dataDefault = [
         Nome: "Ashlee Addington",
         UfNasc: "PI",
         Salario: 7273.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "28/04/2017",
@@ -3309,7 +3676,8 @@ export const dataDefault = [
         Nome: "Ashleigh Addis",
         UfNasc: "BA",
         Salario: 3113.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -3318,7 +3686,8 @@ export const dataDefault = [
         Nome: "Ashley Addison",
         UfNasc: "GO",
         Salario: 7538.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -3327,7 +3696,8 @@ export const dataDefault = [
         Nome: "Ashley Addleman",
         UfNasc: "BA",
         Salario: 1141.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -3336,7 +3706,8 @@ export const dataDefault = [
         Nome: "Ashli Addo",
         UfNasc: "AM",
         Salario: 3154.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -3345,7 +3716,8 @@ export const dataDefault = [
         Nome: "Ashlie Adduci",
         UfNasc: "AL",
         Salario: 5029.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -3354,7 +3726,8 @@ export const dataDefault = [
         Nome: "Ashly Addy",
         UfNasc: "PB",
         Salario: 3685.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -3363,7 +3736,8 @@ export const dataDefault = [
         Nome: "Ashlyn Ade",
         UfNasc: "MG",
         Salario: 652.60,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -3372,7 +3746,8 @@ export const dataDefault = [
         Nome: "Ashton Adebisi",
         UfNasc: "AM",
         Salario: 8780.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -3381,7 +3756,8 @@ export const dataDefault = [
         Nome: "Asia Adee",
         UfNasc: "ES",
         Salario: 3275.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -3390,7 +3766,8 @@ export const dataDefault = [
         Nome: "Asley Adel",
         UfNasc: "BA",
         Salario: 8045.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -3399,7 +3776,8 @@ export const dataDefault = [
         Nome: "Assunta Adelblue",
         UfNasc: "RJ",
         Salario: 9129.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "10/04/2017",
@@ -3408,7 +3786,8 @@ export const dataDefault = [
         Nome: "Astrid Adelgren",
         UfNasc: "RR",
         Salario: 5609.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -3417,7 +3796,8 @@ export const dataDefault = [
         Nome: "Asuncion Adelizzi",
         UfNasc: "AM",
         Salario: 4622.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -3426,7 +3806,8 @@ export const dataDefault = [
         Nome: "Athena Adell",
         UfNasc: "RN",
         Salario: 5040.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -3435,7 +3816,8 @@ export const dataDefault = [
         Nome: "Aubrey Adelman",
         UfNasc: "AC",
         Salario: 2009.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -3444,7 +3826,8 @@ export const dataDefault = [
         Nome: "Aubrey Adelmann",
         UfNasc: "MT",
         Salario: 3154.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -3453,7 +3836,8 @@ export const dataDefault = [
         Nome: "Audie Adelmund",
         UfNasc: "PB",
         Salario: 901.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -3462,7 +3846,8 @@ export const dataDefault = [
         Nome: "Audra Adels",
         UfNasc: "MA",
         Salario: 785.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -3471,7 +3856,8 @@ export const dataDefault = [
         Nome: "Audrea Adelsberg",
         UfNasc: "AL",
         Salario: 3395.80,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3480,7 +3866,8 @@ export const dataDefault = [
         Nome: "Audrey Adelson",
         UfNasc: "RR",
         Salario: 746.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -3489,7 +3876,8 @@ export const dataDefault = [
         Nome: "Audria Adelsperger",
         UfNasc: "AL",
         Salario: 9992.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -3498,7 +3886,8 @@ export const dataDefault = [
         Nome: "Audrie Adelstein",
         UfNasc: "RS",
         Salario: 8438.00,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -3507,7 +3896,8 @@ export const dataDefault = [
         Nome: "Audry Adema",
         UfNasc: "RS",
         Salario: 1707.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -3516,7 +3906,8 @@ export const dataDefault = [
         Nome: "August Aden",
         UfNasc: "MT",
         Salario: 6420.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -3525,7 +3916,8 @@ export const dataDefault = [
         Nome: "Augusta Adens",
         UfNasc: "AP",
         Salario: 8034.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3534,7 +3926,8 @@ export const dataDefault = [
         Nome: "Augustina Ader",
         UfNasc: "RN",
         Salario: 3334.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -3543,7 +3936,8 @@ export const dataDefault = [
         Nome: "Augustine Aderhold",
         UfNasc: "RJ",
         Salario: 3051.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -3552,7 +3946,8 @@ export const dataDefault = [
         Nome: "Augustine Aderholdt",
         UfNasc: "RS",
         Salario: 3323.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -3561,7 +3956,8 @@ export const dataDefault = [
         Nome: "Augustus Aderholt",
         UfNasc: "RO",
         Salario: 6924.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -3570,7 +3966,8 @@ export const dataDefault = [
         Nome: "Aundrea Aderman",
         UfNasc: "RJ",
         Salario: 1030.70,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -3579,7 +3976,8 @@ export const dataDefault = [
         Nome: "Aura Aderson",
         UfNasc: "DF",
         Salario: 546.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -3588,7 +3986,8 @@ export const dataDefault = [
         Nome: "Aurea Ades",
         UfNasc: "MS",
         Salario: 4855.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -3597,7 +3996,8 @@ export const dataDefault = [
         Nome: "Aurelia Adessa",
         UfNasc: "GO",
         Salario: 6102.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -3606,7 +4006,8 @@ export const dataDefault = [
         Nome: "Aurelio Adesso",
         UfNasc: "SP",
         Salario: 7031.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -3615,7 +4016,8 @@ export const dataDefault = [
         Nome: "Aurora Adey",
         UfNasc: "SE",
         Salario: 138.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -3624,7 +4026,8 @@ export const dataDefault = [
         Nome: "Aurore Adeyemo",
         UfNasc: "CE",
         Salario: 5320.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -3633,7 +4036,8 @@ export const dataDefault = [
         Nome: "Austin Adger",
         UfNasc: "DF",
         Salario: 1489.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -3642,7 +4046,8 @@ export const dataDefault = [
         Nome: "Austin Adham",
         UfNasc: "CE",
         Salario: 9511.40,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -3651,7 +4056,8 @@ export const dataDefault = [
         Nome: "Autumn Adhami",
         UfNasc: "GO",
         Salario: 4127.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -3660,7 +4066,8 @@ export const dataDefault = [
         Nome: "Ava Adi",
         UfNasc: "RJ",
         Salario: 9123.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -3669,7 +4076,8 @@ export const dataDefault = [
         Nome: "Avelina Adib",
         UfNasc: "RS",
         Salario: 2086.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -3678,7 +4086,8 @@ export const dataDefault = [
         Nome: "Avery Adickes",
         UfNasc: "CE",
         Salario: 1220.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -3687,7 +4096,8 @@ export const dataDefault = [
         Nome: "Avery Adie",
         UfNasc: "AM",
         Salario: 407.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -3696,7 +4106,8 @@ export const dataDefault = [
         Nome: "Avis Adil",
         UfNasc: "SC",
         Salario: 4078.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -3705,7 +4116,8 @@ export const dataDefault = [
         Nome: "Avril Adinolfi",
         UfNasc: "PA",
         Salario: 2169.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -3714,7 +4126,8 @@ export const dataDefault = [
         Nome: "Awilda Adjei",
         UfNasc: "PA",
         Salario: 262.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -3723,7 +4136,8 @@ export const dataDefault = [
         Nome: "Ayako Adjutant",
         UfNasc: "RO",
         Salario: 8449.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -3732,7 +4146,8 @@ export const dataDefault = [
         Nome: "Ayana Adkerson",
         UfNasc: "AL",
         Salario: 3023.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "02/04/2017",
@@ -3741,7 +4156,8 @@ export const dataDefault = [
         Nome: "Ayanna Adkin",
         UfNasc: "RN",
         Salario: 6532.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -3750,7 +4166,8 @@ export const dataDefault = [
         Nome: "Ayesha Adkins",
         UfNasc: "RJ",
         Salario: 1509.00,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -3759,7 +4176,8 @@ export const dataDefault = [
         Nome: "Azalee Adkinson",
         UfNasc: "RN",
         Salario: 7589.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -3768,7 +4186,8 @@ export const dataDefault = [
         Nome: "Azucena Adkison",
         UfNasc: "AM",
         Salario: 1964.60,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -3777,7 +4196,8 @@ export const dataDefault = [
         Nome: "Azzie Adkisson",
         UfNasc: "TO",
         Salario: 673.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -3786,7 +4206,8 @@ export const dataDefault = [
         Nome: "Babara Adlam",
         UfNasc: "SP",
         Salario: 3302.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -3795,7 +4216,8 @@ export const dataDefault = [
         Nome: "Babette Adle",
         UfNasc: "SE",
         Salario: 8223.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3804,7 +4226,8 @@ export const dataDefault = [
         Nome: "Bailey Adleman",
         UfNasc: "AM",
         Salario: 5497.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "16/04/2017",
@@ -3813,7 +4236,8 @@ export const dataDefault = [
         Nome: "Bambi Adler",
         UfNasc: "PI",
         Salario: 7826.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -3822,7 +4246,8 @@ export const dataDefault = [
         Nome: "Bao Adley",
         UfNasc: "MG",
         Salario: 1146.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -3831,7 +4256,8 @@ export const dataDefault = [
         Nome: "Barabara Adling",
         UfNasc: "SE",
         Salario: 5318.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -3840,7 +4266,8 @@ export const dataDefault = [
         Nome: "Barb Adloff",
         UfNasc: "BA",
         Salario: 6324.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -3849,7 +4276,8 @@ export const dataDefault = [
         Nome: "Barbar Admas",
         UfNasc: "RR",
         Salario: 7528.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -3858,7 +4286,8 @@ export const dataDefault = [
         Nome: "Barbara Admire",
         UfNasc: "RN",
         Salario: 6865.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -3867,7 +4296,8 @@ export const dataDefault = [
         Nome: "Barbera Adner",
         UfNasc: "AC",
         Salario: 8029.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -3876,7 +4306,8 @@ export const dataDefault = [
         Nome: "Barbie Adney",
         UfNasc: "CE",
         Salario: 7459.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3885,7 +4316,8 @@ export const dataDefault = [
         Nome: "Barbra Adolf",
         UfNasc: "DF",
         Salario: 779.00,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -3894,7 +4326,8 @@ export const dataDefault = [
         Nome: "Bari Adolfo",
         UfNasc: "RS",
         Salario: 5173.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -3903,7 +4336,8 @@ export const dataDefault = [
         Nome: "Barney Adolfson",
         UfNasc: "BA",
         Salario: 2202.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -3912,7 +4346,8 @@ export const dataDefault = [
         Nome: "Barrett Adolph",
         UfNasc: "PA",
         Salario: 3083.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -3921,7 +4356,8 @@ export const dataDefault = [
         Nome: "Barrie Adolphe",
         UfNasc: "BA",
         Salario: 243.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -3930,7 +4366,8 @@ export const dataDefault = [
         Nome: "Barry Adolphsen",
         UfNasc: "AP",
         Salario: 8088.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3939,7 +4376,8 @@ export const dataDefault = [
         Nome: "Bart Adolphson",
         UfNasc: "MS",
         Salario: 2062.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -3948,7 +4386,8 @@ export const dataDefault = [
         Nome: "Barton Adolphus",
         UfNasc: "PB",
         Salario: 8207.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -3957,7 +4396,8 @@ export const dataDefault = [
         Nome: "Basil Adomaitis",
         UfNasc: "RR",
         Salario: 7846.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -3966,7 +4406,8 @@ export const dataDefault = [
         Nome: "Basilia Adon",
         UfNasc: "SC",
         Salario: 9674.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -3975,7 +4416,8 @@ export const dataDefault = [
         Nome: "Bea Adonis",
         UfNasc: "MG",
         Salario: 2657.70,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -3984,7 +4426,8 @@ export const dataDefault = [
         Nome: "Beata Adorno",
         UfNasc: "PB",
         Salario: 2100.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -3993,7 +4436,8 @@ export const dataDefault = [
         Nome: "Beatrice Adragna",
         UfNasc: "AP",
         Salario: 7213.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -4002,7 +4446,8 @@ export const dataDefault = [
         Nome: "Beatris Adrian",
         UfNasc: "RJ",
         Salario: 4883.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -4011,7 +4456,8 @@ export const dataDefault = [
         Nome: "Beatriz Adriance",
         UfNasc: "RS",
         Salario: 5776.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -4020,7 +4466,8 @@ export const dataDefault = [
         Nome: "Beau Adriano",
         UfNasc: "TO",
         Salario: 443.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -4029,7 +4476,8 @@ export const dataDefault = [
         Nome: "Beaulah Adrid",
         UfNasc: "RN",
         Salario: 1681.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -4038,7 +4486,8 @@ export const dataDefault = [
         Nome: "Bebe Adrien",
         UfNasc: "RJ",
         Salario: 8624.60,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -4047,7 +4496,8 @@ export const dataDefault = [
         Nome: "Becki Adrion",
         UfNasc: "PE",
         Salario: 3026.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -4056,7 +4506,8 @@ export const dataDefault = [
         Nome: "Beckie Adrovel",
         UfNasc: "AM",
         Salario: 6953.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -4065,7 +4516,8 @@ export const dataDefault = [
         Nome: "Becky Adside",
         UfNasc: "CE",
         Salario: 2670.30,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -4074,7 +4526,8 @@ export const dataDefault = [
         Nome: "Bee Adsit",
         UfNasc: "MA",
         Salario: 460.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -4083,7 +4536,8 @@ export const dataDefault = [
         Nome: "Belen Adu",
         UfNasc: "CE",
         Salario: 3883.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -4092,7 +4546,8 @@ export const dataDefault = [
         Nome: "Belia Aduddell",
         UfNasc: "SC",
         Salario: 155.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -4101,7 +4556,8 @@ export const dataDefault = [
         Nome: "Belinda Adule",
         UfNasc: "MS",
         Salario: 3896.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "23/04/2017",
@@ -4110,7 +4566,8 @@ export const dataDefault = [
         Nome: "Belkis Adwell",
         UfNasc: "SE",
         Salario: 2970.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -4119,7 +4576,8 @@ export const dataDefault = [
         Nome: "Bell Ady",
         UfNasc: "PR",
         Salario: 4547.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -4128,7 +4586,8 @@ export const dataDefault = [
         Nome: "Bella Adzhabakyan",
         UfNasc: "SE",
         Salario: 5283.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -4137,7 +4596,8 @@ export const dataDefault = [
         Nome: "Belle Aegerter",
         UfNasc: "CE",
         Salario: 6985.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -4146,7 +4606,8 @@ export const dataDefault = [
         Nome: "Belva Aeillo",
         UfNasc: "RN",
         Salario: 4002.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -4155,7 +4616,8 @@ export const dataDefault = [
         Nome: "Ben Aeling",
         UfNasc: "MA",
         Salario: 2447.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -4164,7 +4626,8 @@ export const dataDefault = [
         Nome: "Benedict Aemmer",
         UfNasc: "RN",
         Salario: 2626.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -4173,7 +4636,8 @@ export const dataDefault = [
         Nome: "Benita Aerni",
         UfNasc: "GO",
         Salario: 5659.80,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -4182,7 +4646,8 @@ export const dataDefault = [
         Nome: "Benito Aerts",
         UfNasc: "RO",
         Salario: 4433.30,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -4191,7 +4656,8 @@ export const dataDefault = [
         Nome: "Benjamin Aery",
         UfNasc: "MT",
         Salario: 9088.40,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -4200,7 +4666,8 @@ export const dataDefault = [
         Nome: "Bennett Aeschbacher",
         UfNasc: "RO",
         Salario: 5705.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -4209,7 +4676,8 @@ export const dataDefault = [
         Nome: "Bennie Aeschliman",
         UfNasc: "MT",
         Salario: 7799.20,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -4218,7 +4686,8 @@ export const dataDefault = [
         Nome: "Bennie Aeschlimann",
         UfNasc: "PR",
         Salario: 3655.70,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "08/04/2017",
@@ -4227,7 +4696,8 @@ export const dataDefault = [
         Nome: "Benny Afable",
         UfNasc: "AM",
         Salario: 125.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "11/04/2017",
@@ -4236,7 +4706,8 @@ export const dataDefault = [
         Nome: "Benton Afalava",
         UfNasc: "AC",
         Salario: 6994.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "26/04/2017",
@@ -4245,7 +4716,8 @@ export const dataDefault = [
         Nome: "Berenice Afan",
         UfNasc: "MS",
         Salario: 1119.70,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -4254,7 +4726,8 @@ export const dataDefault = [
         Nome: "Berna Afanador",
         UfNasc: "RJ",
         Salario: 9010.20,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "09/04/2017",
@@ -4263,7 +4736,8 @@ export const dataDefault = [
         Nome: "Bernadette Affagato",
         UfNasc: "AP",
         Salario: 5154.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "19/04/2017",
@@ -4272,7 +4746,8 @@ export const dataDefault = [
         Nome: "Bernadine Affeld",
         UfNasc: "AL",
         Salario: 532.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -4281,7 +4756,8 @@ export const dataDefault = [
         Nome: "Bernard Affelt",
         UfNasc: "CE",
         Salario: 1259.30,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "06/04/2017",
@@ -4290,7 +4766,8 @@ export const dataDefault = [
         Nome: "Bernarda Affeltranger",
         UfNasc: "AC",
         Salario: 1495.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -4299,7 +4776,8 @@ export const dataDefault = [
         Nome: "Bernardina Affleck",
         UfNasc: "PA",
         Salario: 7043.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "04/04/2017",
@@ -4308,7 +4786,8 @@ export const dataDefault = [
         Nome: "Bernardine Afflick",
         UfNasc: "RS",
         Salario: 9581.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -4317,7 +4796,8 @@ export const dataDefault = [
         Nome: "Bernardo Affolter",
         UfNasc: "TO",
         Salario: 5301.90,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -4326,7 +4806,8 @@ export const dataDefault = [
         Nome: "Berneice Affronti",
         UfNasc: "MT",
         Salario: 9712.70,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -4335,7 +4816,8 @@ export const dataDefault = [
         Nome: "Bernetta Aflalo",
         UfNasc: "PI",
         Salario: 6686.30,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "01/04/2017",
@@ -4344,7 +4826,8 @@ export const dataDefault = [
         Nome: "Bernice Afoa",
         UfNasc: "RS",
         Salario: 9365.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "12/04/2017",
@@ -4353,7 +4836,8 @@ export const dataDefault = [
         Nome: "Bernie Afonso",
         UfNasc: "BA",
         Salario: 9255.60,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "14/04/2017",
@@ -4362,7 +4846,8 @@ export const dataDefault = [
         Nome: "Bernie Africa",
         UfNasc: "RS",
         Salario: 7486.00,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "07/04/2017",
@@ -4371,7 +4856,8 @@ export const dataDefault = [
         Nome: "Berniece Afshar",
         UfNasc: "AL",
         Salario: 3548.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "22/04/2017",
@@ -4380,7 +4866,8 @@ export const dataDefault = [
         Nome: "Bernita Afshari",
         UfNasc: "PI",
         Salario: 4579.20,
-        Status: "INATIVO"
+        Status: "INATIVO",
+        deleted: false,
     },
     {
         DataCad: "20/04/2017",
@@ -4389,7 +4876,8 @@ export const dataDefault = [
         Nome: "Berry Afton",
         UfNasc: "PR",
         Salario: 2300.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "21/04/2017",
@@ -4398,7 +4886,8 @@ export const dataDefault = [
         Nome: "Berry Afurong",
         UfNasc: "SE",
         Salario: 5569.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "13/04/2017",
@@ -4407,7 +4896,8 @@ export const dataDefault = [
         Nome: "Bert Afzal",
         UfNasc: "SE",
         Salario: 9550.00,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "27/04/2017",
@@ -4416,7 +4906,8 @@ export const dataDefault = [
         Nome: "Berta Agamao",
         UfNasc: "AC",
         Salario: 7862.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "24/04/2017",
@@ -4425,7 +4916,8 @@ export const dataDefault = [
         Nome: "Bertha Agan",
         UfNasc: "MS",
         Salario: 5523.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "15/04/2017",
@@ -4434,7 +4926,8 @@ export const dataDefault = [
         Nome: "Bertie Agans",
         UfNasc: "SP",
         Salario: 6848.50,
-        Status: "BLOQUEADO"
+        Status: "BLOQUEADO",
+        deleted: false,
     },
     {
         DataCad: "18/04/2017",
@@ -4443,7 +4936,8 @@ export const dataDefault = [
         Nome: "Bertram Agar",
         UfNasc: "ES",
         Salario: 8246.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -4452,7 +4946,8 @@ export const dataDefault = [
         Nome: "Beryl Agard",
         UfNasc: "PB",
         Salario: 8706.50,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "25/04/2017",
@@ -4461,7 +4956,8 @@ export const dataDefault = [
         Nome: "Bess Agarwal",
         UfNasc: "PA",
         Salario: 703.80,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "05/04/2017",
@@ -4470,7 +4966,8 @@ export const dataDefault = [
         Nome: "Bessie Agbayani",
         UfNasc: "DF",
         Salario: 4099.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "29/04/2017",
@@ -4479,7 +4976,8 @@ export const dataDefault = [
         Nome: "Beth Agbisit",
         UfNasc: "PB",
         Salario: 1948.10,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "17/04/2017",
@@ -4488,7 +4986,8 @@ export const dataDefault = [
         Nome: "Bethanie Agcaoili",
         UfNasc: "CE",
         Salario: 1054.90,
-        Status: "ATIVO"
+        Status: "ATIVO",
+        deleted: false,
     },
     {
         DataCad: "03/04/2017",
@@ -4497,6 +4996,7 @@ export const dataDefault = [
         "Nom": "Bethann Age",
         "UfNas": "RR",
         "Salari": 2098.50,
-        "Status": "ATIVO"
+        "Status": "ATIVO",
+        deleted: false,
     },
 ]
