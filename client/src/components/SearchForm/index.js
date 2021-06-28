@@ -54,8 +54,8 @@ const SearchForm = () => {
         nome: "",
         cpf: "",
         cargo: "",
-        cadastro: Date.now(),
-        uf: "",
+        dataCad: Date.now(),
+        ufNasc: "",
         salario: [0, 10000],
         status: "",
       }}
@@ -102,12 +102,12 @@ const SearchForm = () => {
                 <CargoInput />
               </FormControl>
             )}
-            {props.values.criterioBusca === "cadastro" && (
+            {props.values.criterioBusca === "dataCad" && (
               <FormControl className={classes.formControl}>
                 <DateInput />
               </FormControl>
             )}
-            {props.values.criterioBusca === "uf" && (
+            {props.values.criterioBusca === "ufNasc" && (
               <FormControl className={classes.formControl}>
                 <UfInput />
               </FormControl>

@@ -7,12 +7,12 @@ const UfInput = () => {
   
   return (
     <>
-   <InputLabel id="uf">UF</InputLabel>
-    <Field name="uf" >
+   <InputLabel id="ufNasc">UF</InputLabel>
+    <Field name="ufNasc" >
       {({ field }) => (
         <Select
-          labelId="uf"
-          value={field.value.uf}
+          labelId="ufNasc"
+          value={field.value.ufNasc}
           {...field}
         >
             {ufs.map((uf, index) => (

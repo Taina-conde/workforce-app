@@ -11,7 +11,7 @@ import UfInput from "../shared/UfInput";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import SalarioInput from "./SalarioInput";
-import { getEmployees, getBy} from "../../api";
+
 
 setLocale({
   number: {
@@ -57,7 +57,7 @@ const NewEmployeeForm = () => {
         nome: "",
         cpf: "",
         cargo: "",
-        uf: "",
+        ufNasc: "",
         salario: "",
         status: "",
       }}
