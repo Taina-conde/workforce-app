@@ -33,7 +33,7 @@ function formatEmployee(employee) {
   };
 }
 
-function saveEmployee(key, newEmployee) {
+function save(key, newEmployee) {
   return new Promise((res) => {
     let employees = getAll(key);
     const employeeInDataBaseArr = employees.filter(
@@ -51,7 +51,7 @@ function saveEmployee(key, newEmployee) {
     employees.concat(formatEmployee(newEmployee));
   });
 }
-function disableEmployee(key, cpf) {
+function disable(key, cpf) {
   return new Promise((res) => {
     let employees = getAll(key);
     const employeeInDataBaseArr = employees.filter(
@@ -62,3 +62,4 @@ function disableEmployee(key, cpf) {
     res(employeeInDataBase);
   });
 }
+
