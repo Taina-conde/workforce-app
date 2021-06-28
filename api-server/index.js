@@ -15,10 +15,10 @@ app.get("/", (req, res) => {
 });
 
 app.use((req, res, next) => {
-    const key = req.get("Authorization");
+    const token = req.get("Authorization");
   
-    if (key) {
-      req.key = key;
+    if (token) {
+      req.token = token;
       next();
     } else {
       res.status(403).send({
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
   });
 
 app.get('/employees', (req, res) => {
-    employees.getAll(req.key)
+    employees.getAll(req.token)
     .then(
         (data) => res.send(data),
         (error) => {
@@ -41,7 +41,7 @@ app.get('/employees', (req, res) => {
     )
 })
 app.get('/employees/:cpf', (req, res) => {
-    employees.getBy(req.key, req.params.cpf)
+    employees.getBy(req.token, req.params.cpf)
     .then(
         (data) => res.send(data),
         (error) => {

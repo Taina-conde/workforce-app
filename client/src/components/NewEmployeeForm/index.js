@@ -11,6 +11,7 @@ import UfInput from "../shared/UfInput";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import SalarioInput from "./SalarioInput";
+import { getEmployees} from "../../api";
 
 setLocale({
   number: {
@@ -63,6 +64,8 @@ const NewEmployeeForm = () => {
       validationSchema={validationSchema}
       onSubmit={(values) => {
         console.log(" values em submit", values);
+        //CALL API
+        getEmployees()
       }}
     >
       {(props) => (

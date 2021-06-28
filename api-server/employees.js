@@ -3,17 +3,17 @@ const clone = require("clone");
 
 let dataBase = {};
 
-function getAll(key) {
-  let data = dataBase[key];
+function getData(token) {
+  let data = dataBase[token];
   if (data == null) {
-    data = dataBase[key] = clone(dataDefault);
+    data = dataBase[token] = clone(dataDefault);
   }
   return data;
 }
 
-function getBy(key, criterioBusca, query) {
+function getBy(token, criterioBusca, query) {
   return new Promise((res) => {
-    let employees = getAll(key);
+    let employees = getData(token);
     let filteredEmployees = employees.filter(
       (employee) => employee[criterioBusca] === query
     );
@@ -33,9 +33,9 @@ function formatEmployee(employee) {
   };
 }
 
-function save(key, newEmployee) {
+function save(token, newEmployee) {
   return new Promise((res) => {
-    let employees = getAll(key);
+    let employees = getData(token);
     const employeeInDataBaseArr = employees.filter(
       (employee) => employee.cpf === newEmployee.cpf
     );
@@ -51,9 +51,9 @@ function save(key, newEmployee) {
     employees.concat(formatEmployee(newEmployee));
   });
 }
-function disable(key, cpf) {
+function disable(token, cpf) {
   return new Promise((res) => {
-    let employees = getAll(key);
+    let employees = getData(token);
     const employeeInDataBaseArr = employees.filter(
       (employee) => employee.cpf === cpf
     );
