@@ -18,3 +18,15 @@ export async function getBy(criterioBusca, query) {
     console.log('employee', employee)
     return employee
 }
+export async function saveNewEmployee(employee) {
+    const response = await window.fetch(`${api}/employees`, {
+        method: 'POST',
+        headers: {
+            Authorization: "app",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(employee)
+    })
+    const employeeResponse = await response.json();
+    return employeeResponse
+}
