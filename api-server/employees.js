@@ -8,7 +8,7 @@ function getData(token) {
   if (data == null) {
     data = dataBase[token] = clone(dataDefault);
   }
-  return data;
+  return data.dataDefault;
 }
 function getAll(token) {
     return new Promise((res) => {
