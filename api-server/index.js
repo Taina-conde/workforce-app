@@ -40,8 +40,9 @@ app.get('/employees', (req, res) => {
         }
     )
 })
-app.get('/employees/:cpf', (req, res) => {
-    employees.getBy(req.token, req.params.cpf)
+app.get('/employees/:criterioBusca/:query', (req, res) => {
+    console.log('req', req)
+    employees.getBy(req.token, req.params.criterioBusca, req.params.query)
     .then(
         (data) => res.send(data),
         (error) => {
