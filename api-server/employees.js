@@ -1,0 +1,3 @@
+import {dataDefault} from "./data";
+
+
