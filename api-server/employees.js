@@ -1,4 +1,4 @@
-const dataDefault = require('./data');
+const dataDefault = require("./data");
 const clone = require("clone");
 
 let dataBase = {};
@@ -11,23 +11,18 @@ function getData(token) {
   return data.dataDefault;
 }
 function getAll(token) {
-    return new Promise((res) => {
-        const employees = getData(token);
-        let filteredEmployees = employees.filter( employee => !employee.deleted);
-        res(filteredEmployees)
-    })
+  return new Promise((res) => {
+    const employees = getData(token);
+    let filteredEmployees = employees.filter((employee) => !employee.deleted);
+    res(filteredEmployees);
+  });
 }
 
 function getBy(token, criterioBusca, query) {
   return new Promise((res) => {
     let employees = getData(token);
-    console.log("criterio de busca", criterioBusca)
-    console.log('query', query)
     let filteredEmployees = employees.filter(
-      (employee) => {
-          
-        console.log("employee", employee)
-        return employee[criterioBusca] === query}
+      (employee) => employee[criterioBusca] === query
     );
     res(filteredEmployees);
   });
@@ -75,8 +70,8 @@ function disable(token, cpf) {
   });
 }
 module.exports = {
-    getAll,
-    getBy,
-    save,
-    disable,
-  };
+  getAll,
+  getBy,
+  save,
+  disable,
+};
