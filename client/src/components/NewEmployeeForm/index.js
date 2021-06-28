@@ -56,7 +56,6 @@ const NewEmployeeForm = () => {
         nome: "",
         cpf: "",
         cargo: "",
-        cadastro: Date.now(),
         uf: "",
         salario: "",
         status: "",
