@@ -80,9 +80,9 @@ const SearchForm = () => {
                 value={props.values.criterioBusca}
                 onChange={props.handleChange}
               >
-                {criteriosArr.map((criterio, index) => (
-                  <MenuItem key={index} value={criterio}>
-                    {criterio}
+                {criteriosArr.map((item, index) => (
+                  <MenuItem key={index} value={item.id}>
+                    {item.criterio}
                   </MenuItem>
                 ))}
               </Select>

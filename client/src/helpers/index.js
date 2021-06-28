@@ -44,6 +44,20 @@ export const cargos = [
 ];
 export const statusArr = ["ativo", "inativo", "bloqueado"];
 
-export const criteriosArr = ["nome", "cpf", "cargo", "dataCad", "ufNasc", "salario", "status"];
+export const criteriosArr = [
+  { id: "nome", criterio: "Nome" },
+  { id: "cpf", criterio: "CPF" },
+  { id: "cargo", criterio: "Cargo" },
+  { id: "dataCad", criterio: "Data de cadastro" },
+  { id: "ufNasc", criterio: "UF de nascimento" },
+  { id: "salario", criterio: "Salário" },
+  { id: "status", criterio: "Status" },
+];
 
-export const sliderMarks = [{value : 0, label: "R$ 0,00"}, {value: 2500, label: "R$ 2.5mil"}, {value: 5000, label: "R$ 5mil"}, {value: 7500, label: "R$ 7.5 mil"}, {value: 10000, label: "R$ 10mil"}]
+export const sliderMarks = [
+  { value: 0, label: "R$ 0,00" },
+  { value: 2500, label: "R$ 2.5mil" },
+  { value: 5000, label: "R$ 5mil" },
+  { value: 7500, label: "R$ 7.5 mil" },
+  { value: 10000, label: "R$ 10mil" },
+];
