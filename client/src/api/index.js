@@ -13,9 +13,9 @@ export async function getEmployees() {
 }
 export async function getBy(criterioBusca, query) {
     const response = await window.fetch(`${api}/employees/${criterioBusca}/${query}`, header);
-    const employee = await response.json();
-    console.log('employee searched', employee)
-    return employee
+    const searchedEmployees = await response.json();
+    console.log('employee searched', searchedEmployees)
+    return searchedEmployees;
 }
 export async function saveNewEmployee(employee) {
     const formattedEmployee = formatEmployee(employee)

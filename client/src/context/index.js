@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getEmployees, saveNewEmployee } from "../api";
+import { getEmployees } from "../api";
 
 const Context = React.createContext({
   employees: [],

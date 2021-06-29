@@ -17,6 +17,8 @@ import SalarioFaixaInput from "./SalarioFaixaInput";
 import StatusInput from "../shared/StatusInput";
 import { getBy} from "../../api";
 import {formatDate} from "../../helpers";
+import { useContext } from "react";
+import Context from "../../context";
 
 setLocale({
   number: {
@@ -25,7 +27,7 @@ setLocale({
 });
 const validationSchema = yup.object({
   nome: yup.string(),
-  cpf: yup.number().positive().integer().min(11),
+  cpf: yup.number().positive().integer(),
 });
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 const SearchForm = () => {
   const classes = useStyles();
+  const ctx = useContext(Context);
   return (
     <Formik
       initialValues={{
@@ -64,6 +67,9 @@ const SearchForm = () => {
       onSubmit={(values) => {
         console.log(" values em submit", values);
         getBy(values.criterioBusca, values[values.criterioBusca])
+        .then((searchedEmployees) => 
+          ctx.onSearchEmployee(searchedEmployees)
+        )
       }}
     >
       {(props) => {
