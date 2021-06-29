@@ -28,8 +28,9 @@ export default function ResultsTable() {
           <TableRow>
             <TableCell>Nome</TableCell>
             <TableCell align="right"> CPF</TableCell>
-            <TableCell align="right">Naturalidade</TableCell>
+            <TableCell align="right">Natural de</TableCell>
             <TableCell align="right">Data do cadastro</TableCell>
+            <TableCell align="right">Cargo</TableCell>
             <TableCell align="right">Salário</TableCell>
             <TableCell align="right">Status</TableCell>
             <TableCell align="right"></TableCell>
