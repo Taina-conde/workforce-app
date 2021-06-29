@@ -63,23 +63,33 @@ export const sliderMarks = [
 ];
 
 export function formatDateToSend(date) {
-  let formattedDate = date.toLocaleDateString('en-GB');
-  formattedDate = formattedDate.replace("/", "-")
-  formattedDate = formattedDate.replace("/", "-")
-  return formattedDate
+  let formattedDate = date.toLocaleDateString("en-GB");
+  formattedDate = formattedDate.replace("/", "-");
+  formattedDate = formattedDate.replace("/", "-");
+  return formattedDate;
 }
 function formatDatePt(date) {
-  let formattedDate = date.toLocaleDateString('en-GB');
+  let formattedDate = date.toLocaleDateString("en-GB");
 
-  return formattedDate
+  return formattedDate;
 }
 
+function capitalize(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+function formatName(name) {
+  let formattedName = name.toLowerCase();
+  const nameArr = formattedName.split(" ");
+  const nameArrCapitalLetter = nameArr.map((word) => capitalize(word));
+  formattedName = nameArrCapitalLetter.join(" ");
+  return formattedName;
+}
 export function formatEmployee(employee) {
   return {
     DataCad: formatDatePt(new Date()),
     Cargo: employee.cargo,
     Cpf: employee.cpf,
-    Nome: employee.nome,
+    Nome: formatName(employee.nome),
     UfNasc: employee.ufNasc.toUpperCase(),
     Salario: Number(employee.salario),
     Status: employee.status.toUpperCase(),
