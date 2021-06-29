@@ -40,6 +40,17 @@ app.get("/employees", (req, res) => {
     }
   );
 });
+app.get("/employees/:cpf", (req, res) => {
+  employees.get(req.token).then(
+    (data) => res.send(data),
+    (error) => {
+      console.log(error);
+      res.status(500).send({
+        error: "There was an error.",
+      });
+    }
+  );
+});
 app.get("/employees/:criterioBusca/:query", (req, res) => {
   console.log("req", req);
   employees.getBy(req.token, req.params.criterioBusca, req.params.query).then(

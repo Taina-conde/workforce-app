@@ -24,42 +24,36 @@ function getBy(token, criterioBusca, query) {
     const filteredEmployees = employees.filter(
       (employee) => employee[criterioBusca] === query && !employee.deleted
     );
-    
+
     res(filteredEmployees);
   });
 }
 function get(token, cpf) {
-    return new Promise((res) => {
-        const employees = getData(token);
-        const employeeArr = employees.filter(item => item.cpf === cpf);
-        const employee = employeeArr[0];
-        res(
-            employee.deleted
-            ? {}
-            : employee
-
-        )
-    })
+  return new Promise((res) => {
+    const employees = getData(token);
+    const employeeArr = employees.filter((item) => item.cpf === cpf);
+    const employee = employeeArr[0];
+    res(employee.deleted ? {} : employee);
+  });
 }
-
 
 function save(token, newEmployee) {
   return new Promise((res) => {
     let employees = getData(token);
-console.log("new employee", newEmployee)
+    console.log("new employee", newEmployee);
     const employeeInDataBaseArr = employees.filter(
       (employee) => employee.cpf === newEmployee.cpf
     );
     const employeeExists = employeeInDataBaseArr.length !== 0;
     const employeeInDataBase = employeeInDataBaseArr[0];
-        console.log("employeeindatbase", employeeInDataBase)
+    console.log("employeeindatbase", employeeInDataBase);
     if (employeeExists) {
       for (prop in newEmployee) {
         employeeInDataBase[prop] = newEmployee[prop];
       }
       return res(employeeInDataBase);
     }
-    console.log("aqui dentro")
+    console.log("aqui dentro");
     employees.push(newEmployee);
     res(newEmployee);
   });
@@ -72,11 +66,12 @@ function disable(token, cpf) {
     );
     const employeeInDataBase = employeeInDataBaseArr[0];
     employeeInDataBase.deleted = true;
-    console.log("employee in deleted", employeeInDataBase)
+    console.log("employee in deleted", employeeInDataBase);
     res(employeeInDataBase);
   });
 }
 module.exports = {
+  get,
   getAll,
   getBy,
   save,
