@@ -28,6 +28,19 @@ function getBy(token, criterioBusca, query) {
     res(filteredEmployees);
   });
 }
+function get(token, cpf) {
+    return new Promise((res) => {
+        const employees = getData(token);
+        const employeeArr = employees.filter(item => item.cpf === cpf);
+        const employee = employeeArr[0];
+        res(
+            employee.deleted
+            ? {}
+            : employee
+
+        )
+    })
+}
 
 
 function save(token, newEmployee) {
