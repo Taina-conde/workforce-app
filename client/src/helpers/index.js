@@ -77,7 +77,7 @@ function formatDatePt(date) {
 function capitalize(word) {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
-function formatName(fullName) {
+export function formatName(fullName) {
   let formattedName = fullName.toLowerCase();
   const nameArr = formattedName.split(" ");
   const nameArrCapitalLetter = nameArr.map((word) => capitalize(word));

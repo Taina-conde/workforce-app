@@ -15,8 +15,8 @@ import DateInput from "./DateInput";
 import UfInput from "../shared/UfInput";
 import SalarioFaixaInput from "./SalarioFaixaInput";
 import StatusInput from "../shared/StatusInput";
-import { getBy} from "../../api";
-import {formatDateToSend} from "../../helpers";
+import { getBy } from "../../api";
+import { formatDateToSend, formatName } from "../../helpers";
 import { useContext } from "react";
 import Context from "../../context";
 
@@ -41,11 +41,11 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 200,
   },
   btn: {
-      margin: theme.spacing(2),
+    margin: theme.spacing(2),
   },
-  salario : {
-      width: "100%",
-  }
+  salario: {
+    width: "100%",
+  },
 }));
 
 const SearchForm = () => {
@@ -65,19 +65,21 @@ const SearchForm = () => {
       }}
       validationSchema={validationSchema}
       onSubmit={(values, formikBag) => {
-        const {criterioBusca} = values;
+        const { criterioBusca } = values;
         let query = values[criterioBusca];
         if (criterioBusca === "dataCad") {
-          query = formatDateToSend(values[criterioBusca])
-          console.log("data busca query", query)
-          console.log("data busca values", values[criterioBusca])
+          query = formatDateToSend(values[criterioBusca]);
+          console.log("data busca query", query);
+          console.log("data busca values", values[criterioBusca]);
+        }
+        if (criterioBusca === "nome") {
+          query = formatName(query);
         }
         formikBag.resetForm();
         console.log(" values em submit", values);
-        getBy(criterioBusca, query)
-        .then((searchedEmployees) => 
+        getBy(criterioBusca, query).then((searchedEmployees) =>
           ctx.onSearchEmployee(searchedEmployees)
-        )
+        );
       }}
     >
       {(props) => {
@@ -127,9 +129,9 @@ const SearchForm = () => {
                 <UfInput />
               </FormControl>
             )}
-              {props.values.criterioBusca === "salario" && (
+            {props.values.criterioBusca === "salario" && (
               <FormControl className={classes.salario}>
-                <SalarioFaixaInput/>
+                <SalarioFaixaInput />
               </FormControl>
             )}
             {props.values.criterioBusca === "status" && (
@@ -138,8 +140,12 @@ const SearchForm = () => {
               </FormControl>
             )}
 
-
-            <Button className = {classes.btn} color="primary" variant="contained" type="submit">
+            <Button
+              className={classes.btn}
+              color="primary"
+              variant="contained"
+              type="submit"
+            >
               Pesquisar
             </Button>
           </form>
