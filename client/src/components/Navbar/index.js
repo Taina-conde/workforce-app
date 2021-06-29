@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    textAlign: "center",
+    
   },
 }));
 
@@ -20,7 +20,7 @@ const Navbar = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            MyEmployees
+            workForce
           </Typography>
       
         </Toolbar>
