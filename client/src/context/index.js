@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getEmployees } from "../api";
+import { getEmployees, deleteEmployee } from "../api";
 
 const Context = React.createContext({
   employees: [],
@@ -14,23 +14,24 @@ export const ContextProvider = (props) => {
   const [searchedEmployees, setSearchedEmployees] = useState([]);
 
   useEffect(() => {
-      const allEmployees = getEmployees();
-      setEmployees(allEmployees);
-   
+    const allEmployees = getEmployees();
+    setEmployees(allEmployees);
   }, []);
 
   const searchEmployeeHandler = (employees) => {
-    setSearchedEmployees(employees)
-  }
+    setSearchedEmployees(employees);
+  };
 
   const saveNewEmployeeHandler = (employee) => {
     setEmployees(employees.concat(employee));
   };
 
- 
   const deleteEmployeeHandler = (cpf) => {
-      
-    
+    deleteEmployee(cpf);
+    const searchedEmployeesWithoutDeleted = searchedEmployees.filter(
+      (employee) => employee.cpf !== cpf
+    );
+    setSearchedEmployees(searchedEmployeesWithoutDeleted);
   };
 
   return (
