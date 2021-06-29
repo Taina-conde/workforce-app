@@ -19,8 +19,8 @@ export const ContextProvider = (props) => {
    
   }, []);
 
-  const searchEmployeeHandler = (criterioBusca, query) => {
-
+  const searchEmployeeHandler = (employees) => {
+    setSearchedEmployees(employees)
   }
 
   const saveNewEmployeeHandler = (employee) => {
