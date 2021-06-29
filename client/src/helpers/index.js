@@ -61,13 +61,22 @@ export const sliderMarks = [
   { value: 7500, label: "R$ 7.5 mil" },
   { value: 10000, label: "R$ 10mil" },
 ];
-export function formatDate(date) {
-  const today = date.toLocaleDateString('en-GB');
-  return today
+
+export function formatDateToSend(date) {
+  let formattedDate = date.toLocaleDateString('en-GB');
+  formattedDate = formattedDate.replace("/", "-")
+  formattedDate = formattedDate.replace("/", "-")
+  return formattedDate
 }
+function formatDatePt(date) {
+  let formattedDate = date.toLocaleDateString('en-GB');
+
+  return formattedDate
+}
+
 export function formatEmployee(employee) {
   return {
-    DataCad: formatDate(),
+    DataCad: formatDatePt(new Date()),
     Cargo: employee.cargo,
     Cpf: employee.cpf,
     Nome: employee.nome,

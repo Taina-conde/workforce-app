@@ -16,7 +16,7 @@ import UfInput from "../shared/UfInput";
 import SalarioFaixaInput from "./SalarioFaixaInput";
 import StatusInput from "../shared/StatusInput";
 import { getBy} from "../../api";
-import {formatDate} from "../../helpers";
+import {formatDateToSend} from "../../helpers";
 import { useContext } from "react";
 import Context from "../../context";
 
@@ -58,7 +58,7 @@ const SearchForm = () => {
         nome: "",
         cpf: "",
         cargo: "",
-        dataCad: formatDate(new Date()),
+        dataCad: new Date(),
         ufNasc: "",
         salario: [0, 10000],
         status: "",
@@ -68,9 +68,7 @@ const SearchForm = () => {
         const {criterioBusca} = values;
         let query = values[criterioBusca];
         if (criterioBusca === "dataCad") {
-          const dateFormatted = formatDate(values[criterioBusca])
-          query = dateFormatted.replace("/", "-")
-          query = query.replace("/", "-")
+          const query = formatDateToSend(values[criterioBusca])
           console.log("data busca query", query)
           console.log("data busca values", values[criterioBusca])
         }
