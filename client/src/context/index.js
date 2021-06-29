@@ -4,6 +4,7 @@ import { getEmployees, deleteEmployee } from "../api";
 const Context = React.createContext({
   employees: [],
   searchedEmployees: [],
+  searchStarted: false,
   onSaveNewEmployee: (employee) => {},
   onSearchEmployee: (employees) => {},
   onDeleteEmployee: (cpf) => {},
@@ -12,6 +13,7 @@ const Context = React.createContext({
 export const ContextProvider = (props) => {
   const [employees, setEmployees] = useState([]);
   const [searchedEmployees, setSearchedEmployees] = useState([]);
+  const [searchStarted, setSearchStarted] = useState(false);
 
   useEffect(() => {
     const allEmployees = getEmployees();
@@ -20,6 +22,9 @@ export const ContextProvider = (props) => {
 
   const searchEmployeeHandler = (employees) => {
     setSearchedEmployees(employees);
+    if (searchStarted === false) {
+        setSearchStarted(true);
+    }
   };
 
   const saveNewEmployeeHandler = (employee) => {
@@ -39,6 +44,7 @@ export const ContextProvider = (props) => {
       value={{
         employees,
         searchedEmployees,
+        searchStarted,
         onSaveNewEmployee: saveNewEmployeeHandler,
         onSearchEmployee: searchEmployeeHandler,
         onDeleteEmployee: deleteEmployeeHandler,
