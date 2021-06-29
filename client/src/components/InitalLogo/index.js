@@ -4,12 +4,17 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
     fontSize: "5em",
     height: "70vh"
   },
   logoStart : {
+      textTransform: "lowercase",
 
+
+  },
+  logoEnd :  {
+      textTransform: "capitalize",
+      fontFamily: "'Fillate', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
   }
 }));
 
@@ -20,7 +25,7 @@ export default function InitalLogo() {
       <Grid item className = {classes.logoStart}>My</Grid>
       <Grid item className = {classes.logoEnd}>employees</Grid>
       <Grid item className = {classes.logoIcon}>
-        <SearchIcon />
+        <SearchIcon fontSize = "inherit"/>
       </Grid>
     </Grid>
   );
