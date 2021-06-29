@@ -68,7 +68,7 @@ const SearchForm = () => {
         const {criterioBusca} = values;
         let query = values[criterioBusca];
         if (criterioBusca === "dataCad") {
-          const query = formatDateToSend(values[criterioBusca])
+          query = formatDateToSend(values[criterioBusca])
           console.log("data busca query", query)
           console.log("data busca values", values[criterioBusca])
         }

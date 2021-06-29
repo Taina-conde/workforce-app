@@ -19,8 +19,9 @@ function getAll(token) {
   });
 }
 
-function formatDate(date) {
-  const formattedDate = date.toLocaleDateString("en-GB");
+function formatReceivedDate(date) {
+  let formattedDate = date.replace("-", "/");
+  formattedDate = formattedDate.replace("-", "/");
   return formattedDate;
 }
 function getBy(token, criterioBusca, query) {
@@ -40,8 +41,7 @@ function getBy(token, criterioBusca, query) {
       return res(filteredEmployees);
     }
     if (criterioBusca === "dataCad") {
-      let dateQuery = query.replace("-", "/");
-      dateQuery = dateQuery.replace("-", "/");
+      let dateQuery = formatReceivedDate(query)
       console.log("dateQuery", dateQuery);
       const filteredEmployees = employees.filter(
         (employee) => employee[criterioBusca] === dateQuery && !employee.deleted
