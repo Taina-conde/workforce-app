@@ -47,7 +47,7 @@ console.log("new employee", newEmployee)
     }
     console.log("aqui dentro")
     employees.push(newEmployee);
-    res(newEmployee)
+    res(newEmployee);
   });
 }
 function disable(token, cpf) {

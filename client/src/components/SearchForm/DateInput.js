@@ -5,7 +5,7 @@ import DateFnsUtils from "@date-io/date-fns";
 const DateInput = () => {
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
-      <Field component={DatePicker} label="Data de cadastro" name="dataCad" />
+      <Field component={DatePicker} format = "dd/MM/yy" label="Data de cadastro" name="dataCad" />
     </MuiPickersUtilsProvider>
   );
 };
