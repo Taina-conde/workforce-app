@@ -29,6 +29,7 @@ export const ContextProvider = (props) => {
 
  
   const deleteEmployeeHandler = (cpf) => {
+      
     
   };
 

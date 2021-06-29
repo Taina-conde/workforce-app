@@ -32,3 +32,14 @@ export async function saveNewEmployee(employee) {
     console.log("employee save", employeeResponse)
     return employeeResponse
 }
+export async function deleteEmployee(cpf) {
+    const response = await window.fetch(`${api}/employees/${cpf}`, {
+        method: "DELETE",
+        headers: {
+          Authorization: "app",
+        },
+      });
+    
+      const deleteResponse = await response.json();
+      return deleteResponse;
+}
