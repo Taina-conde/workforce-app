@@ -22,6 +22,16 @@ function getAll(token) {
 function getBy(token, criterioBusca, query) {
   return new Promise((res) => {
     let employees = getData(token);
+    
+    if (criterioBusca === "salario") {
+        const queryArray = query.split(",")
+        const minSalary = queryArray[0];
+        const maxSalary = queryArray[1];
+        const filteredEmployees = employees.filter(
+            (employee) => employee[criterioBusca] >= minSalary && employee[criterioBusca] <= maxSalary && !employee.deleted
+          );
+        return res(filteredEmployees)
+    }
     const filteredEmployees = employees.filter(
       (employee) => employee[criterioBusca] === query && !employee.deleted
     );

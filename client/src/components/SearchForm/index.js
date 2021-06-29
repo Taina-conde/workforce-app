@@ -121,7 +121,7 @@ const SearchForm = () => {
               </FormControl>
             )}
               {props.values.criterioBusca === "salario" && (
-              <FormControl className={[classes.formControl, classes.salario]}>
+              <FormControl className={classes.salario}>
                 <SalarioFaixaInput/>
               </FormControl>
             )}

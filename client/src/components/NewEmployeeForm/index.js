@@ -60,8 +60,9 @@ const NewEmployeeForm = () => {
         status: "",
       }}
       validationSchema={validationSchema}
-      onSubmit={(values) => {
+      onSubmit={(values, formikBag) => {
         console.log(" values em submit new employee", values);
+        formikBag.resetForm()
         //CALL API
         saveNewEmployee(values)
         
