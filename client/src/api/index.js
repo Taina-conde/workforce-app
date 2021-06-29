@@ -1,4 +1,3 @@
-import { formatEmployee } from "../helpers";
 const api = "http://localhost:3001";
 const header = {
   headers: {
@@ -18,15 +17,13 @@ export async function getBy(criterioBusca, query) {
     return searchedEmployees;
 }
 export async function saveNewEmployee(employee) {
-    const formattedEmployee = formatEmployee(employee)
-    console.log("formatted employee", formattedEmployee)
     const response = await window.fetch(`${api}/employees`, {
         method: 'POST',
         headers: {
             Authorization: "app",
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(formattedEmployee)
+        body: JSON.stringify(employee)
     })
     const employeeResponse = await response.json();
     console.log("employee save", employeeResponse)

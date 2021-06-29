@@ -12,6 +12,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import SalarioInput from "./SalarioInput";
 import { saveNewEmployee } from "../../api";
+import { formatEmployee } from "../../helpers";
 
 
 setLocale({
@@ -63,8 +64,10 @@ const NewEmployeeForm = () => {
       onSubmit={(values, formikBag) => {
         console.log(" values em submit new employee", values);
         formikBag.resetForm()
+        const employee =  formatEmployee(values)
+        console.log(" employee in new form", employee)
         //CALL API
-        saveNewEmployee(values)
+        saveNewEmployee(employee)
         
       }}
     >
