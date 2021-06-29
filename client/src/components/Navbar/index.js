@@ -2,6 +2,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Logo from "../shared/Logo";
+import { useContext } from "react";
+import Context from "../../context";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,11 +18,14 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar = () => {
   const classes = useStyles();
+  const ctx = useContext(Context);
+  const { searchStarted } = ctx;
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Logo/>
+          {searchStarted && <Logo/>}
+          
       
         </Toolbar>
       </AppBar>
