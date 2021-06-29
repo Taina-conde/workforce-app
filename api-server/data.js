@@ -5000,6 +5000,4 @@ dataDefault = [
         deleted: false,
     },
 ]
-module.exports =  {
-    dataDefault
-}
+module.exports =  dataDefault

@@ -8,11 +8,13 @@ function getData(token) {
   if (data == null) {
     data = dataBase[token] = clone(dataDefault);
   }
-  return data.dataDefault;
+  console.log(data)
+  return data;
 }
 function getAll(token) {
   return new Promise((res) => {
     const employees = getData(token);
+    console.log("aquiiiii:", employees)
     const filteredEmployees = employees.filter((employee) => !employee.deleted);
     res(filteredEmployees);
   });
