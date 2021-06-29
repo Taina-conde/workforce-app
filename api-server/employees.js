@@ -27,22 +27,7 @@ function getBy(token, criterioBusca, query) {
     res(filteredEmployees);
   });
 }
-function formatDate() {
-    const today = new Date().toLocaleDateString('en-GB');
-    return today
-}
-function formatEmployee(employee) {
-  return {
-    DataCad: formatDate(),
-    Cargo: employee.cargo,
-    Cpf: employee.cpf,
-    Nome: employee.nome,
-    UfNasc: employee.ufNasc.toUpperCase(),
-    Salario: Number(employee.salario),
-    Status: employee.status.toUpperCase(),
-    deleted: false,
-  };
-}
+
 
 function save(token, newEmployee) {
   return new Promise((res) => {
