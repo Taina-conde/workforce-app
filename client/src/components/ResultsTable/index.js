@@ -6,6 +6,9 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import { useContext } from "react";
+import Context from "../../context";
+import ResultRow from "./ResultRow";
 
 const useStyles = makeStyles({
   table: {
@@ -15,6 +18,8 @@ const useStyles = makeStyles({
 
 export default function ResultsTable() {
   const classes = useStyles();
+  const ctx = useContext(Context);
+  const { searchedEmployees } = ctx;
 
   return (
     <TableContainer component={Paper}>
@@ -31,6 +36,9 @@ export default function ResultsTable() {
           </TableRow>
         </TableHead>
         <TableBody>
+          {searchedEmployees.map((employee, index) => (
+            <ResultRow key = {index} employee = {employee}/>
+          ))}
          
         </TableBody>
       </Table>
