@@ -42,7 +42,7 @@ export const cargos = [
   "Analista Pl",
   "Analista Sr",
 ];
-export const statusArr = ["ativo", "inativo", "bloqueado"];
+export const statusArr = ["ATIVO", "INATIVO", "BLOQUEADO"];
 
 export const criteriosArr = [
   { id: "nome", criterio: "Nome" },
