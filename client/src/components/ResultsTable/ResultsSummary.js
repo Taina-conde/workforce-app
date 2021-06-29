@@ -8,13 +8,13 @@ const ResultsSummary = () => {
   const numEmployees = searchedEmployees.length;
   if (numEmployees === 0) {
     return (
-      <Typography variant="overline" display="block" gutterBottom>
-        Nenhum functionário foi encontrado.
+      <Typography variant="overline" display="block" gutterBottom color = "textSecondary">
+        Nenhum funcionário foi encontrado.
       </Typography>
     );
   }
   return (
-    <Typography variant="caption" display="block" gutterBottom>
+    <Typography variant="caption" display="block" color = "textSecondary" gutterBottom>
       {numEmployees === 1
         ? `${numEmployees} funcionário encontrado.`
         : `${numEmployees} funcionários encontrados.`}
