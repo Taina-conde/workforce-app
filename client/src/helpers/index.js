@@ -61,8 +61,8 @@ export const sliderMarks = [
   { value: 7500, label: "R$ 7.5 mil" },
   { value: 10000, label: "R$ 10mil" },
 ];
-export function formatDate() {
-  const today = new Date().toLocaleDateString('en-GB');
+export function formatDate(date) {
+  const today = date.toLocaleDateString('en-GB');
   return today
 }
 export function formatEmployee(employee) {

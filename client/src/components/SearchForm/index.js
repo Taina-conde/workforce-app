@@ -58,16 +58,23 @@ const SearchForm = () => {
         nome: "",
         cpf: "",
         cargo: "",
-        dataCad: formatDate(),
+        dataCad: formatDate(new Date()),
         ufNasc: "",
         salario: [0, 10000],
         status: "",
       }}
       validationSchema={validationSchema}
       onSubmit={(values, formikBag) => {
+        const {criterioBusca} = values;
+        let query = values[criterioBusca];
+        if (criterioBusca === "dataCad") {
+          query = formatDate(values[criterioBusca])
+          console.log("data busca query", query)
+          console.log("data busca values", values[criterioBusca])
+        }
         formikBag.resetForm();
         console.log(" values em submit", values);
-        getBy(values.criterioBusca, values[values.criterioBusca])
+        getBy(criterioBusca, query)
         .then((searchedEmployees) => 
           ctx.onSearchEmployee(searchedEmployees)
         )
