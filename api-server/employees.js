@@ -45,7 +45,9 @@ console.log("new employee", newEmployee)
       }
       return res(employeeInDataBase);
     }
-    employees.concat(newEmployee);
+    console.log("aqui dentro")
+    employees.push(newEmployee);
+    res(newEmployee)
   });
 }
 function disable(token, cpf) {

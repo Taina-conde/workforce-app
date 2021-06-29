@@ -19,6 +19,7 @@ export async function getBy(criterioBusca, query) {
 }
 export async function saveNewEmployee(employee) {
     const formattedEmployee = formatEmployee(employee)
+    console.log("formatted employee", formattedEmployee)
     const response = await window.fetch(`${api}/employees`, {
         method: 'POST',
         headers: {
