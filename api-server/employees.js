@@ -28,7 +28,7 @@ function getBy(token, criterioBusca, query) {
   });
 }
 function formatDate() {
-    const today = new Date().toLocaleDateString('en-GR');
+    const today = new Date().toLocaleDateString('en-GB');
     return today
 }
 function formatEmployee(employee) {
@@ -47,19 +47,20 @@ function formatEmployee(employee) {
 function save(token, newEmployee) {
   return new Promise((res) => {
     let employees = getData(token);
+console.log("new employee", newEmployee)
     const employeeInDataBaseArr = employees.filter(
       (employee) => employee.cpf === newEmployee.cpf
     );
     const employeeExists = employeeInDataBaseArr.length !== 0;
     const employeeInDataBase = employeeInDataBaseArr[0];
-
+        console.log("employeeindatbase", employeeInDataBase)
     if (employeeExists) {
       for (prop in newEmployee) {
         employeeInDataBase[prop] = newEmployee[prop];
       }
       return res(employeeInDataBase);
     }
-    employees.concat(formatEmployee(newEmployee));
+    employees.concat(newEmployee);
   });
 }
 function disable(token, cpf) {

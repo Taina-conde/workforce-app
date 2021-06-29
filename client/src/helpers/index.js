@@ -61,3 +61,19 @@ export const sliderMarks = [
   { value: 7500, label: "R$ 7.5 mil" },
   { value: 10000, label: "R$ 10mil" },
 ];
+function formatDate() {
+  const today = new Date().toLocaleDateString('en-GR');
+  return today
+}
+export function formatEmployee(employee) {
+  return {
+    DataCad: formatDate(),
+    Cargo: employee.cargo,
+    Cpf: employee.cpf,
+    Nome: employee.nome,
+    UfNasc: employee.ufNasc.toUpperCase(),
+    Salario: Number(employee.salario),
+    Status: employee.status.toUpperCase(),
+    deleted: false,
+  };
+}
