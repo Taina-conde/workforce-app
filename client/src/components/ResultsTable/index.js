@@ -9,6 +9,7 @@ import Paper from '@material-ui/core/Paper';
 import { useContext } from "react";
 import Context from "../../context";
 import ResultRow from "./ResultRow";
+import ResultsSummary from './ResultsSummary';
 
 const useStyles = makeStyles({
   table: {
@@ -20,10 +21,14 @@ export default function ResultsTable() {
   const classes = useStyles();
   const ctx = useContext(Context);
   const { searchedEmployees } = ctx;
+  const numEmployees = searchedEmployees.length;
+  if (numEmployees === 0 ) {
+    return <ResultsSummary/>
+  }
 
   return (
     <TableContainer component={Paper}>
-      
+      <ResultsSummary/>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
