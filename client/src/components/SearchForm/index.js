@@ -64,7 +64,8 @@ const SearchForm = () => {
         status: "",
       }}
       validationSchema={validationSchema}
-      onSubmit={(values) => {
+      onSubmit={(values, formikBag) => {
+        formikBag.resetForm();
         console.log(" values em submit", values);
         getBy(values.criterioBusca, values[values.criterioBusca])
         .then((searchedEmployees) => 
