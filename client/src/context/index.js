@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { getEmployees, saveNewEmployee } from "../api";
 
 const Context = React.createContext({
   employees: [],
@@ -12,6 +13,8 @@ export const ContextProvider = (props) => {
   const [searchedEmployees, setSearchedEmployee] = useState([]);
 
   useEffect(() => {
+      const allEmployees = getEmployees();
+      setEmployees(allEmployees);
    
   }, []);
 
