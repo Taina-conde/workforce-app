@@ -13,7 +13,7 @@ function getData(token) {
 function getAll(token) {
   return new Promise((res) => {
     const employees = getData(token);
-    let filteredEmployees = employees.filter((employee) => !employee.deleted);
+    const filteredEmployees = employees.filter((employee) => !employee.deleted);
     res(filteredEmployees);
   });
 }
@@ -21,9 +21,10 @@ function getAll(token) {
 function getBy(token, criterioBusca, query) {
   return new Promise((res) => {
     let employees = getData(token);
-    let filteredEmployees = employees.filter(
-      (employee) => employee[criterioBusca] === query
+    const filteredEmployees = employees.filter(
+      (employee) => employee[criterioBusca] === query && !employee.deleted
     );
+    
     res(filteredEmployees);
   });
 }
@@ -58,6 +59,7 @@ function disable(token, cpf) {
     );
     const employeeInDataBase = employeeInDataBaseArr[0];
     employeeInDataBase.deleted = true;
+    console.log("employee in deleted", employeeInDataBase)
     res(employeeInDataBase);
   });
 }
