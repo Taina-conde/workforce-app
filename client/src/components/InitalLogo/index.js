@@ -5,6 +5,7 @@ import Logo from "../shared/Logo";
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "70vh",
+    fontSize : "6em"
   },
 }));
 

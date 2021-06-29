@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    fontSize: "6em",
+    fontSize: "inherit",
+    justifyContent: "inherit"
   },
   logoStart: {
     textTransform: "lowercase",
@@ -24,7 +25,6 @@ export default function Logo() {
     <Grid
       container
       className={classes.root}
-      justify="center"
       alignItems="center"
     >
       <Grid item className={classes.logoStart}>
