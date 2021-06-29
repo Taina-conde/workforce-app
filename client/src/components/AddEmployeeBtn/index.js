@@ -1,8 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import IconButton from "@material-ui/core/IconButton";
 import AddIcon from "@material-ui/icons/Add";
-import Box from "@material-ui/core/Box";
 import Fab from "@material-ui/core/Fab";
 import Modal from "@material-ui/core/Modal";
 import NewEmployeeForm from "../NewEmployeeForm";
@@ -26,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function AddEmployeeBtn(props) {
+export default function AddEmployeeBtn() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
