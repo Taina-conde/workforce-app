@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
 }));
-const NewEmployeeForm = () => {
+const NewEmployeeForm = (props) => {
   const classes = useStyles();
   return (
     <Formik
@@ -68,6 +68,7 @@ const NewEmployeeForm = () => {
         console.log(" employee in new form", employee)
         //CALL API
         saveNewEmployee(employee)
+        props.onClose()
         
       }}
     >

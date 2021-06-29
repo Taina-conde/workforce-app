@@ -64,7 +64,7 @@ export default function AddEmployeeBtn(props) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <NewEmployeeForm />
+            <NewEmployeeForm onClose = {handleClose}/>
           </div>
         </Fade>
       </Modal>

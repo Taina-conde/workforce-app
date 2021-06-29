@@ -75,10 +75,12 @@ function save(token, newEmployee) {
     const employeeExists = employeeInDataBaseArr.length !== 0;
     const employeeInDataBase = employeeInDataBaseArr[0];
     console.log("employeeindatbase", employeeInDataBase);
+    console.log("employeeExists", employeeExists)
     if (employeeExists) {
       for (prop in newEmployee) {
         employeeInDataBase[prop] = newEmployee[prop];
       }
+      console.log("edited", employeeInDataBase)
       return res(employeeInDataBase);
     }
     console.log("aqui dentro");
