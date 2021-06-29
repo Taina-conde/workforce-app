@@ -5,6 +5,7 @@ import Container from "@material-ui/core/Container";
 import AddEmployeeModal from "./components/AddEmployeeModal";
 import { useContext } from "react";
 import Context from "./context";
+import InitalLogo from "./components/InitalLogo";
 
 function App() {
   const ctx = useContext(Context);
@@ -15,7 +16,7 @@ function App() {
       <Navbar />
       <Container>
         <SearchForm />
-        {searchStarted && <ResultsTable />}
+        {searchStarted ? <ResultsTable /> : <InitalLogo />}
       </Container>
       <AddEmployeeModal />
     </div>
