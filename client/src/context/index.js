@@ -5,6 +5,7 @@ const Context = React.createContext({
   employees: [],
   searchedEmployees: [],
   onSaveNewEmployee: (employee) => {},
+  onSearchEmployee: (criterioBusca, query) => {},
   onDeleteEmployee: (cpf) => {},
 });
 
@@ -17,6 +18,10 @@ export const ContextProvider = (props) => {
       setEmployees(allEmployees);
    
   }, []);
+
+  const searchEmployeeHandler = (criterioBusca, query) => {
+
+  }
 
   const saveNewEmployeeHandler = (employee) => {
     setEmployees(employees.concat(employee));
@@ -33,6 +38,7 @@ export const ContextProvider = (props) => {
         employees,
         searchedEmployees,
         onSaveNewEmployee: saveNewEmployeeHandler,
+        onSearchEmployee: searchEmployeeHandler,
         onDeleteEmployee: deleteEmployeeHandler,
       }}
     >
