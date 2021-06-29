@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function AddEmployeeBtn() {
+export default function AddEmployeeModal() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {

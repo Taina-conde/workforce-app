@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import SearchForm from "./components/SearchForm";
 import ResultsTable from "./components/ResultsTable";
 import Container from "@material-ui/core/Container";
-import AddEmployeeBtn from "./components/AddEmployeeBtn";
+import AddEmployeeModal from "./components/AddEmployeeModal";
 import { useContext } from "react";
 import Context from "./context";
 
@@ -17,7 +17,7 @@ function App() {
         <SearchForm />
         {searchStarted && <ResultsTable />}
       </Container>
-      <AddEmployeeBtn />
+      <AddEmployeeModal />
     </div>
   );
 }
