@@ -8,14 +8,14 @@ import Context from "./context";
 
 function App() {
   const ctx = useContext(Context);
-  const { searchedEmployees } = ctx;
+  const { searchStarted } = ctx;
 
   return (
     <div>
       <Navbar />
       <Container>
         <SearchForm />
-        {searchedEmployees && <ResultsTable />}
+        {searchStarted && <ResultsTable />}
       </Container>
       <AddEmployeeBtn />
     </div>

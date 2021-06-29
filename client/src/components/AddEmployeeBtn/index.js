@@ -3,22 +3,17 @@ import { makeStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 import AddIcon from "@material-ui/icons/Add";
 import Box from "@material-ui/core/Box";
+import Fab from "@material-ui/core/Fab";
 import Modal from "@material-ui/core/Modal";
 import NewEmployeeForm from "../NewEmployeeForm";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
-  box: {
+  btn: {
     position: "fixed",
     bottom: 50,
     right: 50,
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.background.paper,
-    "&:hover": {
-      backgroundColor: "#7986cb69",
-      color: theme.palette.primary.light,
-    },
   },
   modal: { display: "flex", alignItems: "center", justifyContent: "center" },
   paper: {
@@ -42,17 +37,17 @@ export default function AddEmployeeBtn(props) {
   };
   return (
     <div>
-      <Box
-        component={IconButton}
-        className={classes.box}
-        boxShadow={3}
+      <Fab
+        className={classes.btn}
+        color="primary"
         onClick={handleOpen}
+        aria-label="add"
       >
-        <AddIcon color="inherit" />
-      </Box>
+        <AddIcon />
+      </Fab>
       <Modal
         open={open}
-        className = {classes.modal}
+        className={classes.modal}
         onClose={handleClose}
         aria-labelledby="new-employee-modal"
         aria-describedby="new-employee-form"
@@ -64,7 +59,7 @@ export default function AddEmployeeBtn(props) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <NewEmployeeForm onClose = {handleClose}/>
+            <NewEmployeeForm onClose={handleClose} />
           </div>
         </Fade>
       </Modal>
