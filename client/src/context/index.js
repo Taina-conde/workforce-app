@@ -5,13 +5,13 @@ const Context = React.createContext({
   employees: [],
   searchedEmployees: [],
   onSaveNewEmployee: (employee) => {},
-  onSearchEmployee: (criterioBusca, query) => {},
+  onSearchEmployee: (employees) => {},
   onDeleteEmployee: (cpf) => {},
 });
 
 export const ContextProvider = (props) => {
   const [employees, setEmployees] = useState([]);
-  const [searchedEmployees, setSearchedEmployee] = useState([]);
+  const [searchedEmployees, setSearchedEmployees] = useState([]);
 
   useEffect(() => {
       const allEmployees = getEmployees();
