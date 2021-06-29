@@ -8,7 +8,7 @@ function getData(token) {
   if (data == null) {
     data = dataBase[token] = clone(dataDefault);
   }
-  console.log(data)
+  console.log(data);
   return data;
 }
 function getAll(token) {
@@ -19,19 +19,36 @@ function getAll(token) {
   });
 }
 
+function formatDate(date) {
+  const formattedDate = date.toLocaleDateString("en-GB");
+  return formattedDate;
+}
 function getBy(token, criterioBusca, query) {
   return new Promise((res) => {
     let employees = getData(token);
-    
+
     if (criterioBusca === "salario") {
-        const queryArray = query.split(",")
-        const minSalary = queryArray[0];
-        const maxSalary = queryArray[1];
-        const filteredEmployees = employees.filter(
-            (employee) => employee[criterioBusca] >= minSalary && employee[criterioBusca] <= maxSalary && !employee.deleted
-          );
-        return res(filteredEmployees)
+      const queryArray = query.split(",");
+      const minSalary = queryArray[0];
+      const maxSalary = queryArray[1];
+      const filteredEmployees = employees.filter(
+        (employee) =>
+          employee[criterioBusca] >= minSalary &&
+          employee[criterioBusca] <= maxSalary &&
+          !employee.deleted
+      );
+      return res(filteredEmployees);
     }
+    if (criterioBusca === "dataCad") {
+      let dateQuery = query.replace("-", "/");
+      dateQuery = dateQuery.replace("-", "/");
+      console.log("dateQuery", dateQuery);
+      const filteredEmployees = employees.filter(
+        (employee) => employee[criterioBusca] === dateQuery && !employee.deleted
+      );
+      return res(filteredEmployees);
+    }
+    console.log("query in getBy api-server", query);
     const filteredEmployees = employees.filter(
       (employee) => employee[criterioBusca] === query && !employee.deleted
     );

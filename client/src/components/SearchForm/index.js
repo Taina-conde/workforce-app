@@ -68,7 +68,9 @@ const SearchForm = () => {
         const {criterioBusca} = values;
         let query = values[criterioBusca];
         if (criterioBusca === "dataCad") {
-          query = formatDate(values[criterioBusca])
+          const dateFormatted = formatDate(values[criterioBusca])
+          query = dateFormatted.replace("/", "-")
+          query = query.replace("/", "-")
           console.log("data busca query", query)
           console.log("data busca values", values[criterioBusca])
         }
