@@ -39,19 +39,25 @@ export const ContextProvider = (props) => {
     saveNewEmployee(employee);
     setEmployees(employees.concat(employee));
   };
-  const editEmployeeHandler = (editedEmployee) => {
-    editEmployee(editedEmployee);
+  const editEmployeeHandler = (cpf, editedEmployee) => {
+    editEmployee(cpf, editedEmployee);
     let employeesCopy = employees;
     const employeeInDataBaseArr = employees.filter(
-      (e) => e.cpf === editedEmployee.cpf
+      (e) => e.cpf === cpf
     );
     const employeeInDataBase = employeeInDataBaseArr[0];
     const index = employees.indexOf(employeeInDataBase);
     if (index !== -1) {
-        employeesCopy[index] = editedEmployee
+      employeesCopy[index] = editedEmployee;
+    }
+    
+    const indexSearched = searchedEmployees.indexOf(employeeInDataBase);
+    if (indexSearched !== -1) {
+      let searchedEmployeesCopy = searchedEmployees;
+      searchedEmployeesCopy[indexSearched] = editedEmployee;
+      setSearchedEmployees(searchedEmployeesCopy);
     }
     setEmployees(employeesCopy);
-    
   };
 
   const deleteEmployeeHandler = (cpf) => {

@@ -29,8 +29,8 @@ export async function saveNewEmployee(employee) {
     console.log("employee save", employeeResponse)
     return employeeResponse
 }
-export async function editEmployee(employee) {
-    const response = await window.fetch(`${api}/employees/${employee.cpf}`, {
+export async function editEmployee(cpf, employee) {
+    const response = await window.fetch(`${api}/employees/${cpf}`, {
         method: 'PUT',
         headers: {
             Authorization: "app",

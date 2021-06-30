@@ -86,7 +86,7 @@ const NewEmployeeForm = (props) => {
           console.log("form employee", employee);
           props.onClose();
           formikBag.resetForm();
-          return onEditEmployee(employee);
+          return onEditEmployee(employee.cpf, employee);
         }
         console.log(" employee in new form", employee);
         onSaveNewEmployee(employee);
