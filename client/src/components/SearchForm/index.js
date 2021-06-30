@@ -32,10 +32,9 @@ const validationSchema = yup.object({
 });
 const useStyles = makeStyles((theme) => ({
   root: {
-    "& .MuiTextField-root": {
-      margin: theme.spacing(1),
-      width: "50ch",
-    },
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(3),
+   
   },
   formControl: {
     margin: theme.spacing(1),
