@@ -19,6 +19,7 @@ import { getBy } from "../../api";
 import { formatDateToSend, formatName } from "../../helpers";
 import { useContext } from "react";
 import Context from "../../context";
+import SearchIcon from '@material-ui/icons/Search';
 
 setLocale({
   number: {
@@ -145,8 +146,9 @@ const SearchForm = () => {
               color="primary"
               variant="contained"
               type="submit"
+              endIcon = {<SearchIcon/>}
             >
-              Pesquisar
+              Pesquisar 
             </Button>
           </form>
         );
