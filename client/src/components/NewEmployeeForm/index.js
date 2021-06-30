@@ -12,7 +12,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import SalarioInput from "./SalarioInput";
 import { saveNewEmployee } from "../../api";
-import { formatEmployee } from "../../helpers";
+import { formatEmployee, cargos, ufs, statusArr } from "../../helpers";
 import SaveIcon from '@material-ui/icons/Save';
 
 
@@ -26,9 +26,18 @@ const validationSchema = yup.object({
   nome: yup.string().required('Campo obrigatório'),
   cpf: yup.number().positive().integer().required('Campo obrigatório'),
   salario: yup.number().positive().max(100000).required('Campo obrigatório'),
-  cargo: yup.string().required('Campo obrigatório'),
-  ufNasc: yup.string().required('Campo obrigatório'),
-  status: yup.string().required('Campo obrigatório'),
+  cargo: yup.string().oneOf(
+    cargos,
+    'Cargo inválido'
+  ).required('Campo obrigatório'),
+  ufNasc: yup.string().oneOf(
+    ufs,
+    'UF inválida'
+  ).required('Campo obrigatório'),
+  status: yup.string().oneOf(
+    statusArr,
+    'Status inválido'
+  ).required('Campo obrigatório'),
 });
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -100,7 +109,7 @@ const NewEmployeeForm = (props) => {
             </Grid>
             
             <Grid item xs={12} className={classes.btn}>
-              <Button color="primary" variant="contained" type="submit" endIcon = {<SaveIcon/>}>
+              <Button disabled={!props.isValid || !props.dirty} color="primary" variant="contained" type="submit" endIcon = {<SaveIcon/>}>
                 Salvar
               </Button>
             </Grid>
