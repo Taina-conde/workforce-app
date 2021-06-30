@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { getEmployees, deleteEmployee } from "../api";
+import {
+  getEmployees,
+  deleteEmployee,
+  editEmployee,
+  saveNewEmployee,
+} from "../api";
 
 const Context = React.createContext({
   employees: [],
   searchedEmployees: [],
   searchStarted: false,
   onSaveNewEmployee: (employee) => {},
+  onEditEmployee: (editedEmployee) => {},
   onSearchEmployee: (employees) => {},
   onDeleteEmployee: (cpf) => {},
 });
@@ -16,19 +22,27 @@ export const ContextProvider = (props) => {
   const [searchStarted, setSearchStarted] = useState(false);
 
   useEffect(() => {
-    const allEmployees = getEmployees();
-    setEmployees(allEmployees);
+    const employeesInDataBase = getEmployees();
+    setEmployees(employeesInDataBase);
   }, []);
 
   const searchEmployeeHandler = (employees) => {
     setSearchedEmployees(employees);
     if (searchStarted === false) {
-        setSearchStarted(true);
+      setSearchStarted(true);
     }
   };
 
   const saveNewEmployeeHandler = (employee) => {
     setEmployees(employees.concat(employee));
+  };
+  const editEmployeeHandler = (editedEmployee) => {
+    editEmployee(editedEmployee);
+    const employeeInDataBaseArr = employees.filter(
+      (e) => e.cpf === editedEmployee.cpf
+    );
+    const employeeInDataBase = employeeInDataBaseArr[0];
+    setEmployees(employees.replace(employeeInDataBase, editedEmployee));
   };
 
   const deleteEmployeeHandler = (cpf) => {
@@ -48,6 +62,7 @@ export const ContextProvider = (props) => {
         onSaveNewEmployee: saveNewEmployeeHandler,
         onSearchEmployee: searchEmployeeHandler,
         onDeleteEmployee: deleteEmployeeHandler,
+        onEditEmployee: editEmployeeHandler,
       }}
     >
       {props.children}
