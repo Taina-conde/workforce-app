@@ -17,14 +17,16 @@ import { formatEmployee, cargos, ufs, statusArr } from "../../helpers";
 import SaveIcon from "@material-ui/icons/Save";
 
 setLocale({
-  number: {
+  string: {
     min: "Deve conter 11 números",
+  },
+  number: {
     max: "O salário deve ser menor que R$ 10mil",
   },
 });
 const validationSchema = yup.object({
   nome: yup.string().required("Campo obrigatório"),
-  cpf: yup.number().positive().integer().required("Campo obrigatório"),
+  cpf: yup.string().min(11).required("Campo obrigatório"),
   salario: yup.number().positive().max(100000).required("Campo obrigatório"),
   cargo: yup
     .string()

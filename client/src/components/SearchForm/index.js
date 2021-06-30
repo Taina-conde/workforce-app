@@ -21,13 +21,13 @@ import Context from "../../context";
 import SearchIcon from "@material-ui/icons/Search";
 
 setLocale({
-  number: {
+  string: {
     min: "Deve conter 11 números",
   },
 });
 const validationSchema = yup.object({
   nome: yup.string(),
-  cpf: yup.number().positive().integer(),
+  cpf: yup.string().min(11),
 });
 const useStyles = makeStyles((theme) => ({
   root: {
