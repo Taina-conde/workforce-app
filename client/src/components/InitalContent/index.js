@@ -5,7 +5,14 @@ import Logo from "../shared/Logo";
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "70vh",
-    fontSize : "6em"
+    fontSize : "4em",
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '6em',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '8em',
+    },
+
   },
 }));
 
