@@ -35,14 +35,23 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(3),
   },
   formControl: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(3),
     minWidth: 200,
   },
   btn: {
     margin: theme.spacing(2),
   },
   salario: {
-    width: "100%",
+    [theme.breakpoints.down("sm")]: {
+      width: "90%",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "50%",
+    },
+
+    width: "70%",
+
+    margin: theme.spacing(3),
   },
 }));
 
@@ -75,8 +84,7 @@ const SearchForm = () => {
         }
         formikBag.resetForm();
         console.log(" values em submit", values);
-        ctx.onSearchEmployee(criterioBusca, query)
-        
+        ctx.onSearchEmployee(criterioBusca, query);
       }}
     >
       {(props) => {
@@ -144,7 +152,7 @@ const SearchForm = () => {
                 variant="contained"
                 type="submit"
                 endIcon={<SearchIcon />}
-                disabled={!props.isValid || !props.dirty} 
+                disabled={!props.isValid || !props.dirty}
               >
                 Pesquisar
               </Button>

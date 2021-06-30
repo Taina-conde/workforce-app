@@ -8,7 +8,7 @@ const SalarioFaixaInput = () => {
       <Typography id="range-slider" gutterBottom>
         Faixa salarial
       </Typography>
-      <Field name="salario">
+      <Field name="salario" >
         {({
           field, // { name, value, onChange, onBlur }
           form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
