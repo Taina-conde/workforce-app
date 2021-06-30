@@ -91,11 +91,11 @@ function save(token, newEmployee) {
     res(newEmployee);
   });
 }
-function edit(token, cpf, editedEmployee) {
+function edit(token, editedEmployee) {
   return new Promise((res) => {
     let employees = getData(token);
     const employeeInDataBaseArr = employees.filter(
-      (employee) => employee.cpf === cpf
+      (employee) => employee.cpf === editedEmployee.cpf
     );
     const employeeExists = employeeInDataBaseArr.length !== 0;
 
