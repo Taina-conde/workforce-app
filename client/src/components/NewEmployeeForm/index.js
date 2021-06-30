@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import Context from "../../context";
 import { Formik } from "formik";
 import { setLocale } from "yup";
 import * as yup from "yup";
@@ -13,8 +15,7 @@ import Typography from "@material-ui/core/Typography";
 import SalarioInput from "./SalarioInput";
 import { saveNewEmployee } from "../../api";
 import { formatEmployee, cargos, ufs, statusArr } from "../../helpers";
-import SaveIcon from '@material-ui/icons/Save';
-
+import SaveIcon from "@material-ui/icons/Save";
 
 setLocale({
   number: {
@@ -23,21 +24,18 @@ setLocale({
   },
 });
 const validationSchema = yup.object({
-  nome: yup.string().required('Campo obrigatório'),
-  cpf: yup.number().positive().integer().required('Campo obrigatório'),
-  salario: yup.number().positive().max(100000).required('Campo obrigatório'),
-  cargo: yup.string().oneOf(
-    cargos,
-    'Cargo inválido'
-  ).required('Campo obrigatório'),
-  ufNasc: yup.string().oneOf(
-    ufs,
-    'UF inválida'
-  ).required('Campo obrigatório'),
-  status: yup.string().oneOf(
-    statusArr,
-    'Status inválido'
-  ).required('Campo obrigatório'),
+  nome: yup.string().required("Campo obrigatório"),
+  cpf: yup.number().positive().integer().required("Campo obrigatório"),
+  salario: yup.number().positive().max(100000).required("Campo obrigatório"),
+  cargo: yup
+    .string()
+    .oneOf(cargos, "Cargo inválido")
+    .required("Campo obrigatório"),
+  ufNasc: yup.string().oneOf(ufs, "UF inválida").required("Campo obrigatório"),
+  status: yup
+    .string()
+    .oneOf(statusArr, "Status inválido")
+    .required("Campo obrigatório"),
 });
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,6 +58,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 const NewEmployeeForm = (props) => {
   const classes = useStyles();
+  const ctx = useContext(Context);
+  const { employees } = ctx;
   return (
     <Formik
       initialValues={{
@@ -73,12 +73,24 @@ const NewEmployeeForm = (props) => {
       validationSchema={validationSchema}
       onSubmit={(values, formikBag) => {
         console.log(" values em submit new employee", values);
-        formikBag.resetForm()
-        const employee =  formatEmployee(values)
-        console.log(" employee in new form", employee)
-        saveNewEmployee(employee)
-        props.onClose()
-        
+        const employee = formatEmployee(values);
+        const employeeInDataBaseArr = employees.filter(
+          (e) => e.cpf === employee.cpf
+        );
+        const employeeExists = employeeInDataBaseArr.length !== 0;
+
+        console.log("employeeExists", employeeExists);
+        if (employeeExists) {
+          const employeeInDataBase = employeeInDataBaseArr[0];
+          console.log("employeeindatbase", employeeInDataBase);
+          console.log("form employee", employee);
+          
+          
+        }
+        console.log(" employee in new form", employee);
+        saveNewEmployee(employee);
+        props.onClose();
+        formikBag.resetForm();
       }}
     >
       {(props) => (
@@ -95,7 +107,7 @@ const NewEmployeeForm = (props) => {
             <Grid item xs={12}>
               <CpfInput />
             </Grid>
-            <Grid item xs= {12}>
+            <Grid item xs={12}>
               <SalarioInput />
             </Grid>
             <Grid item xs className={classes.inputItem}>
@@ -107,9 +119,15 @@ const NewEmployeeForm = (props) => {
             <Grid item xs className={classes.inputItem}>
               <StatusInput />
             </Grid>
-            
+
             <Grid item xs={12} className={classes.btn}>
-              <Button disabled={!props.isValid || !props.dirty} color="primary" variant="contained" type="submit" endIcon = {<SaveIcon/>}>
+              <Button
+                disabled={!props.isValid || !props.dirty}
+                color="primary"
+                variant="contained"
+                type="submit"
+                endIcon={<SaveIcon />}
+              >
                 Salvar
               </Button>
             </Grid>
