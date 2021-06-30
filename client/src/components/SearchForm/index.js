@@ -92,6 +92,7 @@ const SearchForm = () => {
               <Select
                 labelId="criterioBusca"
                 id="criterioBusca"
+                data-testid="search-dropdown"
                 name="criterioBusca"
                 value={props.values.criterioBusca}
                 onChange={props.handleChange}

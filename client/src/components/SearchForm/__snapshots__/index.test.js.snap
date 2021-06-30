@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm renders dropdown correctly 1`] = `
+<div>
+  <form
+    class="makeStyles-root-1"
+  >
+    <div
+      class="MuiFormControl-root makeStyles-formControl-2"
+    >
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        data-shrink="false"
+        id="criterioBusca"
+      >
+        Buscar funcionários por
+         
+      </label>
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        data-testid="search-dropdown"
+      >
+        <div
+          aria-haspopup="listbox"
+          aria-labelledby="criterioBusca criterioBusca"
+          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+          id="criterioBusca"
+          role="button"
+          tabindex="0"
+        >
+          <span>
+            ​
+          </span>
+        </div>
+        <input
+          aria-hidden="true"
+          class="MuiSelect-nativeInput"
+          name="criterioBusca"
+          tabindex="-1"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+    </div>
+    
+  </form>
+</div>
+`;
+
+exports[`SearchForm renders dropdown correctly 2`] = `
+<div>
+  <form
+    class="makeStyles-root-1"
+  >
+    <div
+      class="MuiFormControl-root makeStyles-formControl-2"
+    >
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-focused Mui-focused"
+        data-shrink="true"
+        id="criterioBusca"
+      >
+        Buscar funcionários por
+         
+      </label>
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInput-underline Mui-focused Mui-focused MuiInputBase-formControl MuiInput-formControl"
+        data-testid="search-dropdown"
+      >
+        <div
+          aria-haspopup="listbox"
+          aria-labelledby="criterioBusca criterioBusca"
+          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+          id="criterioBusca"
+          role="button"
+          tabindex="0"
+        >
+          <span>
+            ​
+          </span>
+        </div>
+        <input
+          aria-hidden="true"
+          class="MuiSelect-nativeInput"
+          name="criterioBusca"
+          tabindex="-1"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+    </div>
+    
+  </form>
+</div>
+`;
