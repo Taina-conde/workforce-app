@@ -104,7 +104,10 @@ function edit(token, editedEmployee) {
       const employeeInDataBase = employeeInDataBaseArr[0];
       console.log("employeeindatbase", employeeInDataBase);
       console.log("edited editedEmployee", editedEmployee);
-      employees.replace(employeeInDataBase, editedEmployee);
+      const index = employees.indexOf(employeeInDataBase);
+      if (index !== -1) {
+        employees[index] = editedEmployee;
+      }
     }
     return res(editedEmployee);
   });

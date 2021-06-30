@@ -84,7 +84,9 @@ const NewEmployeeForm = (props) => {
           const employeeInDataBase = employeeInDataBaseArr[0];
           console.log("employeeindatbase", employeeInDataBase);
           console.log("form employee", employee);
-          onEditEmployee(employee);
+          props.onClose();
+          formikBag.resetForm();
+          return onEditEmployee(employee);
         }
         console.log(" employee in new form", employee);
         onSaveNewEmployee(employee);

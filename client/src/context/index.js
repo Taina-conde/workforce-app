@@ -23,8 +23,7 @@ export const ContextProvider = (props) => {
   const [searchStarted, setSearchStarted] = useState(false);
 
   useEffect(() => {
-    const employeesInDataBase = getEmployees();
-    setEmployees(employeesInDataBase);
+    getEmployees().then((results) => setEmployees(results));
   }, []);
 
   const searchEmployeeHandler = (criterioBusca, query) => {
@@ -42,11 +41,17 @@ export const ContextProvider = (props) => {
   };
   const editEmployeeHandler = (editedEmployee) => {
     editEmployee(editedEmployee);
+    let employeesCopy = employees;
     const employeeInDataBaseArr = employees.filter(
       (e) => e.cpf === editedEmployee.cpf
     );
     const employeeInDataBase = employeeInDataBaseArr[0];
-    setEmployees(employees.replace(employeeInDataBase, editedEmployee));
+    const index = employees.indexOf(employeeInDataBase);
+    if (index !== -1) {
+        employeesCopy[index] = editedEmployee
+    }
+    setEmployees(employeesCopy);
+    
   };
 
   const deleteEmployeeHandler = (cpf) => {
