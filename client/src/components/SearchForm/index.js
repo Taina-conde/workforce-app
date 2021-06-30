@@ -15,7 +15,6 @@ import DateInput from "./DateInput";
 import UfInput from "../shared/UfInput";
 import SalarioFaixaInput from "./SalarioFaixaInput";
 import StatusInput from "../shared/StatusInput";
-import { getBy } from "../../api";
 import { formatDateToSend, formatName } from "../../helpers";
 import { useContext } from "react";
 import Context from "../../context";
