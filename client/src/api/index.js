@@ -29,6 +29,19 @@ export async function saveNewEmployee(employee) {
     console.log("employee save", employeeResponse)
     return employeeResponse
 }
+export async function editEmployee(employee) {
+    const response = await window.fetch(`${api}/employees/${employee.cpf}`, {
+        method: 'PUT',
+        headers: {
+            Authorization: "app",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(employee)
+    })
+    const employeeResponse = await response.json();
+    console.log("employee edit", employeeResponse)
+    return employeeResponse
+}
 export async function deleteEmployee(cpf) {
     const response = await window.fetch(`${api}/employees/${cpf}`, {
         method: "DELETE",
