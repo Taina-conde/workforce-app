@@ -23,12 +23,12 @@ setLocale({
   },
 });
 const validationSchema = yup.object({
-  nome: yup.string().required(),
-  cpf: yup.number().positive().integer().required(),
-  salario: yup.number().positive().required().max(100000),
-  cargo: yup.string().required(),
-  ufNasc: yup.string().required(),
-  status: yup.string().required(),
+  nome: yup.string().required('Campo obrigatório'),
+  cpf: yup.number().positive().integer().required('Campo obrigatório'),
+  salario: yup.number().positive().max(100000).required('Campo obrigatório'),
+  cargo: yup.string().required('Campo obrigatório'),
+  ufNasc: yup.string().required('Campo obrigatório'),
+  status: yup.string().required('Campo obrigatório'),
 });
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -76,7 +76,7 @@ const NewEmployeeForm = (props) => {
         <form onSubmit={props.handleSubmit} className={classes.root}>
           <Grid container spacing={2} justify="center" alignItems="center">
             <Grid item xs={12}>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="subtitle1" gutterBottom>
                 Novo funcionário
               </Typography>
             </Grid>
