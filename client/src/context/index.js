@@ -12,7 +12,7 @@ const Context = React.createContext({
   searchedEmployees: [],
   searchStarted: false,
   onSaveNewEmployee: (employee) => {},
-  onEditEmployee: (editedEmployee) => {},
+  onEditEmployee: (cpf, editedEmployee) => {},
   onSearchEmployee: (criterioBusca, query) => {},
   onDeleteEmployee: (cpf) => {},
 });
@@ -50,8 +50,13 @@ export const ContextProvider = (props) => {
     if (index !== -1) {
       employeesCopy[index] = editedEmployee;
     }
-    
-    const indexSearched = searchedEmployees.indexOf(employeeInDataBase);
+
+    let indexSearched = -1;
+    searchedEmployees.map((e, idx) => {
+        if (e.cpf === cpf){
+            indexSearched = idx;
+        }
+    })
     if (indexSearched !== -1) {
       let searchedEmployeesCopy = searchedEmployees;
       searchedEmployeesCopy[indexSearched] = editedEmployee;
