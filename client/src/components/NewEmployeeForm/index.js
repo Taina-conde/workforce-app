@@ -13,7 +13,6 @@ import UfInput from "../shared/UfInput";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import SalarioInput from "./SalarioInput";
-import { saveNewEmployee } from "../../api";
 import { formatEmployee, cargos, ufs, statusArr } from "../../helpers";
 import SaveIcon from "@material-ui/icons/Save";
 
@@ -56,10 +55,11 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
 }));
+
 const NewEmployeeForm = (props) => {
   const classes = useStyles();
   const ctx = useContext(Context);
-  const { employees } = ctx;
+  const { employees, onEditEmployee, onSaveNewEmployee } = ctx;
   return (
     <Formik
       initialValues={{
@@ -84,11 +84,10 @@ const NewEmployeeForm = (props) => {
           const employeeInDataBase = employeeInDataBaseArr[0];
           console.log("employeeindatbase", employeeInDataBase);
           console.log("form employee", employee);
-          
-          
+          onEditEmployee(employee);
         }
         console.log(" employee in new form", employee);
-        saveNewEmployee(employee);
+        onSaveNewEmployee(employee);
         props.onClose();
         formikBag.resetForm();
       }}

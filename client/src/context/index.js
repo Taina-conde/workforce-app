@@ -34,6 +34,7 @@ export const ContextProvider = (props) => {
   };
 
   const saveNewEmployeeHandler = (employee) => {
+    saveNewEmployee(employee);
     setEmployees(employees.concat(employee));
   };
   const editEmployeeHandler = (editedEmployee) => {
