@@ -53,7 +53,7 @@ export const ContextProvider = (props) => {
     setEmployees(employeesCopy);
 
     let indexSearched = -1;
-    searchedEmployees.map((e, idx) => {
+    searchedEmployees.forEach((e, idx) => {
         if (e.cpf === cpf){
             indexSearched = idx;
         }
