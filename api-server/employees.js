@@ -1,7 +1,6 @@
 const dataDefault = require("./data");
 const clone = require("clone");
 
-
 let dataBase = {};
 
 function getData(token) {
@@ -42,7 +41,7 @@ function getBy(token, criterioBusca, query) {
       return res(filteredEmployees);
     }
     if (criterioBusca === "dataCad") {
-      let dateQuery = formatReceivedDate(query)
+      let dateQuery = formatReceivedDate(query);
       console.log("dateQuery", dateQuery);
       const filteredEmployees = employees.filter(
         (employee) => employee[criterioBusca] === dateQuery && !employee.deleted
@@ -70,23 +69,44 @@ function save(token, newEmployee) {
   return new Promise((res) => {
     let employees = getData(token);
     console.log("new employee", newEmployee);
-    const employeeInDataBaseArr = employees.filter(
+    /*const employeeInDataBaseArr = employees.filter(
       (employee) => employee.cpf === newEmployee.cpf
     );
     const employeeExists = employeeInDataBaseArr.length !== 0;
-    const employeeInDataBase = employeeInDataBaseArr[0];
-    console.log("employeeindatbase", employeeInDataBase);
-    console.log("employeeExists", employeeExists)
+
+    console.log("employeeExists", employeeExists);
     if (employeeExists) {
+      const employeeInDataBase = employeeInDataBaseArr[0];
+      let updatedEmployee = {};
+      console.log("employeeindatbase", employeeInDataBase);
       for (prop in newEmployee) {
-        employeeInDataBase[prop] = newEmployee[prop];
+        updatedEmployee[prop] = newEmployee[prop];
       }
-      console.log("edited", employeeInDataBase)
-      return res(employeeInDataBase);
-    }
+      console.log("edited updatedEmployee", updatedEmployee);
+      employees.replace(employeeInDataBase, updatedEmployee);
+      return res(updatedEmployee);
+    }*/
     console.log("aqui dentro");
     employees.push(newEmployee);
     res(newEmployee);
+  });
+}
+function edit(token, cpf, editedEmployee) {
+  return new Promise((res) => {
+    let employees = getData(token);
+    const employeeInDataBaseArr = employees.filter(
+      (employee) => employee.cpf === editedEmployee.cpf
+    );
+    const employeeExists = employeeInDataBaseArr.length !== 0;
+
+    console.log("employeeExists", employeeExists);
+    if (employeeExists) {
+      const employeeInDataBase = employeeInDataBaseArr[0];
+      console.log("employeeindatbase", employeeInDataBase);
+      console.log("edited editedEmployee", editedEmployee);
+      employees.replace(employeeInDataBase, editedEmployee);
+    }
+    return res(editedEmployee);
   });
 }
 function disable(token, cpf) {
@@ -106,5 +126,6 @@ module.exports = {
   getAll,
   getBy,
   save,
+  edit,
   disable,
 };
