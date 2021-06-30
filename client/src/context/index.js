@@ -50,6 +50,7 @@ export const ContextProvider = (props) => {
     if (index !== -1) {
       employeesCopy[index] = editedEmployee;
     }
+    setEmployees(employeesCopy);
 
     let indexSearched = -1;
     searchedEmployees.map((e, idx) => {
@@ -62,7 +63,7 @@ export const ContextProvider = (props) => {
       searchedEmployeesCopy[indexSearched] = editedEmployee;
       setSearchedEmployees(searchedEmployeesCopy);
     }
-    setEmployees(employeesCopy);
+    
   };
 
   const deleteEmployeeHandler = (cpf) => {
