@@ -13,6 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import SalarioInput from "./SalarioInput";
 import { saveNewEmployee } from "../../api";
 import { formatEmployee } from "../../helpers";
+import SaveIcon from '@material-ui/icons/Save';
 
 
 setLocale({
@@ -66,7 +67,6 @@ const NewEmployeeForm = (props) => {
         formikBag.resetForm()
         const employee =  formatEmployee(values)
         console.log(" employee in new form", employee)
-        //CALL API
         saveNewEmployee(employee)
         props.onClose()
         
@@ -100,7 +100,7 @@ const NewEmployeeForm = (props) => {
             </Grid>
             
             <Grid item xs={12} className={classes.btn}>
-              <Button color="primary" variant="contained" type="submit">
+              <Button color="primary" variant="contained" type="submit" endIcon = {<SaveIcon/>}>
                 Salvar
               </Button>
             </Grid>

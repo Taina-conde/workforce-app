@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     margin: theme.spacing(2),
+    
   },
   salario: {
     width: "100%",
