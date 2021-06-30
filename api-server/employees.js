@@ -95,7 +95,7 @@ function edit(token, cpf, editedEmployee) {
   return new Promise((res) => {
     let employees = getData(token);
     const employeeInDataBaseArr = employees.filter(
-      (employee) => employee.cpf === editedEmployee.cpf
+      (employee) => employee.cpf === cpf
     );
     const employeeExists = employeeInDataBaseArr.length !== 0;
 
