@@ -14,7 +14,7 @@ import ResultsSummary from './ResultsSummary';
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
-  },
+  }
 });
 
 export default function ResultsTable() {
@@ -27,8 +27,9 @@ export default function ResultsTable() {
   }
 
   return (
+    <>
+    <ResultsSummary/>
     <TableContainer component={Paper}>
-      <ResultsSummary/>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -50,5 +51,6 @@ export default function ResultsTable() {
         </TableBody>
       </Table>
     </TableContainer>
+    </>
   );
 }
