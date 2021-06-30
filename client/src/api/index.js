@@ -10,7 +10,7 @@ export async function getEmployees() {
   const employees = await employeeResponses.json();
   return employees;
 }
-export async function getBy(criterioBusca, query) {
+export async function getByCategory(criterioBusca, query) {
     const response = await window.fetch(`${api}/employees/${criterioBusca}/${query}`, header);
     const searchedEmployees = await response.json();
     console.log('employee searched', searchedEmployees)

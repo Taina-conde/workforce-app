@@ -76,9 +76,8 @@ const SearchForm = () => {
         }
         formikBag.resetForm();
         console.log(" values em submit", values);
-        getBy(criterioBusca, query).then((searchedEmployees) =>
-          ctx.onSearchEmployee(searchedEmployees)
-        );
+        ctx.onSearchEmployee(criterioBusca, query)
+        
       }}
     >
       {(props) => {

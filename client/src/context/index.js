@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
+  getByCategory,
   getEmployees,
   deleteEmployee,
   editEmployee,
@@ -12,7 +13,7 @@ const Context = React.createContext({
   searchStarted: false,
   onSaveNewEmployee: (employee) => {},
   onEditEmployee: (editedEmployee) => {},
-  onSearchEmployee: (employees) => {},
+  onSearchEmployee: (criterioBusca, query) => {},
   onDeleteEmployee: (cpf) => {},
 });
 
@@ -26,11 +27,13 @@ export const ContextProvider = (props) => {
     setEmployees(employeesInDataBase);
   }, []);
 
-  const searchEmployeeHandler = (employees) => {
-    setSearchedEmployees(employees);
-    if (searchStarted === false) {
-      setSearchStarted(true);
-    }
+  const searchEmployeeHandler = (criterioBusca, query) => {
+    getByCategory(criterioBusca, query).then((results) => {
+      if (searchStarted === false) {
+        setSearchStarted(true);
+      }
+      setSearchedEmployees(results);
+    });
   };
 
   const saveNewEmployeeHandler = (employee) => {
