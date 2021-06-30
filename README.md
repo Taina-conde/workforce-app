@@ -32,8 +32,6 @@ O front-end da aplicação foi desenvolvido com `create-react-app`. Para fazer o
 - enzyme: v3.11.0,
 - jest: v26.6.0
 
-Para fazer os testes unitários foram usados Jest e Enzyme
-
 ### Back-end
 
 O back-end da aplicação foi desenvolvido usando `express`. Para que o back-end funcione corretamente, é preciso que você já tenha instalado localmente o [https://nodejs.org/en/](Node.js). As dependências do servidor são as seguintes:
