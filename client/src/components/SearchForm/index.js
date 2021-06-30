@@ -19,7 +19,7 @@ import { getBy } from "../../api";
 import { formatDateToSend, formatName } from "../../helpers";
 import { useContext } from "react";
 import Context from "../../context";
-import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from "@material-ui/icons/Search";
 
 setLocale({
   number: {
@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
-   
   },
   formControl: {
     margin: theme.spacing(1),
@@ -42,7 +41,6 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     margin: theme.spacing(2),
-    
   },
   salario: {
     width: "100%",
@@ -140,16 +138,18 @@ const SearchForm = () => {
                 <StatusInput />
               </FormControl>
             )}
-
-            <Button
-              className={classes.btn}
-              color="primary"
-              variant="contained"
-              type="submit"
-              endIcon = {<SearchIcon/>}
-            >
-              Pesquisar 
-            </Button>
+            {props.values.criterioBusca && (
+              <Button
+                className={classes.btn}
+                color="primary"
+                variant="contained"
+                type="submit"
+                endIcon={<SearchIcon />}
+                disabled={!props.isValid || !props.dirty} 
+              >
+                Pesquisar
+              </Button>
+            )}
           </form>
         );
       }}

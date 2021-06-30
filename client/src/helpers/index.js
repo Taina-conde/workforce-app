@@ -86,13 +86,13 @@ export function formatName(fullName) {
 }
 export function formatEmployee(employee) {
   return {
-    DataCad: formatDatePt(new Date()),
-    Cargo: employee.cargo,
-    Cpf: employee.cpf,
-    Nome: formatName(employee.nome),
-    UfNasc: employee.ufNasc.toUpperCase(),
-    Salario: Number(employee.salario),
-    Status: employee.status.toUpperCase(),
+    dataCad: formatDatePt(new Date()),
+    cargo: employee.cargo,
+    cpf: employee.cpf,
+    nome: formatName(employee.nome),
+    ufNasc: employee.ufNasc.toUpperCase(),
+    salario: Number(employee.salario),
+    status: employee.status.toUpperCase(),
     deleted: false,
   };
 }

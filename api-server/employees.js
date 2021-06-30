@@ -1,6 +1,7 @@
 const dataDefault = require("./data");
 const clone = require("clone");
 
+
 let dataBase = {};
 
 function getData(token) {
