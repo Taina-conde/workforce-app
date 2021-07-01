@@ -3,10 +3,11 @@ const clone = require("clone");
 
 let dataBase = {};
 
-function getData(token) {
-  let data = dataBase[token];
+function getData(token, dependencias = { db : dataBase}) {
+    const { db } = dependencias;
+  let data = db[token];
   if (data == null) {
-    data = dataBase[token] = clone(dataDefault);
+    data = db[token] = clone(dataDefault);
   }
   console.log(data);
   return data;

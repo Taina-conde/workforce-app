@@ -1,7 +1,7 @@
 // import { useContext } from 'react';
 // import { shallow, mount } from 'enzyme';
 // import { act } from 'react-dom/test-utils'
-import Context, { ContextProvider } from '.';
+// import Context, { ContextProvider } from '.';
 
 
 // const DummyComponent = () => <div />;
