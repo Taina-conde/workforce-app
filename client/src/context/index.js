@@ -41,7 +41,7 @@ export const ContextProvider = (props) => {
   };
   const editEmployeeHandler = (cpf, editedEmployee) => {
     editEmployee(cpf, editedEmployee);
-    let employeesCopy = employees;
+    let employeesCopy = [...employees];
     const employeeInDataBaseArr = employees.filter(
       (e) => e.cpf === cpf
     );
@@ -59,7 +59,7 @@ export const ContextProvider = (props) => {
         }
     })
     if (indexSearched !== -1) {
-      let searchedEmployeesCopy = searchedEmployees;
+      let searchedEmployeesCopy = [...searchedEmployees];
       searchedEmployeesCopy[indexSearched] = editedEmployee;
       setSearchedEmployees(searchedEmployeesCopy);
     }
