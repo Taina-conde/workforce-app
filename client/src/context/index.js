@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   getByCategory,
-  getEmployees,
+  getEmployees as defaultGetEmployees,
   deleteEmployee,
   editEmployee,
   saveNewEmployee,
@@ -18,12 +18,16 @@ const Context = React.createContext({
 });
 
 export const ContextProvider = (props) => {
+  const { getEmployees } = props;
+
   const [employees, setEmployees] = useState([]);
   const [searchedEmployees, setSearchedEmployees] = useState([]);
   const [searchStarted, setSearchStarted] = useState(false);
 
   useEffect(() => {
-    getEmployees().then((results) => setEmployees(results));
+    getEmployees().then((results) => {
+        setEmployees(results)
+    });
   }, []);
 
   const searchEmployeeHandler = (criterioBusca, query) => {
@@ -42,9 +46,7 @@ export const ContextProvider = (props) => {
   const editEmployeeHandler = (cpf, editedEmployee) => {
     editEmployee(cpf, editedEmployee);
     let employeesCopy = [...employees];
-    const employeeInDataBaseArr = employees.filter(
-      (e) => e.cpf === cpf
-    );
+    const employeeInDataBaseArr = employees.filter((e) => e.cpf === cpf);
     const employeeInDataBase = employeeInDataBaseArr[0];
     const index = employees.indexOf(employeeInDataBase);
     if (index !== -1) {
@@ -54,16 +56,15 @@ export const ContextProvider = (props) => {
 
     let indexSearched = -1;
     searchedEmployees.forEach((e, idx) => {
-        if (e.cpf === cpf){
-            indexSearched = idx;
-        }
-    })
+      if (e.cpf === cpf) {
+        indexSearched = idx;
+      }
+    });
     if (indexSearched !== -1) {
       let searchedEmployeesCopy = [...searchedEmployees];
       searchedEmployeesCopy[indexSearched] = editedEmployee;
       setSearchedEmployees(searchedEmployeesCopy);
     }
-    
   };
 
   const deleteEmployeeHandler = (cpf) => {
@@ -89,6 +90,10 @@ export const ContextProvider = (props) => {
       {props.children}
     </Context.Provider>
   );
+};
+
+Context.defaultProps = {
+  getEmployees: defaultGetEmployees,
 };
 
 export default Context;
