@@ -20,7 +20,6 @@ const ResultsSummary = () => {
     return (
       <Typography
         component="h2"
-        title="results"
         variant="overline"
         display="block"
         gutterBottom
@@ -34,7 +33,6 @@ const ResultsSummary = () => {
   return (
     <Typography
       component="h2"
-      title="results"
       variant="caption"
       display="block"
       color="textSecondary"

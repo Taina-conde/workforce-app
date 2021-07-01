@@ -41,6 +41,7 @@ O back-end da aplicação foi desenvolvido usando `express`. Para que o back-end
 - cors: v2.8.5,
 - dotenv: v10.0.0,
 - express: v4.17.1
+- jest: v27.0.6
 
 ## Instruções para iniciar a aplicação
 
