@@ -5,6 +5,7 @@ info:
   title: WorkForce API
   contact:
     email: tainabatistaconde@gmail.com
+    
 host: http://localhost:3001
 basePath: /
 
@@ -108,9 +109,30 @@ paths:
       500:
         description: There was an error.
   /employees/{criterioBusca}/{query}:
-    
-
-
+    get: 
+      summary: find an employee by search criteria
+      produces:
+        - application/json
+      parameters:
+        - in : path
+        name : criterioBusca
+        required: true
+        type: string
+        description: This is the search criteria, it can be nome, cargo, salario, status, ufNasc, dataCad, cpf.
+        - in: path
+        name: query
+        required: true
+        type: string
+        description: The query is the term the user is looking for to match in the employee info related to the search criteria. 
+      responses:
+        200:
+          description: A list of employees
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/EmployeeItem"
+        500:
+          description: There was an error.
 securityDefinitions:
   ApiKeyAuth:
     type: apiKey
@@ -154,22 +176,3 @@ definitions:
       deleted:
         type: boolean
 
-  Manufacturer:
-    required:
-      - name
-    properties:
-      name:
-        type: string
-        example: ACME Corporation
-      homePage:
-        type: string
-        format: url
-        example: https://www.acme-corp.com
-      phone:
-        type: string
-        example: 408-867-5309
-# Added by API Auto Mocking Plugin
-host: virtserver.swaggerhub.com
-basePath: /Taina-conde/example/1.0.0
-schemes:
-  - https
