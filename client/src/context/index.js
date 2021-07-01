@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-  getByCategory,
+  getByCategory as defaultGetByCategory,
   getEmployees as defaultGetEmployees,
-  deleteEmployee,
+  deleteEmployee as defaultDeleteEmployee,
   editEmployee,
   saveNewEmployee,
 } from "../api";
@@ -18,29 +18,42 @@ const Context = React.createContext({
 });
 
 export const ContextProvider = (props) => {
-  const { getEmployees } = props;
+  const {
+      getEmployees,
+      getByCategory,
+      deleteEmployee,
+    } = props;
 
   const [employees, setEmployees] = useState([]);
   const [searchedEmployees, setSearchedEmployees] = useState([]);
   const [searchStarted, setSearchStarted] = useState(false);
 
   useEffect(() => {
-    getEmployees().then((results) => {
-        setEmployees(results)
-    });
-  }, []);
+      const getEmployeesWrapper = async() => {
+        const result = await getEmployees();
+        //const result2 = await getByCategory();
+        //console.log('in useEffect1: ', getByCategory.getMockImplementation());
+        console.log('in useEffect2: ', result);
+        //console.log('in useEffect3: ', result2);
+        setEmployees(result)
+      };
+      getEmployeesWrapper();
+  }, [getEmployees]);
 
-  const searchEmployeeHandler = (criterioBusca, query) => {
-    getByCategory(criterioBusca, query).then((results) => {
-      if (searchStarted === false) {
+  const searchEmployeeHandler = async (criterioBusca, query) => {
+    console.log('mock function: ', getByCategory);
+    console.log('in search method: ', getByCategory.getMockImplementation());
+    const res = await getByCategory();
+    console.log('mock function: ', res);
+    const results = await getByCategory(criterioBusca, query);
+    if (searchStarted === false) {
         setSearchStarted(true);
-      }
-      setSearchedEmployees(results);
-    });
+    }
+    setSearchedEmployees(results);
   };
 
-  const saveNewEmployeeHandler = (employee) => {
-    saveNewEmployee(employee);
+  const saveNewEmployeeHandler = async (employee) => {
+    await saveNewEmployee(employee);
     setEmployees([...employees].concat(employee));
   };
   const editEmployeeHandler = (cpf, editedEmployee) => {
@@ -67,8 +80,8 @@ export const ContextProvider = (props) => {
     }
   };
 
-  const deleteEmployeeHandler = (cpf) => {
-    deleteEmployee(cpf);
+  const deleteEmployeeHandler = async (cpf) => {
+    await deleteEmployee(cpf);
     const searchedEmployeesWithoutDeleted = searchedEmployees.filter(
       (employee) => employee.cpf !== cpf
     );
@@ -93,7 +106,9 @@ export const ContextProvider = (props) => {
 };
 
 Context.defaultProps = {
+  getByCategory: defaultGetByCategory,
   getEmployees: defaultGetEmployees,
+  deleteEmployee: defaultDeleteEmployee,
 };
 
 export default Context;
