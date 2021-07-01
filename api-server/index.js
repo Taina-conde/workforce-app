@@ -12,7 +12,17 @@ app.use(express.static("public"));
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  const help = `
+  <pre>
+    Bem-vindo à WorkForce API
+
+    Use uma Authorization header para trabalhar com seus próprios dados:
+    Exemplo:
+    fetch(url, { headers: { 'Authorization': 'customize' }})
+ </pre>
+  `;
+
+  res.send(help);
 });
 
 app.use((req, res, next) => {
