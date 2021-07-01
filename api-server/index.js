@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
     Use uma Authorization header para trabalhar com seus próprios dados:
     Exemplo:
-    fetch(url, { headers: { 'Authorization': 'customize' }})
+    fetch(url, { headers: { 'Authorization': 'your string' }})
  </pre>
   `;
 

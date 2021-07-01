@@ -25,6 +25,8 @@ paths:
           description: There was an error
     post:
       summary: creates a new employee 
+      security: 
+        - ApiKeyAuth: []
       consumes:
         - application/json
       produces:
@@ -48,22 +50,72 @@ paths:
         name: cpf
         required: true
         type: string
-        minimun: 11
+        minimun: 11 characters
         description: CPF is a unique id for each employee. It is similar to a Social Security Number in the US. 
       procudes: 
         - application/json
       responses:
         200:
-          description: An Employee object
+          description: An Employee object was created
           schema:
             $ref: "#/definitions/EmployeeItem"
         500:
           description: There was an error.
     put:
-      summary: 
-            
-      
-        
+      summary: update an existing employee in the system.
+      security: 
+        - ApiKeyAuth: []
+      parameters:
+        - in: path
+        name: cpf
+        required: true
+        type: string
+        minimun: 11 characters
+        description: CPF is a unique id for each employee. It is similar to a Social Security Number in the US.
+        - in: body
+        name: editedEmployee
+        description: Employee object that needs to be updated
+        required: true
+        schema: 
+          $ref: "#/definitions/EmployeeItem"
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+      200:
+        description: An Employee object was updated
+        schema:
+          $ref: "#/definitions/EmployeeItem"
+      500:
+        description: There was an error.
+    delete:
+      summary: deletes an employee by CPF
+      produces:
+        - application/json
+      parameters:
+        - in : path
+        name: cpf
+        required: true
+        type: string
+        minimun: 11 characters
+        description: CPF is a unique id for each employee. It is similar to a Social Security Number in the US.
+      responses:
+      200:
+        description: An Employee object was deleted
+        schema:
+          $ref: "#/definitions/EmployeeItem"
+      500:
+        description: There was an error.
+  /employees/{criterioBusca}/{query}:
+    
+
+
+securityDefinitions:
+  ApiKeyAuth:
+    type: apiKey
+    in: header
+    name: app      
 definitions:
   EmployeeItem:
     type: object
