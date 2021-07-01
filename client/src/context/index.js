@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-  getByCategory as defaultGetByCategory,
-  getEmployees as defaultGetEmployees,
-  deleteEmployee as defaultDeleteEmployee,
+  getByCategory ,
+  getEmployees ,
+  deleteEmployee ,
   editEmployee,
   saveNewEmployee,
 } from "../api";
@@ -18,11 +18,7 @@ const Context = React.createContext({
 });
 
 export const ContextProvider = (props) => {
-  const {
-      getEmployees,
-      getByCategory,
-      deleteEmployee,
-    } = props;
+  
 
   const [employees, setEmployees] = useState([]);
   const [searchedEmployees, setSearchedEmployees] = useState([]);
@@ -42,7 +38,7 @@ export const ContextProvider = (props) => {
 
   const searchEmployeeHandler = async (criterioBusca, query) => {
     console.log('mock function: ', getByCategory);
-    console.log('in search method: ', getByCategory.getMockImplementation());
+    //console.log('in search method: ', getByCategory.getMockImplementation());
     const res = await getByCategory();
     console.log('mock function: ', res);
     const results = await getByCategory(criterioBusca, query);
@@ -105,10 +101,5 @@ export const ContextProvider = (props) => {
   );
 };
 
-Context.defaultProps = {
-  getByCategory: defaultGetByCategory,
-  getEmployees: defaultGetEmployees,
-  deleteEmployee: defaultDeleteEmployee,
-};
 
 export default Context;
