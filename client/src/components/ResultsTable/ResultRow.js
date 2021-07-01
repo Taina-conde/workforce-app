@@ -2,7 +2,7 @@ import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 import IconButton from "@material-ui/core/IconButton";
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
-import {useContext, useEffect} from "react";
+import {useContext} from "react";
 import Context from "../../context";
 
 const ResultRow = (props) => {

@@ -8,6 +8,7 @@ A aplicação conta com um botão fixo para que o usuário possa adicionar um no
 
 Por fim, o usuário pode remover o funcionário que desejar. Basta clicar no botão relativo àquele funcionário para removê-lo.
 
+
 ## Dependências do projeto
 
 ### Front-end

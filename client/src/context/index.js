@@ -34,7 +34,7 @@ export const ContextProvider = (props) => {
         setEmployees(result)
       };
       getEmployeesWrapper();
-  }, [getEmployees]);
+  }, []);
 
   const searchEmployeeHandler = async (criterioBusca, query) => {
     console.log('mock function: ', getByCategory);
