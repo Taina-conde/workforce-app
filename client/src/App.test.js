@@ -1,14 +1,19 @@
+
 import { render, screen } from '@testing-library/react';
 import "@testing-library/jest-dom/extend-expect";
 import App from './App';
+import { ContextProvider } from "./context";
 
-/*test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});*/
-test('renders the initial content logo when user has not started the search yet', () => {
-  const { getByText } = render(<App />);
-  //const logoText = screen.getByText('work');
-  expect(getByText(/work/i)).toBeInTheDocument();
+function renderApp(searchStarted=false) {
+  return render(
+    <ContextProvider value = {searchStarted}>
+      <App/>
+    </ContextProvider>
+  )
+}
+
+test('App renders the initial content logo when user has not started the search yet', () => {
+  renderApp()
+  expect(screen.getByText(/work/i)).toBeInTheDocument();
 });
+

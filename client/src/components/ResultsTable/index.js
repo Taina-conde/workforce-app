@@ -27,7 +27,7 @@ export default function ResultsTable() {
   }
 
   return (
-    <>
+    <div title = 'results'>
     <ResultsSummary/>
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="simple table">
@@ -51,6 +51,6 @@ export default function ResultsTable() {
         </TableBody>
       </Table>
     </TableContainer>
-    </>
+    </div>
   );
 }

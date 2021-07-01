@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   summary: {
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
-    textAlign: "center"
+    textAlign: "center",
   },
 }));
 
@@ -19,11 +19,13 @@ const ResultsSummary = () => {
   if (numEmployees === 0) {
     return (
       <Typography
+        component="h2"
+        title="results"
         variant="overline"
         display="block"
         gutterBottom
         color="textSecondary"
-        className = {classes.summary}
+        className={classes.summary}
       >
         Nenhum funcionário foi encontrado.
       </Typography>
@@ -31,11 +33,13 @@ const ResultsSummary = () => {
   }
   return (
     <Typography
+      component="h2"
+      title="results"
       variant="caption"
       display="block"
       color="textSecondary"
       gutterBottom
-      className= {classes.summary}
+      className={classes.summary}
     >
       {numEmployees === 1
         ? `${numEmployees} funcionário encontrado.`
