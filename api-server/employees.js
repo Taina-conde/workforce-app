@@ -3,7 +3,7 @@ const clone = require("clone");
 
 let dataBase = {};
 
-function getData(token, dependencias = { db : dataBase}) {
+function getData(token, dependencias = { db : dataBase }) {
     const { db } = dependencias;
   let data = db[token];
   if (data == null) {
@@ -132,4 +132,7 @@ module.exports = {
   save,
   edit,
   disable,
+
+  // internal method, exporting for testing only
+  getData,
 };
