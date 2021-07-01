@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-  getByCategory ,
-  getEmployees ,
-  deleteEmployee ,
+  getByCategory,
+  getEmployees,
+  deleteEmployee,
   editEmployee,
   saveNewEmployee,
 } from "../api-client";
@@ -11,6 +11,7 @@ const Context = React.createContext({
   employees: [],
   searchedEmployees: [],
   searchStarted: false,
+  searchDetails: { searchCriteria: "", searchedQuery: "" },
   onSaveNewEmployee: (employee) => {},
   onEditEmployee: (cpf, editedEmployee) => {},
   onSearchEmployee: (criterioBusca, query) => {},
@@ -18,39 +19,62 @@ const Context = React.createContext({
 });
 
 export const ContextProvider = (props) => {
-  
-
   const [employees, setEmployees] = useState([]);
   const [searchedEmployees, setSearchedEmployees] = useState([]);
   const [searchStarted, setSearchStarted] = useState(false);
+  const [searchDetails, setSearchDetails] = useState({
+    searchCriteria: "",
+    searchedQuery: "",
+  });
 
   useEffect(() => {
-      const getEmployeesWrapper = async() => {
-        const result = await getEmployees();
-        //const result2 = await getByCategory();
-        //console.log('in useEffect1: ', getByCategory.getMockImplementation());
-        console.log('in useEffect2: ', result);
-        //console.log('in useEffect3: ', result2);
-        setEmployees(result)
-      };
-      getEmployeesWrapper();
+    const getEmployeesWrapper = async () => {
+      const result = await getEmployees();
+      //const result2 = await getByCategory();
+      //console.log('in useEffect1: ', getByCategory.getMockImplementation());
+      console.log("in useEffect2: ", result);
+      //console.log('in useEffect3: ', result2);
+      setEmployees(result);
+    };
+    getEmployeesWrapper();
   }, []);
 
   const searchEmployeeHandler = async (criterioBusca, query) => {
-    console.log('mock function: ', getByCategory);
+    console.log("mock function: ", getByCategory);
     //console.log('in search method: ', getByCategory.getMockImplementation());
     const res = await getByCategory();
-    console.log('mock function: ', res);
+    console.log("mock function: ", res);
     const results = await getByCategory(criterioBusca, query);
     if (searchStarted === false) {
-        setSearchStarted(true);
+      setSearchStarted(true);
     }
     setSearchedEmployees(results);
+    setSearchDetails({ searchCriteria: criterioBusca, searchedQuery: query });
   };
 
   const saveNewEmployeeHandler = async (employee) => {
+    const { searchCriteria, searchedQuery } = searchDetails;
     await saveNewEmployee(employee);
-    setEmployees([...employees].concat(employee));
+    let employeesCopy = [...employees];
+    setEmployees(employeesCopy.concat(employee));
+    console.log("searchDetails", searchDetails);
+    if (searchCriteria === "salario") {
+      const minSalary = searchedQuery[0];
+      const maxSalary = searchedQuery[1];
+      if (employee.salario >= minSalary && employee.salario <= maxSalary) {
+        let searchedEmployeesCopy = [...searchedEmployees];
+        searchedEmployeesCopy.push(employee);
+        console.log("copy salario", searchedEmployeesCopy);
+        setSearchedEmployees(searchedEmployeesCopy);
+      }
+      return
+    }
+    if (employee[searchCriteria] === searchedQuery) {
+      let searchedEmployeesCopy = [...searchedEmployees];
+      searchedEmployeesCopy.push(employee);
+      console.log("copy other", searchedEmployeesCopy);
+      setSearchedEmployees(searchedEmployeesCopy);
+    }
   };
   const editEmployeeHandler = (cpf, editedEmployee) => {
     editEmployee(cpf, editedEmployee);
@@ -90,6 +114,7 @@ export const ContextProvider = (props) => {
         employees,
         searchedEmployees,
         searchStarted,
+        searchDetails,
         onSaveNewEmployee: saveNewEmployeeHandler,
         onSearchEmployee: searchEmployeeHandler,
         onDeleteEmployee: deleteEmployeeHandler,
@@ -100,6 +125,5 @@ export const ContextProvider = (props) => {
     </Context.Provider>
   );
 };
-
 
 export default Context;
