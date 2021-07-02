@@ -30,20 +30,13 @@ export const ContextProvider = (props) => {
   useEffect(() => {
     const getEmployeesWrapper = async () => {
       const result = await getEmployees();
-      //const result2 = await getByCategory();
-      //console.log('in useEffect1: ', getByCategory.getMockImplementation());
-      console.log("in useEffect2: ", result);
-      //console.log('in useEffect3: ', result2);
       setEmployees(result);
     };
     getEmployeesWrapper();
   }, []);
 
   const searchEmployeeHandler = async (criterioBusca, query) => {
-    console.log("mock function: ", getByCategory);
-    //console.log('in search method: ', getByCategory.getMockImplementation());
     const res = await getByCategory();
-    console.log("mock function: ", res);
     const results = await getByCategory(criterioBusca, query);
     if (searchStarted === false) {
       setSearchStarted(true);
@@ -57,14 +50,14 @@ export const ContextProvider = (props) => {
     await saveNewEmployee(employee);
     let employeesCopy = [...employees];
     setEmployees(employeesCopy.concat(employee));
-    console.log("searchDetails", searchDetails);
+  
     if (searchCriteria === "salario") {
       const minSalary = searchedQuery[0];
       const maxSalary = searchedQuery[1];
       if (employee.salario >= minSalary && employee.salario <= maxSalary) {
         let searchedEmployeesCopy = [...searchedEmployees];
         searchedEmployeesCopy.push(employee);
-        console.log("copy salario", searchedEmployeesCopy);
+  
         setSearchedEmployees(searchedEmployeesCopy);
       }
       return
@@ -72,7 +65,7 @@ export const ContextProvider = (props) => {
     if (employee[searchCriteria] === searchedQuery) {
       let searchedEmployeesCopy = [...searchedEmployees];
       searchedEmployeesCopy.push(employee);
-      console.log("copy other", searchedEmployeesCopy);
+    
       setSearchedEmployees(searchedEmployeesCopy);
     }
   };
