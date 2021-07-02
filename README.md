@@ -37,7 +37,7 @@ O front-end da aplicação foi desenvolvido com `create-react-app`. Para fazer o
 
 ### Back-end
 
-O back-end da aplicação foi desenvolvido usando `express`. Para que o back-end funcione corretamente, é preciso que você já tenha instalado localmente o [https://nodejs.org/en/](Node.js). As dependências do servidor são as seguintes:
+O back-end da aplicação foi desenvolvido usando `express`. Para que o back-end funcione corretamente, é preciso que você já tenha instalado localmente o NodeJs[https://nodejs.org/en/](Node.js). As dependências do servidor são as seguintes:
 
 - body-parser: v1.19.0,
 - clone: v2.1.2,
@@ -61,7 +61,7 @@ Para rodar o script do React App:
 
 ### Back-end
 
-Assumindo que o [https://nodejs.org/en/](Node.js) já se encontra instalado localmente, para iniciar o servidor:
+Assumindo que o NodeJs[https://nodejs.org/en/](Node.js) já se encontra instalado localmente, para iniciar o servidor:
 
 - a partir da pasta `workforce-app`, navegue para a pasta do servidor: `cd api-server`.
 - instale as dependências do servidor: `npm install`.
