@@ -104,7 +104,6 @@ function disable(token, cpf, dependencias = { _getData: getData}) {
     );
     const employeeInDataBase = employeeInDataBaseArr[0];
     employeeInDataBase.deleted = true;
-    console.log("employee in deleted", employeeInDataBase);
     res(employeeInDataBase);
   });
 }

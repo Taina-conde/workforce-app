@@ -322,7 +322,7 @@ describe("edit", () => {
 });
 
 describe("disable", () => {
-  it("disable employee", async () => {
+  it("disable employee and returns the disabled employee", async () => {
     const mockEmployees = [
       {
         nome: "Harry",
