@@ -1,7 +1,7 @@
 const dataDefault = require("./data");
 const employees = require("./employees");
 
-const { getData, getAll } = employees;
+const { getData, getAll, getBy } = employees;
 
 describe("getData", () => {
   it("assigns dataDefault to db and returns it db does not have token well defined", () => {
@@ -23,20 +23,67 @@ describe("getData", () => {
 describe("getAll", () => {
   it("returns all the employees in the db that were not deleted", async () => {
     const mockGetData = jest.fn().mockReturnValue([
-          {
-            nome: "Harry",
-            deleted: true,
-          },
-          { nome: "Hermione", deleted: false },
-          { nome: "Rony", deleted: false },
-        ],
-      );
-    const result = await getAll("meuToken", { _getData: mockGetData});
+      {
+        nome: "Harry",
+        deleted: true,
+      },
+      { nome: "Hermione", deleted: false },
+      { nome: "Rony", deleted: false },
+    ]);
+    const result = await getAll("meuToken", { _getData: mockGetData });
 
     expect(result).toEqual([
       { nome: "Hermione", deleted: false },
       { nome: "Rony", deleted: false },
     ]);
   });
-  it("", () => {});
+});
+
+describe("getBy", () => {
+  it("if search criteria is salario, returns the employees that were not deleted and whose salary is in the query range", async () => {
+    const mockGetData = jest.fn().mockReturnValue([
+      {
+        nome: "Harry",
+        deleted: true,
+        salario: 1000,
+      },
+      {
+        nome: "Draco",
+        deleted: true,
+        salario: 2500,
+      },
+      {
+        nome: "Snape",
+        deleted: false,
+        salario: 2500,
+      },
+
+      {
+        nome: "Hermione",
+        deleted: false,
+        salario: 8000,
+      },
+      {
+        nome: "Rony",
+        deleted: false,
+        salario: 5000,
+      },
+    ]);
+    const result = await getBy("meuToken", 'salario', '2000, 6000', {
+      _getData: mockGetData,
+    });
+    expect(result).toEqual([
+      {
+        nome: "Snape",
+        deleted: false,
+        salario: 2500,
+      },
+      {
+        nome: "Rony",
+        deleted: false,
+        salario: 5000,
+      },
+    ]);
+  });
+  it("", async() => {})
 });

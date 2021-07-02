@@ -25,9 +25,10 @@ function formatReceivedDate(date) {
   formattedDate = formattedDate.replace("-", "/");
   return formattedDate;
 }
-function getBy(token, criterioBusca, query) {
+function getBy(token, criterioBusca, query, dependencias = { _getData : getData}) {
+  const { _getData } = dependencias;
   return new Promise((res) => {
-    let employees = getData(token);
+    let employees = _getData(token);
 
     if (criterioBusca === "salario") {
       const queryArray = query.split(",");
