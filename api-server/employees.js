@@ -67,9 +67,10 @@ function get(token, cpf) {
   });
 }
 
-function save(token, newEmployee) {
+function save(token, newEmployee, dependencias = {_getData: getData}) {
+  const { _getData } = dependencias;
   return new Promise((res) => {
-    let employees = getData(token);
+    let employees = _getData(token);
     employees.push(newEmployee);
     res(newEmployee);
   });
