@@ -75,25 +75,24 @@ function save(token, newEmployee, dependencias = {_getData: getData}) {
     res(newEmployee);
   });
 }
-function edit(token, cpf, editedEmployee) {
+function edit(token, cpf, editedEmployee, dependencias = {_getData: getData}) {
+  const { _getData } = dependencias;
   return new Promise((res) => {
-    let employees = getData(token);
+    let employees = _getData(token);
     const employeeInDataBaseArr = employees.filter(
       (employee) => employee.cpf === cpf
     );
     const employeeExists = employeeInDataBaseArr.length !== 0;
 
-    console.log("employeeExists", employeeExists);
     if (employeeExists) {
       const employeeInDataBase = employeeInDataBaseArr[0];
-      console.log("employeeindatbase", employeeInDataBase);
-      console.log("edited editedEmployee", editedEmployee);
       const index = employees.indexOf(employeeInDataBase);
       if (index !== -1) {
         employees[index] = editedEmployee;
+        return res(editedEmployee);
       }
     }
-    return res(editedEmployee);
+    return res(null)
   });
 }
 function disable(token, cpf) {
