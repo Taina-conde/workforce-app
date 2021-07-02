@@ -48,13 +48,13 @@ O back-end da aplicação foi desenvolvido usando `express`. Para que o back-end
 
 ## Instruções para iniciar a aplicação
 
-Primeiramente, clone este repositório com `git clone xxxxxxx`
+Primeiramente, clone este repositório com `git clone https://github.com/Taina-conde/workforce-app.git`
 
 ### Front-end
 
 Para rodar o script do React App:
 
-- navegue para a pasta do React App: `cd client`.
+- a partir da pasta `workforce-app`, navegue para a pasta do React App: `cd client`.
 - instale as dependências do projeto: `npm install`.
 - inicie o servidor: `npm start`.
 - verifique no console ou no browser se o React App está rodando em [http://localhost:3000/](http://localhost:3000/).
@@ -63,7 +63,7 @@ Para rodar o script do React App:
 
 Assumindo que o [https://nodejs.org/en/](Node.js) já se encontra instalado localmente, para iniciar o servidor:
 
-- a partir da pasta `my-employees`, navegue para a pasta do servidor: `cd api-server`.
+- a partir da pasta `workforce-app`, navegue para a pasta do servidor: `cd api-server`.
 - instale as dependências do servidor: `npm install`.
 - inicie o servidor: `node index.js`.
 - verifique no console ou no browser se o servidor está rodando em [http://localhost:3001/](http://localhost:3001/).
