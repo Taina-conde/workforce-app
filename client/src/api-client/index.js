@@ -13,7 +13,7 @@ export async function getEmployees() {
 export async function getByCategory(criterioBusca, query) {
     const response = await window.fetch(`${api}/employees/${criterioBusca}/${query}`, header);
     const searchedEmployees = await response.json();
-    console.log('employee searched', searchedEmployees)
+    
     return searchedEmployees;
 }
 export async function saveNewEmployee(employee) {
@@ -26,7 +26,7 @@ export async function saveNewEmployee(employee) {
         body: JSON.stringify(employee)
     })
     const employeeResponse = await response.json();
-    console.log("employee save", employeeResponse)
+   
     return employeeResponse
 }
 export async function editEmployee(cpf, employee) {
@@ -39,7 +39,7 @@ export async function editEmployee(cpf, employee) {
         body: JSON.stringify(employee)
     })
     const employeeResponse = await response.json();
-    console.log("employee edit", employeeResponse)
+   
     return employeeResponse
 }
 export async function deleteEmployee(cpf) {
