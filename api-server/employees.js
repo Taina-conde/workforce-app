@@ -70,25 +70,6 @@ function get(token, cpf) {
 function save(token, newEmployee) {
   return new Promise((res) => {
     let employees = getData(token);
-    console.log("new employee", newEmployee);
-    /*const employeeInDataBaseArr = employees.filter(
-      (employee) => employee.cpf === newEmployee.cpf
-    );
-    const employeeExists = employeeInDataBaseArr.length !== 0;
-
-    console.log("employeeExists", employeeExists);
-    if (employeeExists) {
-      const employeeInDataBase = employeeInDataBaseArr[0];
-      let updatedEmployee = {};
-      console.log("employeeindatbase", employeeInDataBase);
-      for (prop in newEmployee) {
-        updatedEmployee[prop] = newEmployee[prop];
-      }
-      console.log("edited updatedEmployee", updatedEmployee);
-      employees.replace(employeeInDataBase, updatedEmployee);
-      return res(updatedEmployee);
-    }*/
-    console.log("aqui dentro");
     employees.push(newEmployee);
     res(newEmployee);
   });
