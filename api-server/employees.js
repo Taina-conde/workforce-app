@@ -95,9 +95,10 @@ function edit(token, cpf, editedEmployee, dependencias = {_getData: getData}) {
     return res(null)
   });
 }
-function disable(token, cpf) {
+function disable(token, cpf, dependencias = { _getData: getData}) {
+  const { _getData } = dependencias;
   return new Promise((res) => {
-    let employees = getData(token);
+    let employees = _getData(token);
     const employeeInDataBaseArr = employees.filter(
       (employee) => employee.cpf === cpf
     );

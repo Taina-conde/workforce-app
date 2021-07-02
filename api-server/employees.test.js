@@ -1,7 +1,7 @@
 const dataDefault = require("./data");
 const employees = require("./employees");
 
-const { getData, getAll, getBy, save, edit } = employees;
+const { getData, getAll, getBy, save, edit, disable } = employees;
 
 describe("getData", () => {
   it("assigns dataDefault to db and returns it db does not have token well defined", () => {
@@ -322,5 +322,33 @@ describe("edit", () => {
 });
 
 describe("disable", () => {
-    it('')
-})
+  it("disable employee", async () => {
+    const mockEmployees = [
+      {
+        nome: "Harry",
+        deleted: false,
+        cpf: "12345678901",
+        dataCad: "12/06/2021",
+        ufNasc: "DF",
+      },
+      {
+        nome: "Draco",
+        deleted: false,
+        dataCad: "11/06/2017",
+        cpf: "09876543210",
+        ufNasc: "MG",
+      },
+    ];
+    const mockGetData = jest.fn().mockReturnValue(mockEmployees);
+    const result = await disable("meuToken", "12345678901", {
+      _getData: mockGetData,
+    });
+    expect(result).toEqual({
+      nome: "Harry",
+      deleted: true,
+      cpf: "12345678901",
+      dataCad: "12/06/2021",
+      ufNasc: "DF",
+    });
+  });
+});
