@@ -9,12 +9,12 @@ function getData(token, dependencias = { db : dataBase }) {
   if (data == null) {
     data = db[token] = clone(dataDefault);
   }
-  console.log(data);
   return data;
 }
-function getAll(token) {
+function getAll(token, dependencias = {_getData: getData}) {
+  const { _getData } = dependencias;
   return new Promise((res) => {
-    const employees = getData(token);
+    const employees = _getData(token);
     const filteredEmployees = employees.filter((employee) => !employee.deleted);
     res(filteredEmployees);
   });
