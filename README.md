@@ -8,6 +8,8 @@ A aplicação conta com um botão fixo para que o usuário possa adicionar um no
 
 Por fim, o usuário pode remover o funcionário que desejar. Basta clicar no botão relativo àquele funcionário para removê-lo.
 
+Tecnologias usadas: Material-ui, React, Context-Api, ExpressJs, yup, Formik, Jest.
+
 
 ## Dependências do projeto
 
