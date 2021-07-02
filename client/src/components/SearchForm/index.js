@@ -76,19 +76,16 @@ const SearchForm = () => {
         let query = values[criterioBusca];
         if (criterioBusca === "dataCad") {
           query = formatDateToSend(values[criterioBusca]);
-          console.log("data busca query", query);
-          console.log("data busca values", values[criterioBusca]);
         }
         if (criterioBusca === "nome") {
           query = formatName(query);
         }
         formikBag.resetForm();
-        console.log(" values em submit", values);
         ctx.onSearchEmployee(criterioBusca, query);
       }}
     >
       {(props) => {
-        console.log("cpf", props.values.cpf);
+    
         return (
           <form onSubmit={props.handleSubmit} className={classes.root}>
             <FormControl className={classes.formControl}>
