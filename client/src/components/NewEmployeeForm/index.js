@@ -74,23 +74,17 @@ const NewEmployeeForm = (props) => {
       }}
       validationSchema={validationSchema}
       onSubmit={(values, formikBag) => {
-        console.log(" values em submit new employee", values);
+       
         const employee = formatEmployee(values);
         const employeeInDataBaseArr = employees.filter(
           (e) => e.cpf === employee.cpf
         );
         const employeeExists = employeeInDataBaseArr.length !== 0;
-
-        console.log("employeeExists", employeeExists);
         if (employeeExists) {
-          const employeeInDataBase = employeeInDataBaseArr[0];
-          console.log("employeeindatbase", employeeInDataBase);
-          console.log("form employee", employee);
           props.onClose();
           formikBag.resetForm();
           return onEditEmployee(employee.cpf, employee);
         }
-        console.log(" employee in new form", employee);
         onSaveNewEmployee(employee);
         props.onClose();
         formikBag.resetForm();
