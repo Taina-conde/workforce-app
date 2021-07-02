@@ -69,7 +69,7 @@ describe("getBy", () => {
         salario: 5000,
       },
     ]);
-    const result = await getBy("meuToken", 'salario', '2000, 6000', {
+    const result = await getBy("meuToken", "salario", "2000, 6000", {
       _getData: mockGetData,
     });
     expect(result).toEqual([
@@ -85,5 +85,36 @@ describe("getBy", () => {
       },
     ]);
   });
-  it("", async() => {})
+  it("if search criteria is dataCad, returns the employees not deleted that match the query", async () => {
+    const mockGetData = jest.fn().mockReturnValue([
+      {
+        nome: "Harry",
+        deleted: true,
+        dataCad: "12/06/2021",
+      },
+      {
+        nome: "Draco",
+        deleted: false,
+        dataCad: "11/06/2017",
+      },
+      {
+        nome: "Snape",
+        deleted: false,
+        dataCad: "12/06/2021",
+      },
+    ]);
+    const result = await getBy("meuToken", "dataCad", "12/06/2021", {
+      _getData: mockGetData,
+    });
+    expect(result).toEqual([
+      {
+        nome: "Snape",
+        deleted: false,
+        dataCad: "12/06/2021",
+      },
+    ]);
+  });
+  it('if search criteria is not salario or dataCad, returns the employee not deleted that match the query', async() => {
+
+  })
 });
