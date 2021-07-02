@@ -44,13 +44,12 @@ function getBy(token, criterioBusca, query, dependencias = { _getData : getData}
     }
     if (criterioBusca === "dataCad") {
       let dateQuery = formatReceivedDate(query);
-      console.log("dateQuery", dateQuery);
       const filteredEmployees = employees.filter(
         (employee) => employee[criterioBusca] === dateQuery && !employee.deleted
       );
       return res(filteredEmployees);
     }
-    console.log("query in getBy api-server", query);
+   
     const filteredEmployees = employees.filter(
       (employee) => employee[criterioBusca] === query && !employee.deleted
     );
