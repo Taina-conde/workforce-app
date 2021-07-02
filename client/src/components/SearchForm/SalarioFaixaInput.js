@@ -10,11 +10,11 @@ const SalarioFaixaInput = () => {
       </Typography>
       <Field name="salario" >
         {({
-          field, // { name, value, onChange, onBlur }
-          form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
+          field, 
+          form: { touched, errors }, 
           meta,
         }) => {
-          console.log("field", field);
+
           return (
             <Slider
               value={field.value}
