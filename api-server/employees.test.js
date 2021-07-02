@@ -114,7 +114,38 @@ describe("getBy", () => {
       },
     ]);
   });
-  it('if search criteria is not salario or dataCad, returns the employee not deleted that match the query', async() => {
-
-  })
+  it("if search criteria is not salario or dataCad, returns the employee not deleted that match the query", async () => {
+    const mockGetData = jest.fn().mockReturnValue([
+      {
+        nome: "Harry",
+        deleted: true,
+        ufNasc: "DF",
+      },
+      {
+        nome: "Draco",
+        deleted: false,
+        dataCad: "11/06/2017",
+        ufNasc: "MG",
+      },
+      {
+        nome: "Snape",
+        deleted: false,
+        dataCad: "12/06/2021",
+        ufNasc: "DF",
+      },
+    ]);
+    const result = await getBy("meuToken", "ufNasc", "DF", {
+      _getData: mockGetData,
+    });
+    expect(result).toEqual([
+      {
+        nome: "Snape",
+        deleted: false,
+        dataCad: "12/06/2021",
+        ufNasc: "DF",
+      },
+    ]);
+  });
 });
+
+describe()
