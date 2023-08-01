@@ -8,7 +8,7 @@ The application has a fixed button so that the user can add a new employee to th
 
 Finally, the user can remove an employees from the database by clicking on an employee's delete button.
 
-Tecnologias usadas: Material-ui, React, Context-Api, ExpressJs, yup, Formik, Jest.
+Tech Stack: Material-ui, React, Context-Api, ExpressJs, yup, Formik, Jest.
 
 
 ## Project's dependencies
