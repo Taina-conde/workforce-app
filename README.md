@@ -1,21 +1,21 @@
 # WorkForce App
 
-WorkForce é uma aplicação Web que permite que o usuário busque um funcionário no banco de dados de acordo com um dos seguintes critérios: nome, CPF, data de cadastro, UF de nascimento, salário, cargo e status.
+WorkForce is a web application that allows the user to search for an employee in the database according to one of the following criteria: name, CPF, date of registration, UF of birth, salary, position and status.
 
-A busca retorna os funcionários em um formato de tabela para facilitar a visualização dos dados de cada funcionário.
+The search returns the employees in a table format to facilitate the visualization of the data of each employee.
 
-A aplicação conta com um botão fixo para que o usuário possa adicionar um novo funcionário ao banco de dados, preenchando um formulário com as informações solicitadas em cada campo. Ao enviar o formulário, se um funcionário com o mesmo CPF já existir no banco de dados, este terá seus dados atualizados. Por outro lado, se aquele CPF ainda não constar no cadastro, um novo funcionário será adicionado ao banco de dados.
+The application has a fixed button so that the user can add a new employee to the database by filling out a form with the information requested in each field. When submitting the form, if an employee with the same CPF already exists in the database, his/her data will be updated. On the other hand, if that CPF is not yet in the register, a new employee will be added to the database.
 
-Por fim, o usuário pode remover o funcionário que desejar. Basta clicar no botão relativo àquele funcionário para removê-lo.
+Finally, the user can remove an employees from the database by clicking on an employee's delete button.
 
 Tecnologias usadas: Material-ui, React, Context-Api, ExpressJs, yup, Formik, Jest.
 
 
-## Dependências do projeto
+## Project's dependencies
 
 ### Front-end
 
-O front-end da aplicação foi desenvolvido com `create-react-app`. Para fazer os testes unitários foram usados Jest e Enzyme. Foi preciso instalar um adaptador não oficial para usar o Enzyme com o React v.17. O front-end do projeto possui as seguintes dependências:
+The app's front-end was implemented with `create-react-app`. Jest e Enzyme were used to implement Unit Tests. An unofficial adapter was installed to use Enzyme with React v.17. Dependencies:
 
 - @date-io/date-fns: v1.3.13,
 - @material-ui/core: v4.11.4,
@@ -37,7 +37,7 @@ O front-end da aplicação foi desenvolvido com `create-react-app`. Para fazer o
 
 ### Back-end
 
-O back-end da aplicação foi desenvolvido usando `express`. Para que o back-end funcione corretamente, é preciso que você já tenha instalado localmente o NodeJs[https://nodejs.org/en/](Node.js). As dependências do servidor são as seguintes:
+`express` was used to implement the back-end of the application. To properly run the back-end, you need to have already installed NodeJs locally [https://nodejs.org/en/](Node.js). Dependencies:
 
 - body-parser: v1.19.0,
 - clone: v2.1.2,
@@ -46,24 +46,24 @@ O back-end da aplicação foi desenvolvido usando `express`. Para que o back-end
 - express: v4.17.1
 - jest: v27.0.6
 
-## Instruções para iniciar a aplicação
+## Instructions to run the app
 
-Primeiramente, clone este repositório com `git clone https://github.com/Taina-conde/workforce-app.git`
+First, clone this repository with the command `git clone https://github.com/Taina-conde/workforce-app.git`
 
 ### Front-end
 
-Para rodar o script do React App:
+To run the React App:
 
-- a partir da pasta `workforce-app`, navegue para a pasta do React App: `cd client`.
-- instale as dependências do projeto: `npm install`.
-- inicie o servidor: `npm start`.
-- verifique no console ou no browser se o React App está rodando em [http://localhost:3000/](http://localhost:3000/).
+- from the `workforce-app` folder, go to the front-end folder: `cd client`.
+- install the project's dependencies: `npm install`.
+- start the server: `npm start`.
+- verify if the React App is running on [http://localhost:3000/](http://localhost:3000/).
 
 ### Back-end
 
-Assumindo que o NodeJs[https://nodejs.org/en/](Node.js) já se encontra instalado localmente, para iniciar o servidor:
+Supposing the Node.js[https://nodejs.org/en/](Node.js) is already installed, to run the server:
 
-- a partir da pasta `workforce-app`, navegue para a pasta do servidor: `cd api-server`.
-- instale as dependências do servidor: `npm install`.
-- inicie o servidor: `node index.js`.
-- verifique no console ou no browser se o servidor está rodando em [http://localhost:3001/](http://localhost:3001/).
+- from the `workforce-app` folder, fo to the back-end folder: `cd api-server`.
+- install the dependencies: `npm install`.
+- start the server: `node index.js`.
+- verify if the server is running on [http://localhost:3001/](http://localhost:3001/).
